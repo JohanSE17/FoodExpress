@@ -1,0 +1,5 @@
+
+export const ACTIVE_STATUS = ["PENDIENTE", "RECOGIDO", "ACEPTADO", "ASIGNADO"];
+export const INACTIVE_STATUS = ["ENTREGADO", "COMPLETADO", "CANCELADO"];
+export const ORDER_STATUS = ["PENDIENTE", "ACEPTADO"];
+export const DAYS = ["DOM", "LUN", "MAR", "MIE", "JUE", "VIE", "SAB"];
