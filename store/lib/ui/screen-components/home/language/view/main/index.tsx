@@ -1,10 +1,10 @@
-// Components
+// Componentes
 import {
   CustomContinueButton,
   CustomRadioButton,
 } from "@/lib/ui/useable-components";
 
-// Constants
+// Constantes
 import { LANGUAGES } from "@/lib/utils/constants";
 
 // React Native Async Storage
@@ -13,19 +13,19 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 // I18n
 import { changeLanguage } from "i18next";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { AuthContext } from "@/lib/context/global/auth.context";
 import { Image, ScrollView, Text, View } from "react-native";
 
 export default function LanguageMain() {
   const [isChangingLang, setIsChangingLang] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { isSelected, setIsSelected } = useContext(AuthContext);

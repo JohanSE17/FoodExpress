@@ -8,7 +8,7 @@ import {
   Option,
 } from "@/lib/utils/interfaces";
 
-// Components
+// Componentes
 import Divider from "../custom-divider";
 import { ItemDetailSection } from "./item-section";
 import ClearCartModal from "../clear-cart-modal";

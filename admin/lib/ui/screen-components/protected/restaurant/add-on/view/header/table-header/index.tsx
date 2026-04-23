@@ -9,7 +9,7 @@ export default function AddonTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IAddonTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="mb-4 flex flex-col gap-6">

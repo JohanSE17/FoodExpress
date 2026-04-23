@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Formik } from "formik";
 import { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -14,7 +14,7 @@ import {
   View,
 } from "react-native";
 
-// Components
+// Componentes
 
 // Icon
 import { FontAwesome, FontAwesome6 } from '@expo/vector-icons';
@@ -24,7 +24,7 @@ import { FontAwesome, FontAwesome6 } from '@expo/vector-icons';
 import { SignInSchema } from "@/lib/utils/schema";
 import { useTranslation } from "react-i18next";
 
-// Hooks
+// Ganchos (Hooks)
 import useLogin from "@/lib/hooks/useLogin";
 
 // Interface
@@ -44,7 +44,7 @@ const LoginScreen = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [initialValues, setInitialValues] = useState(initial);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const client = setupApollo();
   const { t } = useTranslation();

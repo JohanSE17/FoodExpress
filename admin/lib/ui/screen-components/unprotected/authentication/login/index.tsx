@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useRouter } from 'next/navigation';
 
 // Components

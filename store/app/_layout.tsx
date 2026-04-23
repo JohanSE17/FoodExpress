@@ -8,7 +8,7 @@ import "react-native-reanimated";
 import setupApollo from "@/lib/apollo";
 import PublicAccessTokenService from "@/lib/services/public-access-token.service";
 
-// Providers
+// Proveedores
 import { AuthProvider } from "@/lib/context/global/auth.context";
 import { ConfigurationProvider } from "@/lib/context/global/configuration.context";
 import { ApolloProvider } from "@apollo/client";
@@ -22,14 +22,14 @@ import "@/i18next";
 // Style
 import "../global.css";
 
-// Hooks
+// Ganchos (Hooks)
 import { UserProvider } from "@/lib/context/global/user.context";
 import { useFonts } from "expo-font";
 import { useKeepAwake } from "expo-keep-awake";
 import { StatusBar } from "expo-status-bar";
 import FlashMessage from "react-native-flash-message";
 
-// Providers
+// Proveedores
 import InternetProvider from "@/lib/context/global/internet-provider";
 // UI
 import AppThemeProvidor, { useApptheme } from "@/lib/context/theme.context";
@@ -51,7 +51,7 @@ SplashScreen.preventAutoHideAsync();
 
 
 function RootLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   useKeepAwake();
   const { currentTheme, appTheme } = useApptheme();
   const [loaded] = useFonts({

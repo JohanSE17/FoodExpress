@@ -2,12 +2,12 @@
 import * as Notifications from "expo-notifications";
 import { Href, useRouter } from "expo-router";
 
-// Core
+// Núcleo (Core)
 import { useCallback, useEffect } from "react";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Context
+// Contexto
 import { useLocationContext } from "@/lib/context/global/location.context";
 
 // API

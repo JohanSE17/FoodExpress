@@ -40,7 +40,7 @@ const SAVE_NOTIFICATION_TOKEN_WEB = gql`
   ${saveNotificationTokenWeb}
 `;
 
-// Types
+// Tipos (Types)
 export interface CartItem {
   image: string;
   key: string;

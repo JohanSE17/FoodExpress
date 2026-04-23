@@ -41,12 +41,12 @@ import * as Clarity from '@microsoft/react-native-clarity';
 //   // 'Warning: ...',
 //   // 'Sentry Logger ',
 //   'Constants.deviceYearClass'
-// ]) // Ignore log notification by message
-// LogBox.ignoreAllLogs() // Ignore all log notifications
+// ]) // Ignorar notificaciones de logs por mensaje
+// LogBox.ignoreAllLogs() // Ignorar todas las notificaciones de logs
 
 
 Clarity.initialize('mcdyi6urgs', {
-  logLevel: Clarity.LogLevel.Verbose, // Note: Use "LogLevel.Verbose" value while testing to debug initialization issues.
+  logLevel: Clarity.LogLevel.Verbose, // Nota: Usar el valor "LogLevel.Verbose" durante las pruebas para depurar problemas de inicialización.
 });
 
 Notifications.setNotificationHandler({
@@ -72,7 +72,7 @@ export default function App() {
   useKeepAwake()
   // useWatchLocation()
 
-  // Use system theme
+  // Usar el tema del sistema
   const systemTheme = useColorScheme()
   const [theme, themeSetter] = useReducer(ThemeReducer, systemTheme === 'dark' ? 'Dark' : 'Pink')
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function App() {
     }
   }, [systemTheme])
 
-  // For Fonts, etc
+  // Para fuentes, etc.
   useEffect(() => {
     const loadAppData = async () => {
       // try {
@@ -99,8 +99,9 @@ export default function App() {
         MuseoSans700: require('./src/assets/font/MuseoSans/MuseoSans700.ttf')
       })
       // await permissionForPushNotificationsAsync()
+      // obtener ubicación activa
       await getActiveLocation()
-      // get stored theme
+      // obtener tema almacenado
       // await getStoredTheme()
       setAppIsReady(true)
     }
@@ -124,7 +125,7 @@ export default function App() {
     hideSplashScreen()
   }, [appIsReady])
 
-  // For Location
+  // Para la Ubicación
   useEffect(() => {
     if (!location) return
     const saveLocation = async () => {
@@ -134,9 +135,9 @@ export default function App() {
   }, [location])
 
   // For Permission
-/*   useEffect(() => {
-    requestTrackingPermissions()
-  }, []) */
+  /*   useEffect(() => {
+      requestTrackingPermissions()
+    }, []) */
 
   // For Sentry
   // useEffect(() => {
@@ -153,33 +154,33 @@ export default function App() {
   //   }
   // }, [SENTRY_DSN])
 
-  // For App Update
+  // Para la Actualización de la Aplicación
   useEffect(() => {
     // eslint-disable-next-line no-undef
     if (__DEV__) return
-    ;(async () => {
-      const { isAvailable } = await Updates.checkForUpdateAsync()
-      if (isAvailable) {
-        try {
-          setIsUpdating(true)
-          const { isNew } = await Updates.fetchUpdateAsync()
-          if (isNew) {
-            await Updates.reloadAsync()
+      ; (async () => {
+        const { isAvailable } = await Updates.checkForUpdateAsync()
+        if (isAvailable) {
+          try {
+            setIsUpdating(true)
+            const { isNew } = await Updates.fetchUpdateAsync()
+            if (isNew) {
+              await Updates.reloadAsync()
+            }
+          } catch (error) {
+            console.log('error while updating app', JSON.stringify(error))
+          } finally {
+            setIsUpdating(false)
           }
-        } catch (error) {
-          console.log('error while updating app', JSON.stringify(error))
-        } finally {
-          setIsUpdating(false)
         }
-      }
-    })()
+      })()
   }, [])
 
-  // For Push Notification
+  // Para Notificaciones Push
   useEffect(() => {
     // registerForPushNotificationsAsync()
 
-    const notifSub  = Notifications.addNotificationReceivedListener((notification) => {
+    const notifSub = Notifications.addNotificationReceivedListener((notification) => {
       if (notification?.request?.content?.data?.type === NOTIFICATION_TYPES.REVIEW_ORDER) {
         const id = notification?.request?.content?.data?._id
         if (id) {
@@ -204,8 +205,8 @@ export default function App() {
     }
   }, [])
 
-  // Handlers
-  // get active location
+  // Controladores (Handlers)
+  // obtener ubicación activa
   async function getActiveLocation() {
     try {
       const locationStr = await AsyncStorage.getItem('location')
@@ -233,7 +234,7 @@ export default function App() {
   //   }
   // }
 
-  // set stored theme
+  // establecer tema almacenado
   const setStoredTheme = async (newTheme) => {
     try {
       await AsyncStorage.setItem('appTheme', newTheme)
@@ -242,7 +243,7 @@ export default function App() {
     }
   }
 
-  // set modal close
+  // establecer cierre del modal
   const onOverlayPress = () => {
     reviewModalRef?.current?.close()
   }
@@ -260,11 +261,11 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-    <AnimatedSplashScreen>
-      <ApolloProvider client={client}>
-        <ThemeContext.Provider
-          // use default theme
-          value={{ ThemeValue: theme, dispatch: themeSetter }}
+      <AnimatedSplashScreen>
+        <ApolloProvider client={client}>
+          <ThemeContext.Provider
+            // use default theme
+            value={{ ThemeValue: theme, dispatch: themeSetter }}
           // use stored theme
           // value={{
           //   ThemeValue: theme,
@@ -273,24 +274,24 @@ export default function App() {
           //     setStoredTheme(action.type) // Save the theme in AsyncStorage when it changes
           //   }
           // }}
-        >
-          <StatusBar backgroundColor={Theme[theme].menuBar} barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'} />
-          <LocationProvider>
-            <ConfigurationProvider>
-              <AuthProvider>
-                <UserProvider>
-                  <OrdersProvider>
-                    <AppContainer />
-                    <ReviewModal ref={reviewModalRef} onOverlayPress={onOverlayPress} theme={Theme[theme]} orderId={orderId} />
-                  </OrdersProvider>
-                </UserProvider>
-              </AuthProvider>
-            </ConfigurationProvider>
-          </LocationProvider>
-          <FlashMessage MessageComponent={MessageComponent} />
-        </ThemeContext.Provider>
-      </ApolloProvider>
-    </AnimatedSplashScreen>
+          >
+            <StatusBar backgroundColor={Theme[theme].menuBar} barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'} />
+            <LocationProvider>
+              <ConfigurationProvider>
+                <AuthProvider>
+                  <UserProvider>
+                    <OrdersProvider>
+                      <AppContainer />
+                      <ReviewModal ref={reviewModalRef} onOverlayPress={onOverlayPress} theme={Theme[theme]} orderId={orderId} />
+                    </OrdersProvider>
+                  </UserProvider>
+                </AuthProvider>
+              </ConfigurationProvider>
+            </LocationProvider>
+            <FlashMessage MessageComponent={MessageComponent} />
+          </ThemeContext.Provider>
+        </ApolloProvider>
+      </AnimatedSplashScreen>
     </ErrorBoundary>
   )
 }

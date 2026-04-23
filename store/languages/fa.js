@@ -1,5 +1,5 @@
 export const fa = {
-  // Navigation
+  // Navegación
   continue: "ادامه",
   Wallet: "کیف پول",
   Home: "خانه",

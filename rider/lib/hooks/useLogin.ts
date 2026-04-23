@@ -6,7 +6,7 @@ import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
 import { Href, router } from "expo-router";
 
-// Contexts
+// Contextos
 import { AuthContext } from "../context/global/auth.context";
 
 // GraphQL
@@ -15,16 +15,16 @@ import {
   RIDER_LOGIN,
 } from "../api/graphql/mutation/login";
 
-// Components
+// Componentes
 import { FlashMessageComponent } from "../ui/useable-components";
 
 // Interfaces
 import { IRiderDefaultCredsResponse, IRiderLoginCompleteResponse, IRiderLoginResponse } from "../utils/interfaces/auth.interface";
 
-// Constants
+// Constantes
 import { ROUTES } from "../utils/constants";
 
-// Hooks
+// Ganchos (Hooks)
 import { ApolloError, useMutation, useQuery } from "@apollo/client";
 import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -35,10 +35,10 @@ const useLogin = () => {
   const [creds, setCreds] = useState({ username: "", password: "" });
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
 
-  // Context
+  // Contexto
   const { setTokenAsync } = useContext(AuthContext);
 
   // API

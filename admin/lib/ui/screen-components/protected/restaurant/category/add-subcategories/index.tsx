@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import useToast from '@/lib/hooks/useToast';
 import { useMutation } from '@apollo/client';
 import { useContext } from 'react';
@@ -37,7 +37,7 @@ import {
 } from '@/lib/api/graphql/queries/sub-categories';
 import { CREATE_SUB_CATEGORIES } from '@/lib/api/graphql/mutations/sub-category';
 
-// Contexts
+// Contextos
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 import { useTranslations } from 'next-intl';
 
@@ -45,10 +45,10 @@ export default function SubCategoriesAddForm({
   onHide,
   isAddSubCategoriesVisible,
 }: ISubCategoriesAddFormProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 

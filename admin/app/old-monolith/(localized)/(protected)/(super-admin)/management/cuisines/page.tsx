@@ -1,5 +1,5 @@
 'use client';
-// Screens
+// Pantallas
 import CuisinesScreen from '@/lib/ui/screens/super-admin/management/cuisines';
 
 export default function CuisinesPage() {

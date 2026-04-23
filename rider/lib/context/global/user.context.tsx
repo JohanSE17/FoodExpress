@@ -13,7 +13,7 @@ import {
   IUserContextProps,
   IUserProviderProps,
 } from "@/lib/utils/interfaces";
-// Context
+// Contexto
 // import { useLocationContext } from "./location.context";
 // API
 import { UPDATE_LOCATION } from "@/lib/apollo/mutations/rider.mutation";
@@ -56,7 +56,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
   const locationListener = useRef<LocationSubscription>();
   const coordinatesRef = useRef<LocationObject>({} as LocationObject);
 
-  // Context
+  // Contexto
   // const { locationPermission } = useLocationContext()
 
   const {

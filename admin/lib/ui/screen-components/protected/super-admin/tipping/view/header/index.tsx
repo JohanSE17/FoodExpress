@@ -5,7 +5,7 @@ import HeaderText from '@/lib/ui/useable-components/header-text';
 import { useTranslations } from 'next-intl';
 
 const TippingHeader = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

@@ -17,7 +17,7 @@ import UserContext from '../../context/User'
 import useNetworkStatus from '../../utils/useNetworkStatus'
 import ErrorView from '../../components/ErrorView/ErrorView'
 
-// Hooks
+// Ganchos (Hooks)
 import React, { useState, useContext, useLayoutEffect, useEffect, useRef, useCallback } from 'react'
 import { useNavigation, useFocusEffect } from '@react-navigation/native'
 import { useTranslation } from 'react-i18next'
@@ -28,7 +28,7 @@ import { Text } from 'react-native'
 import { scale } from '../../utils/scaling'
 import { TextField } from 'react-native-material-textfield'
 
-// Utils
+// Utilidades
 import { truncateText } from '../../utils/customFunctions'
 
 const { height } = Dimensions.get('window')

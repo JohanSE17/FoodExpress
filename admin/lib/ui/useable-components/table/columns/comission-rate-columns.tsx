@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import React from 'react';
 import { Form, Formik } from 'formik';
 
@@ -18,7 +18,7 @@ export const COMMISSION_RATE_COLUMNS = ({
   handleCommissionRateChange,
   loadingRestaurant,
 }: ICommissionColumnProps & { loadingRestaurant: string | null }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return [
     {

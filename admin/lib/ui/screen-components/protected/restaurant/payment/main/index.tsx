@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useState, useContext, useEffect } from 'react';
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 import { useTranslations } from 'next-intl';
@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 import PaymentCard from '@/lib/ui/useable-components/PaymentCard';
 import PaymentCardSkeleton from '@/lib/ui/useable-components/custom-skeletons/payment.card.skeleton';
 
-// Contexts
+// Contextos
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 import { ToastContext } from '@/lib/context/global/toast.context';
 
@@ -20,11 +20,11 @@ import { ProfileContext } from '@/lib/context/restaurant/profile.context';
 
 export default function PaymentMain() {
 
-  // Hooks
+  // Ganchos (Hooks)
   const { SERVER_URL } = useConfiguration();
   const t = useTranslations()
 
-  // Contexts
+  // Contextos
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const {restaurantProfileResponse} = useContext(ProfileContext)
   const { showToast } = useContext(ToastContext);

@@ -3,7 +3,7 @@ import { useContext, useMemo } from 'react';
 import { GET_VENDOR_DASHBOARD_STATS_CARD_DETAILS } from '@/lib/api/graphql/queries/dashboard';
 import StatsCard from '@/lib/ui/useable-components/stats-card';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
@@ -21,17 +21,17 @@ import {
   faTruck,
 } from '@fortawesome/free-solid-svg-icons';
 
-// Context
+// Contexto
 import { VendorLayoutContext } from '@/lib/context/vendor/layout-vendor.context';
 import { useTranslations } from 'next-intl';
 
 export default function RestaurantStats({
   dateFilter,
 }: IDashboardOrderStatsComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     vendorLayoutContextData: { vendorId },
   } = useContext(VendorLayoutContext);

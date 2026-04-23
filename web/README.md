@@ -1,58 +1,58 @@
-# Converting PWA to iOS Project with Capacitor
+# Convertir PWA a un Proyecto de iOS con Capacitor
 
-These instructions will guide you through converting your existing Progressive Web App (PWA) into an iOS project that can be run on Xcode.
+Estas instrucciones le guiarán a través de la conversión de su Aplicación Web Progresiva (PWA) existente en un proyecto de iOS que puede ejecutarse en Xcode.
 
-## Prerequisites
+## Prerrequisitos
 
-*   Node.js and npm installed
-*   Xcode installed
+*   Node.js e npm instalados
+*   Xcode instalado
 
-## Steps
+## Pasos
 
-1.  **Install Capacitor:**
+1.  **Instalar Capacitor:**
 
     ```bash
     npm install -g @capacitor/cli @capacitor/core
     ```
 
-2.  **Create a Capacitor Project:**
+2.  **Crear un Proyecto de Capacitor:**
 
     ```bash
     mkdir ios-app
     cd ios-app
     npm init -y
     npm install @capacitor/ios @capacitor/cli @capacitor/core
-    npx cap init --web-dir ../public --app-name "YourAppName" --appId "com.example.yourapp"
+    npx cap init --web-dir ../public --app-name "NombreDeTuApp" --appId "com.example.tuapp"
     ```
 
-    Replace `"YourAppName"` with the desired name of your iOS app.
-    Replace `"com.example.yourapp"` with a unique bundle identifier for your app.
+    Reemplace `"NombreDeTuApp"` con el nombre deseado para su aplicación de iOS.
+    Reemplace `"com.example.tuapp"` con un identificador de paquete único para su aplicación.
 
-3.  **Copy Web App Assets:**
+3.  **Copiar los Activos (Assets) de la Aplicación Web:**
 
-    Copy the contents of your PWA's `public` directory (or whichever directory contains your web app's assets) into the `ios-app/www` directory.
+    Copie el contenido del directorio `public` de su PWA (o cualquier directorio que contenga los activos de su aplicación web) al directorio `ios-app/www`.
 
-4.  **Add iOS Platform:**
+4.  **Agregar la Plataforma iOS:**
 
     ```bash
     cd ios-app
     npx cap add ios
     ```
 
-5.  **Build iOS Project:**
+5.  **Construir el Proyecto de iOS:**
 
     ```bash
     npx cap sync ios
     npx cap open ios
     ```
 
-    This will open the project in Xcode.
+    Esto abrirá el proyecto en Xcode.
 
-6.  **Run in Xcode:**
+6.  **Ejecutar en Xcode:**
 
-    In Xcode, select your target device (simulator or physical device) and run the project.
+    En Xcode, seleccione su dispositivo de destino (simulador o dispositivo físico) y ejecute el proyecto.
 
-## Notes
+## Notas
 
-*   You may need to configure signing certificates and provisioning profiles in Xcode to run the app on a physical device.
-*   This process creates a basic iOS wrapper around your PWA. You may need to add additional native functionality using Capacitor plugins.
+*   Es posible que deba configurar certificados de firma y perfiles de aprovisionamiento en Xcode para ejecutar la aplicación en un dispositivo físico.
+*   Este proceso crea un contenedor básico de iOS alrededor de su PWA. Es posible que deba agregar funcionalidad nativa adicional utilizando complementos (plugins) de Capacitor.

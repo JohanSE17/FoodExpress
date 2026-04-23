@@ -9,7 +9,7 @@ export default function FoodsTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IFoodTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

@@ -1,95 +1,95 @@
-# Restaurant Delivery Management System
+# Sistema de Gestión de Domicilios para Restaurantes
 
-This project is a Restaurant Delivery Management System built with modern web technologies.
+Este proyecto es un Sistema de Gestión de Domicilios para Restaurantes construido con tecnologías web modernas.
 
-## Technologies Used
+## Tecnologías Utilizadas
 
 - **Next.js 14**
 - **TypeScript**
-- **UI Libraries**: Next UI, Chakra UI, or Prime React
-- **React Icons** (if required)
+- **Librerías de UI**: Next UI, Chakra UI, o Prime React
+- **React Icons** (si se requieren)
 - **Tailwind CSS**
-- **Cypress** for:
-  - Component Testing
-  - Integration Testing
-  - E2E Testing
+- **Cypress** para:
+  - Pruebas de Componentes
+  - Pruebas de Integración
+  - Pruebas E2E (Extremo a Extremo)
 
-## Build Size and Performance
+## Tamaño de Construcción y Rendimiento
 
-- **Page Size**: Must be between 150KB.
-- **Critical JS and CSS**: Must be below 100KB.
-- **Bundle Analysis**: Use `webpack-bundle-analyzer` as a dev dependency to analyze the bundle.
-- **Dynamic Imports**: Use dynamic imports in Next.js.
-- **Image Optimization**: Use the `<Image/>` tag of Next.js.
+- **Tamaño de Página**: Debe estar alrededor de los 150KB.
+- **JS y CSS Críticos**: Deben ser inferiores a 100KB.
+- **Análisis de Bundle**: Usar `webpack-bundle-analyzer` como dependencia de desarrollo para analizar el paquete.
+- **Importaciones Dinámicas**: Usar importaciones dinámicas de Next.js.
+- **Optimización de Imágenes**: Usar la etiqueta `<Image/>` de Next.js.
 
-### Performance Metrics
+### Métricas de Rendimiento
 
-The app must follow the standard render times as follows:
+La aplicación debe seguir los tiempos de renderizado estándar de la siguiente manera:
 
-- **First Contentful Paint (FCP)**: Under 1.8 seconds
-- **Largest Contentful Paint (LCP)**: Under 2.5 seconds
-- **First Input Delay (FID)**: Under 100 milliseconds
-- **Time to Interactive (TTI)**: Under 5 seconds
-- **Total Blocking Time (TBT)**: Under 300 milliseconds
-- **Cumulative Layout Shift (CLS)**: Under 0.1
-- **Speed Index (SI)**: Under 4.3 seconds
-- **Time to First Byte (TTFB)**: Under 600 milliseconds
-- **First Meaningful Paint (FMP)**: Under 2.5 seconds
+- **First Contentful Paint (FCP)**: Menos de 1.8 segundos
+- **Largest Contentful Paint (LCP)**: Menos de 2.5 segundos
+- **First Input Delay (FID)**: Menos de 100 milisegundos
+- **Time to Interactive (TTI)**: Menos de 5 segundos
+- **Total Blocking Time (TBT)**: Menos de 300 milisegundos
+- **Cumulative Layout Shift (CLS)**: Menos de 0.1
+- **Speed Index (SI)**: Menos de 4.3 segundos
+- **Time to First Byte (TTFB)**: Menos de 600 milisegundos
+- **First Meaningful Paint (FMP)**: Menos de 2.5 segundos
 
-Use the browser's Lighthouse tool for performance reports.
+Utilice la herramienta Lighthouse del navegador para los informes de rendimiento.
 
-## Folder Structure
+## Estructura de Carpetas
 
-### `app` Folder
+### Carpeta `app`
 
-- Contains only routes and layouts.
+- Contiene únicamente rutas y layouts (diseños).
 
-### `cypress` Folder
+### Carpeta `cypress`
 
-- Contains only test cases
+- Contiene únicamente casos de prueba.
 
-### `lib` Folder
+### Carpeta `lib`
 
-- **hooks Folder**: Custom hooks (e.g., `useAuth`, `useConfiguration`).
-- **hoc Folder**: Higher-order components (e.g., `Route Protection HOC`, `Data Refresh HOC`).
-- **services Folder**: Services for different flows, third-party API calls (e.g. `Apollo`, `Geolocation API`).
-  - create separate sub-folders.
-- **ui Folder**: Reusable components, layouts, and screens.
-- **utils Folder**:
-  - **methods Folder**: Utility methods (e.g. string manipulation).
-  - **interfaces Folder**: TypeScript interfaces (prefixed with "I").
-  - **constants Folder**: Common constants (strings, headers).
-  - **types Folder**: Custom TypeScript types, if necessary.
+- **Carpeta hooks**: Hooks personalizados (ej. `useAuth`, `useConfiguration`).
+- **Carpeta hoc**: Componentes de orden superior (ej. `HOC de Protección de Rutas`, `HOC de Refresco de Datos`).
+- **Carpeta services**: Servicios para diferentes flujos, llamadas a APIs de terceros (ej. `Apollo`, `Geolocation API`).
+  - Crear subcarpetas separadas.
+- **Carpeta ui**: Componentes reutilizables, diseños y pantallas.
+- **Carpeta utils**:
+  - **Carpeta methods**: Métodos de utilidad (ej. manipulación de cadenas).
+  - **Carpeta interfaces**: Interfaces de TypeScript (prefijadas con "I").
+  - **Carpeta constants**: Constantes comunes (cadenas, encabezados).
+  - **Carpeta types**: Tipos personalizados de TypeScript, si es necesario.
 
-## Component Guidelines
+## Lineamientos para Componentes
 
-- Divide complex components into sub-components (e.g., header, body, footer).
-- Recommended code lines per component: `100-200 lines`.
+- Dividir los componentes complejos en subcomponentes (ej. encabezado, cuerpo, pie de página).
+- Líneas de código recomendadas por componente: `100-200 líneas`.
 
-## Changelog
+## Registro de Cambios (Changelog)
 
-- Log code changes in the `CHANGELOG.md` file.
-- Only log merges/pushes to develop/staging/production branches.
+- Registrar los cambios de código en el archivo `CHANGELOG.md`.
+- Solo registrar integraciones (merges) o envíos (pushes) a las ramas develop/staging/production.
 
 ---
 
 ```plaintext
 
 ├── .husky
-│   └── git hooks
+│   └── ganchos de git
 ├── .vscode
-│   └── IDE configuration
+│   └── configuración de IDE
 ├── dist
-│   └── built and minifed app.
+│   └── aplicación construida y minificada.
 ├── .npmrc
-│   └── npm configuration
+│   └── configuración de npm
 ├── .nvmrc
-│   └── nvm configuration
+│   └── configuración de nvm
 ├── cypress.config.ts
-│   └── cypress configuration
+│   └── configuración de cypress
 ├── app
-│   └── routes
-│   └── layouts
+│   └── rutas
+│   └── diseños (layouts)
 ├── lib
 │   ├── hooks
 │   │   ├── useAuth.ts
@@ -108,36 +108,36 @@ Use the browser's Lighthouse tool for performance reports.
 │   │   ├── components
 │   │   ├── layouts
 │   │   └── screens
-|   ├── utils
-|   │   ├── methods
-|   |   |   |   ├── string
-|   │   │   |   |   ├── sort.ts
-|   │   │   |   |   ├── toSentenceCase.ts
-|   │   │   |   |   ├── index.ts
-|   |   |   |   ├── regex
-|   │   │   |   |   ├── email.ts
-|   │   │   |   |   ├── password.ts
-|   │   │   |   |   ├── url.ts
-|   │   │   |   |   ├── index.ts
-|   |   |   |   └── index. ts
-|   │   ├── interfaces
-|   │   │   ├── common
-|   │   │   │   ├── IParent.ts
-|   │   │   │   └── index.ts
-|   │   │   ├── support.interface (sub-folders if required and index.ts for each)
-|   │   │   └── index.ts
-|   │   ├── constants
-|   │   │   ├── strings
-|   │   │   │   ├── global.strings.ts
-|   │   │   │   └── support.strings (sub-folders if required and index.ts for each)
-|   |   |   |   └── index.ts (export all above)
-|   │   │   ├── headers
-|   │   │   │   ├── global.headers.ts
-|   │   │   │   └── support.headers (sub-folders if required and index.ts for each)
-|   |   |   |   └──  index.ts (export all above)
-|   │   │   └── index.ts
-|   │   ├── types (same as interfaces)
-|   │   │   └── index.ts
+│   ├── utils
+│   │   ├── methods
+│   │   │   |   ├── string
+│   │   │   |   |   ├── sort.ts
+│   │   │   |   |   ├── toSentenceCase.ts
+│   │   │   |   |   ├── index.ts
+│   │   │   |   ├── regex
+│   │   │   |   |   ├── email.ts
+│   │   │   |   |   ├── password.ts
+│   │   │   |   |   ├── url.ts
+│   │   │   |   |   ├── index.ts
+│   │   │   |   └── index. ts
+│   │   ├── interfaces
+│   │   │   ├── common
+│   │   │   │   ├── IParent.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── support.interface (subcarpetas si es necesario e index.ts para cada una)
+│   │   │   └── index.ts
+│   │   ├── constants
+│   │   │   ├── strings
+│   │   │   │   ├── global.strings.ts
+│   │   │   │   └── support.strings (subcarpetas si es necesario e index.ts para cada una)
+│   │   │   │   └── index.ts (exporta todo lo anterior)
+│   │   │   ├── headers
+│   │   │   │   ├── global.headers.ts
+│   │   │   │   └── support.headers (subcarpetas si es necesario e index.ts para cada una)
+│   │   │   │   └──  index.ts (exporta todo lo anterior)
+│   │   │   └── index.ts
+│   │   ├── types (igual que interfaces)
+│   │   │   └── index.ts
 ├── CHANGELOG.md
 ├── tsconfig.json
 ├── next.config.js
@@ -147,18 +147,18 @@ Use the browser's Lighthouse tool for performance reports.
 
 ### Git
 
-- **Commit Predefined Types**:
-  - build
-  - fix
-  - refactor
-  - revert
-  - style
-  - test
-  - translation
-  - security
-  - changeset
-  - config
+- **Tipos de Commit Predefinidos**:
+  - build (construcción)
+  - fix (corrección)
+  - refactor (refactorización)
+  - revert (reversión)
+  - style (estilo)
+  - test (pruebas)
+  - translation (traducción)
+  - security (seguridad)
+  - changeset (conjunto de cambios)
+  - config (configuración)
 
-### Note
+### Nota
 
-- Under constant modifications.
+- Bajo constantes modificaciones.

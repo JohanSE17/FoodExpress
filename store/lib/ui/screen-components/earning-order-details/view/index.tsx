@@ -1,15 +1,15 @@
-// Contexts
+// Contextos
 import { useUserContext } from "@/lib/context/global/user.context";
 
 // Interfaces
 import { IStoreEarningsArray } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Components
+// Componentes
 import { NoRecordFound } from "@/lib/ui/useable-components";
 import { FlatList, View } from "react-native";
 import OrderStack from "../order-stack";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import { useEffect, useState } from "react";
 
@@ -19,7 +19,7 @@ export default function EarningsOrderDetailsMain() {
     IStoreEarningsArray[]
   >([] as IStoreEarningsArray[]);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { storeOrdersEarnings } = useUserContext();
 

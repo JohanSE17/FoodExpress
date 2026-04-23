@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components

@@ -4,7 +4,7 @@ import {
   IRiderEarningsResponse,
 } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 import { QueryResult, useQuery } from "@apollo/client";
@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 // GraphQL
 import { RIDER_EARNINGS_GRAPH } from "@/lib/apollo/queries/earnings.query";
 
-// Components
+// Componentes
 import EarningDetailsDateFilter from "../date-filter";
 import EarningDetailsHeader from "../header";
 import EarningsDetailStacks from "./earnings";
@@ -30,7 +30,7 @@ export default function EarningDetailsMain({
   dateFilter,
   setDateFilter,
 }: IEarningDetailsMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 
@@ -38,10 +38,10 @@ export default function EarningDetailsMain({
   const [isFiltering, setIsFiltering] = useState(false);
   const [isDateFilterVisible, setIsDateFilterVisible] = useState(false);
 
-  // Contexts
+  // Contextos
   const { setModalVisible, userId } = useUserContext();
 
-  // Queries
+  // Consultas (Queries)
   const {
     loading: isRiderEarningsLoading,
     data: riderEarningsData,

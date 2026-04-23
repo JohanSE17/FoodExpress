@@ -1,8 +1,8 @@
-// Core
+// Núcleo (Core)
 import { useEffect, useState } from "react";
 import { FlatList, SafeAreaView } from "react-native";
 
-// Components
+// Componentes
 import ProfileHeader from "../../screen-components/profile/header";
 import ProfileMain from "../../screen-components/profile/view/main";
 
@@ -20,7 +20,7 @@ export default function ComponentName() {
   const [isFormOpened, setIsFormOpened] =
     useState<TRiderProfileBottomBarBit>(null);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   // UseEffects
   useEffect(() => {

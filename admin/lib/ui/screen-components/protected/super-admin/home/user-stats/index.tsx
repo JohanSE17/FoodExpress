@@ -4,7 +4,7 @@ import StatsCard from '@/lib/ui/useable-components/stats-card';
 // GraphQL Queries
 import { GET_DASHBOARD_USERS } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 
 // Icons
@@ -29,7 +29,7 @@ export default function UserStats() {
     debounceMs: 300,
   }) as IQueryResult<IDashboardUsersResponseGraphQL | undefined, undefined>;
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   const dashboardUsers = useMemo(() => {

@@ -10,7 +10,7 @@ import {
   WalletIcon,
 } from "@/lib/ui/useable-components/svg";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -19,7 +19,7 @@ const RootLayout = () => {
   // States
   const [tabKey, setTabKey] = useState(1);
 
-  // Hooks
+  // Ganchos (Hooks)
   const pathName = usePathname();
   const { t } = useTranslation();
   const { appTheme } = useApptheme();

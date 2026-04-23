@@ -41,11 +41,11 @@ function HypCheckout(props) {
   const themeContext = useContext(ThemeContext)
   const currentTheme = theme[themeContext.ThemeValue]
 
-  // Mutations
+  // Mutaciones (Mutations)
   const [mutateOrderCreatedAndPaid] = useMutation(ORDER_CREATED_AND_PAID)
   const [createActivityMutation] = useMutation(CREATE_ACTIVITY)
 
-  // Handlers
+  // Controladores (Handlers)
   const onNotifiyUsers = async () => {
     try {
       // Notification

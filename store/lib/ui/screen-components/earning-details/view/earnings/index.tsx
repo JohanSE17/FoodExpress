@@ -1,11 +1,11 @@
-// Core
+// Núcleo (Core)
 import { FlatList, View } from "react-native";
 
 // Interfaces
 import { IStoreEarningsDetailProps } from "@/lib/utils/interfaces/earning.interface";
 import { IStoreEarnings } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Components
+// Componentes
 import NoRecordFound from "@/lib/ui/useable-components/no-record-found";
 import EarningStack from "../../../earnings/view/earnings-stack";
 
@@ -13,7 +13,7 @@ import EarningStack from "../../../earnings/view/earnings-stack";
 
 // React Native Flash Message
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
 export default function EarningsDetailStacks({
@@ -21,7 +21,7 @@ export default function EarningsDetailStacks({
   storeEarnings,
   isLoading,
 }: IStoreEarningsDetailProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   const renderItem = ({

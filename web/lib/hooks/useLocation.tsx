@@ -7,7 +7,7 @@ import Geocode from "react-geocode";
 // Interfaces
 import { ILocation } from "@/lib/utils/interfaces";
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfig } from "../context/configuration/configuration.context";
 
 type LocationCallback = (error: string | null, location?: ILocation) => void;

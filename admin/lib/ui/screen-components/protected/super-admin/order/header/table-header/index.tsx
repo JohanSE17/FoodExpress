@@ -20,7 +20,7 @@ const OrderSuperAdminTableHeader: React.FC<IOrderSuperAdminHeaderProps> = ({
   dateFilter,
   handleDateFilter,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {theme} = useTheme()
   // Refs

@@ -7,10 +7,10 @@ import { ProfileContext } from '@/lib/context/restaurant/profile.context';
 import { useTranslations } from 'next-intl';
 
 const ProfileHeader: React.FC = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Contexts
+  // Contextos
   const profileContext = useContext(ProfileContext);
 
   const onUpdateProfileClick = () => {

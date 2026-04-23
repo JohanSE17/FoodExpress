@@ -12,11 +12,11 @@ export const usePublicAccessInit = () => {
     const initPublicAccess = async () => {
       try {
         await fetchPublicAccessToken(
-          GRAPHQL_URL || "https://aws-server.foodexpress.com/graphql"
+          GRAPHQL_URL || "https://foodexpressapi.snepsej.space/graphql"
         );
-        console.log("✅ Public authentication initialized successfully");
+        console.log("Autenticación publica inicializada correctamente");
       } catch (error) {
-        console.error("❌ Failed to initialize public access:", error);
+        console.error("Fallo al inicializar el acceso publico:", error);
       }
     };
 

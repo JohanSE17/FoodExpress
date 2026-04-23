@@ -1,5 +1,5 @@
 export const th = {
-  // Navigation
+  // Navegación
   continue: "ดำเนินการต่อ",
   Wallet: "กระเป๋าเงิน",
   Home: "หน้าหลัก",

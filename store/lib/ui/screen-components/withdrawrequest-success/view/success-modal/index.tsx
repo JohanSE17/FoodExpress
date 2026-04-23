@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Image, Text, View } from "react-native";
 
 // Icons
@@ -13,11 +13,11 @@ import { router } from "expo-router";
 // Interfaces
 import { IWalletSuccessModalProps } from "@/lib/utils/interfaces/withdraw.interface";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import { useTranslation } from "react-i18next";
 const SuccessModal = ({ message }: IWalletSuccessModalProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

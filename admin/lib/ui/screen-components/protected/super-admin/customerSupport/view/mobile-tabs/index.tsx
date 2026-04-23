@@ -12,7 +12,7 @@ export default function CustomerSupportMobilesTabs({
   activeTab,
   setActiveTab,
 }: ICustomerSupportMobileTabsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

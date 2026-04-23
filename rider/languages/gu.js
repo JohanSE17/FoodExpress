@@ -1,5 +1,5 @@
 export const gu = {
-  // Navigation
+  // Navegación
   continue: "ચાલુ રાખો",
   Wallet: "વૉલેટ",
   Home: "હોમ",
@@ -29,7 +29,7 @@ export const gu = {
   faq7Description:
     "દુર્ભાગ્યવશ, તમે એ જ ઓર્ડરમાં બહુવિધ રેસ્ટોરન્ટમાંથી પસંદગી ન કરી શકો. જો કે, તમે એક સાથે વિવિધ રેસ્ટોરન્ટમાંથી અલગ ઓર્ડર મૂકી શકો છો.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "કમાણી સારાંશ",
   Deliveries: "ડિલિવરી",
   "Total Earnings": "કુલ કમાણી",
@@ -292,14 +292,14 @@ export const gu = {
   "Message sent": "સંદેશ મોકલવામાં આવ્યો",
   "Message failed": "સંદેશ નિષ્ફળ",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "કૃપા કરીને તારીખની રેન્જ પસંદ કરો",
   "Please select a start date": "કૃપા કરીને શરૂઆતની તારીખ પસંદ કરો",
   "Please select an end date": "કૃપા કરીને અંતિમ તારીખ પસંદ કરો",
   "Start date cannot be after end date": "શરૂઆતની તારીખ અંતિમ તારીખ પછી ન હોઈ શકે",
   "Please log in to view your earnings": "તમારી કમાણી જોવા માટે કૃપા કરીને લૉગિન કરો",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "ઉપલબ્ધતા અપડેટ કરવામાં અસમર્થ",
   "rider name": "રાઈડર નામ",
   "rider id": "રાઈડર આઈડી",

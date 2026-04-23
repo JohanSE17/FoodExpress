@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 
 // Moti

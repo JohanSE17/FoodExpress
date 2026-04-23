@@ -60,7 +60,7 @@ export const CATEGORY_TABLE_COLUMNS = ({
     }>
   >;
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
 

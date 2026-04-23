@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Form, Formik, FormikHelpers } from 'formik';
 
 // Prime React
@@ -50,11 +50,11 @@ export default function ZoneAddForm({
     coordinates: zone?.location?.coordinates ?? [[[]]],
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // Query

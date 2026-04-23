@@ -25,10 +25,10 @@ import {
 } from "react-native";
 
 export default function VehicleTypeMainScreen() {
-  // Context
+  // Contexto
   const { dataProfile } = useUserContext();
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 
@@ -54,7 +54,7 @@ export default function VehicleTypeMainScreen() {
   // Hook
   const { width } = useWindowDimensions();
 
-  // Components
+  // Componentes
   const renderItem = ({ item }: { item: IVehicleTypeItem }) => {
     const isSelected = item.code === selectedCode;
     return (

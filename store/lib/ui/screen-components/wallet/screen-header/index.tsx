@@ -1,11 +1,11 @@
-// Components
+// Componentes
 import CustomScreenHeader from "@/lib/ui/useable-components/custom-screen-header";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 
 export default function WalletScreenHeader() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   return <CustomScreenHeader title={t("Earnings")} />;
 }

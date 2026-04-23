@@ -5,7 +5,7 @@ import { Calendar } from 'primereact/calendar';
 // Interfaces
 import { ITransactionHistoryTableHeaderProps } from '@/lib/utils/interfaces';
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ export default function TransactionHistoryStoreTableHeader({
   dateFilters,
   setDateFilters,
 }: ITransactionHistoryTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

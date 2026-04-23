@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ import { onUseLocalStorage } from '@/lib/utils/methods';
 // GraphQL
 import { DELETE_RESTAURANT, HARD_DELETE_RESTAURANT } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { RestaurantContext } from '@/lib/context/super-admin/restaurant.context';
 import { ConfigurationContext } from '@/lib/context/global/configuration.context';
@@ -52,7 +52,7 @@ export default function RestaurantCard({ restaurant }: IRestaurantCardProps) {
   } = restaurant;
 
   const configuration = useContext(ConfigurationContext);
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENT_SYMBOL } = useConfiguration();
   const { showToast } = useContext(ToastContext);
@@ -69,7 +69,7 @@ export default function RestaurantCard({ restaurant }: IRestaurantCardProps) {
     setRestaurantModifed,
   } = useContext(RestaurantContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // API

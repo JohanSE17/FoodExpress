@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-// Core
+// Núcleo (Core)
 import { Image, Text, View } from "react-native";
 import Modal from "react-native-modal";
 
 // Interface
 import { IWellDoneComponentProps } from "@/lib/utils/interfaces";
 
-// Hooks
+// Ganchos (Hooks)
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +22,7 @@ export default function WelldoneComponent({
     }, 3000);
   }, [orderId]);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   return (
     <Modal

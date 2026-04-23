@@ -9,7 +9,7 @@ import {
   UPDATE_SHOP_TYPE,
 } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Components
@@ -33,7 +33,7 @@ import { Sidebar } from 'primereact/sidebar';
 // Methods
 import { onErrorMessageMatcher } from '@/lib/utils/methods';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 
 export default function ShopTypesForm({
@@ -42,7 +42,7 @@ export default function ShopTypesForm({
   visible,
   setIsEditing,
 }: IAddShopTypeProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useContext(ToastContext);
   const t = useTranslations();
 

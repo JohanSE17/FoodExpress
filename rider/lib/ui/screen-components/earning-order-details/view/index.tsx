@@ -1,12 +1,12 @@
-// Contexts
+// Contextos
 import { useUserContext } from "@/lib/context/global/user.context";
 
 // Interfaces
 import { IRiderEarningsArray } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Core
+// Núcleo (Core)
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { NoRecordFound } from "@/lib/ui/useable-components";
 import { useEffect, useState } from "react";
@@ -19,7 +19,7 @@ export default function EarningsOrderDetailsMain() {
     IRiderEarningsArray[]
   >([] as IRiderEarningsArray[]);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { riderOrderEarnings } = useUserContext();
 

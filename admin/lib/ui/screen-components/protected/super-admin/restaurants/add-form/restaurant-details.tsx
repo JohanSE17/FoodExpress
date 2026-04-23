@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-// Core
+// Núcleo (Core)
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Form, Formik } from 'formik';
 import { useContext, useMemo } from 'react';
@@ -25,7 +25,7 @@ import CustomPasswordTextField from '@/lib/ui/useable-components/password-input-
 import ShopTypesForm from '@/lib/ui/screen-components/protected/super-admin/shop-types/form';
 import CuisineForm from '@/lib/ui/screen-components/protected/super-admin/cuisines/form';
 
-// Constants
+// Constantes
 import {
   2 * 1024 * 1024,
   500 * 1000,
@@ -87,7 +87,7 @@ const initialValues: IRestaurantForm = {
 export default function RestaurantDetailsForm({
   stepperProps,
 }: IRestaurantsAddRestaurantComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const [isAddShopTypeVisible, setIsAddShopTypeVisible] = useState(false);
   const [isEditShopType, setIsEditShopType] = useState<IEditState<IShopType>>({
@@ -119,7 +119,7 @@ export default function RestaurantDetailsForm({
     type: '',
     order: -1,
   };
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { restaurantsContextData, onSetRestaurantsContextData } =
     useContext(RestaurantsContext);

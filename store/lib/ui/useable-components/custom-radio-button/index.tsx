@@ -13,7 +13,7 @@ export default function CustomRadioButton({
   showLabel,
   ...props
 }: ICustomRadioButtonProps & TouchableOpacityProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <TouchableOpacity {...props} className="flex flex-row gap-3">

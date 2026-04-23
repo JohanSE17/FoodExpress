@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useState } from 'react';
 
 // Components
@@ -7,11 +7,11 @@ import CategoryHeader from '@/lib/ui/screen-components/protected/restaurant/cate
 import CategoryMain from '@/lib/ui/screen-components/protected/restaurant/category/view/main';
 import SubCategoriesAddForm from '@/lib/ui/screen-components/protected/restaurant/category/add-subcategories';
 
-// Contexts
+// Contextos
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
 export default function CategoryScreen() {
-  // Contexts
+  // Contextos
   const {
     isAddSubCategoriesVisible,
     setIsAddSubCategoriesVisible,

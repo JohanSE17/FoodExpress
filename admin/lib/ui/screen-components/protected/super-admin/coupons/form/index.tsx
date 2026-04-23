@@ -2,7 +2,7 @@
 // GraphQL
 import { CREATE_COUPON, EDIT_COUPON, GET_COUPONS } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Components
@@ -22,7 +22,7 @@ import { Form, Formik } from 'formik';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { Sidebar } from 'primereact/sidebar';
 
-// Hooks
+// Ganchos (Hooks)
 import { useMutation } from '@apollo/client';
 import { ChangeEvent, useContext } from 'react';
 import CustomInputSwitch from '@/lib/ui/useable-components/custom-input-switch';
@@ -36,7 +36,7 @@ export default function CouponForm({
   visible,
   setIsEditing,
 }: IAddCouponProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useContext(ToastContext);
   const t = useTranslations();
 

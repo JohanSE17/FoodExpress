@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useMutation } from '@apollo/client';
 import { useState } from 'react';
 
@@ -14,7 +14,7 @@ import {
   IZoneMainComponentsProps,
 } from '@/lib/utils/interfaces';
 
-// Context
+// Contexto
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 
@@ -23,10 +23,10 @@ import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import Table from '@/lib/ui/useable-components/table';
 import RidersTableHeader from '../header/table-header';
 
-// Constants and Interfaces
+// Constantes and Interfaces
 import { ZONE_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/zone-columns';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import useToast from '@/lib/hooks/useToast';
 
@@ -41,7 +41,7 @@ export default function ZoneMain({
   setIsAddZoneVisible,
   setZone,
 }: IZoneMainComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
   const { ISPAID_VERSION } = useConfiguration()

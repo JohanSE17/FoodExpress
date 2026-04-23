@@ -1,12 +1,12 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, View } from "react-native";
 
 export default function FormHeader({ title }: { title: string }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   return (

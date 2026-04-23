@@ -5,7 +5,7 @@ import { IPhoneTextFieldProps } from '@/lib/utils/interfaces';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 
-// Hooks
+// Ganchos (Hooks)
 import { useState } from 'react';
 
 // Components & Skeletons

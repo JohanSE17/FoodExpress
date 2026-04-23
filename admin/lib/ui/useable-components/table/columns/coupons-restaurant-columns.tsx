@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Custom Components
@@ -9,7 +9,7 @@ import CustomInputSwitch from '../../custom-input-switch';
 import { IActionMenuProps } from '@/lib/utils/interfaces/action-menu.interface';
 import { ICouponRestaurantResponse } from '@/lib/utils/interfaces/coupons-restaurant.interface';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
 // GraphQL
@@ -24,10 +24,10 @@ export const COUPONS_RESTAURANT_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<ICouponRestaurantResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 

@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
 // Moti
@@ -6,7 +6,7 @@ import { MotiView } from "moti";
 import { Skeleton } from "moti/skeleton";
 
 export default function EarningStackSkeleton() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme } = useApptheme();
   return (
     <MotiView

@@ -1,10 +1,10 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useRouter } from 'next/navigation';
 import { useContext, useEffect } from 'react';
 
-// Context
+// Contexto
 import { SidebarContext } from '@/lib/context/global/sidebar.context';
 
 // Interface & Types
@@ -20,10 +20,10 @@ export default function RootPage() {
   // Pista: Usa una variable de entorno o un archivo de configuración global.
 
 
-  // Context
+  // Contexto
   const { setSelectedItem } = useContext<ISidebarContextProps>(SidebarContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // Effects

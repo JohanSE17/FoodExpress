@@ -1,5 +1,5 @@
 export const uz = {
-  // Navigation
+  // Navegación
   continue: "Davom etish",
   Wallet: "Hamyon",
   Home: "Bosh sahifa",

@@ -1,7 +1,7 @@
-// Core
+// Núcleo (Core)
 import { CustomContinueButton } from "@/lib/ui/useable-components";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 
 export default function UpdateScheduleBtn({
@@ -12,7 +12,7 @@ export default function UpdateScheduleBtn({
   isUpatingSchedule: boolean;
   width: number;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
 
   return (

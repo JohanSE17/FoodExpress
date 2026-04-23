@@ -16,7 +16,7 @@ import { useQuery } from "@apollo/client";
 import { PanelMenu } from "primereact/panelmenu";
 import { MenuItem } from "primereact/menuitem";
 
-// Context & Hooks
+// Contexto & Hooks
 import useUser from "@/lib/hooks/useUser";
 import useRestaurant from "@/lib/hooks/useRestaurant";
 
@@ -24,7 +24,7 @@ import useRestaurant from "@/lib/hooks/useRestaurant";
 import { ClockSvg, HeartSvg, InfoSvg, RatingSvg } from "@/lib/utils/assets/svg";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-// Components
+// Componentes
 import { PaddingContainer } from "@/lib/ui/useable-components/containers";
 import FoodItemDetail from "@/lib/ui/useable-components/item-detail";
 import FoodCategorySkeleton from "@/lib/ui/useable-components/custom-skeletons/food-items.skeleton";
@@ -97,7 +97,7 @@ export default function StoreDetailsScreen() {
   const selectedCategoryRefs = useRef<string>("");
   const selectedSubCategoryRefs = useRef<string>("");
 
-  // Hooks
+  // Ganchos (Hooks)
   const { data, loading } = useRestaurant(id, decodeURIComponent(slug));
   const {
     data: categoriesSubCategoriesList,
@@ -136,7 +136,7 @@ export default function StoreDetailsScreen() {
     }
   }, [profile, id]);
 
-  // Constants
+  // Constantes
   const allDeals = data?.restaurant?.categories?.filter(
     (cat: ICategory) => cat.foods.length
   );
@@ -478,7 +478,7 @@ export default function StoreDetailsScreen() {
     }
   );
 
-  // Constants
+  // Constantes
   const headerData = {
     name: data?.restaurant?.name ?? "...",
     averageReview: data?.restaurant?.reviewData?.ratings ?? "...",

@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 // Interfaces and Types
@@ -10,7 +10,7 @@ import {
 
 import { IVendorProfileContextData } from '@/lib/utils/interfaces/profile/vendor.profile.interface';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { VendorLayoutContext } from './layout-vendor.context';
 

@@ -1,7 +1,7 @@
-// Core
+// Núcleo (Core)
 import { Text, TouchableOpacity, View } from "react-native";
 
-// Contexts
+// Contextos
 import { useUserContext } from "@/lib/context/global/user.context";
 
 // Interfaces
@@ -16,7 +16,7 @@ import { barDataItem } from "react-native-gifted-charts";
 // GraphQL
 import { STORE_EARNINGS_GRAPH } from "@/lib/apollo/queries/earnings.query";
 
-// Hooks
+// Ganchos (Hooks)
 import { useLazyQuery } from "@apollo/client";
 import { useTranslation } from "react-i18next";
 
@@ -26,7 +26,7 @@ import { router } from "expo-router";
 // Skeletons
 import { EarningScreenMainLoading } from "@/lib/ui/skeletons";
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/theme.context";
 import formatNumber from "@/lib/utils/methods/num-formatter";
 import { useEffect, useState } from "react";
@@ -51,7 +51,7 @@ export default function EarningsMain() {
     return { startDate, endDate };
   };
 
-  // Constants
+  // Constantes
   const queryPayload = {
     page: 1,
     limit: 5,
@@ -62,12 +62,12 @@ export default function EarningsMain() {
   const [recentTransaction, setRecentTransaction] =
     useState<IStoreEarnings[]>();
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { userId, setModalVisible } = useUserContext();
 
-  // Queries
+  // Consultas (Queries)
   const [
     fetchEarningsGraph,
     { loading: isStoreEarningsLoading, data: storeEarningsData },

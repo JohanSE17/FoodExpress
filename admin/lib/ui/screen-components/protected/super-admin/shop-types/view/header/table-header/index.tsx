@@ -17,7 +17,7 @@ export default function ShopTypesTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IShopTypesTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   //Ref

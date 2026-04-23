@@ -1,10 +1,10 @@
-// Core
+// Núcleo (Core)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FieldArray, Form, Formik, FormikErrors, FormikProps } from 'formik';
 import { Fieldset } from 'primereact/fieldset';
 import React, { useContext, useMemo, useState } from 'react';
 
-// Context
+// Contexto
 import { FoodsContext } from '@/lib/context/restaurant/foods.context';
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
@@ -19,7 +19,7 @@ import {
   IVariationForm,
 } from '@/lib/utils/interfaces';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods';
 import { VariationSchema } from '@/lib/utils/schema';
@@ -33,7 +33,7 @@ import AddonAddForm from '../../../add-on/add-form';
 import TextIconClickable from '@/lib/ui/useable-components/text-icon-clickable';
 import CustomButton from '@/lib/ui/useable-components/button';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // API
@@ -70,7 +70,7 @@ export default function VariationAddForm({
     type: '',
     order: -1,
   };
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
 
@@ -78,7 +78,7 @@ export default function VariationAddForm({
   const [isAddAddonVisible, setIsAddAddonVisible] = useState(false);
   const [addon, setAddon] = useState<IAddon | null>(null);
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { onSetFoodContextData, foodContextData, onClearFoodData } =
     useContext(FoodsContext);
@@ -88,7 +88,7 @@ export default function VariationAddForm({
     setOption
   } = useContext(RestaurantLayoutContext);
 
-  // Constants
+  // Constantes
   const initialValues = {
     variations:
       foodContextData?.isEditing ||

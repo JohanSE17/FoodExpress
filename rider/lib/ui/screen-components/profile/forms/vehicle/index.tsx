@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import {
   Keyboard,
@@ -11,7 +11,7 @@ import {
   View,
 } from "react-native";
 
-// Components
+// Componentes
 import { CustomContinueButton } from "@/lib/ui/useable-components";
 import FormHeader from "../form-header";
 
@@ -38,7 +38,7 @@ import { RIDER_PROFILE } from "@/lib/apollo/queries";
 // Types & Interfaces
 import { TRiderProfileBottomBarBit } from "@/lib/utils/types/rider";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useMutation } from "@apollo/client";
@@ -49,7 +49,7 @@ export default function VehiclePlateForm({
 }: {
   setIsFormOpened: Dispatch<SetStateAction<TRiderProfileBottomBarBit>>;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { userId, dataProfile } = useUserContext();
   const { appTheme, currentTheme } = useApptheme();
@@ -64,7 +64,7 @@ export default function VehiclePlateForm({
     image: "",
     number: "",
   });
-  // Mutations
+  // Mutaciones (Mutations)
   const [uploadImageToS3] = useMutation(UPLOAD_IMAGE_TO_S3);
   
   const [mutateLicense] = useMutation(UPDATE_VEHICLE, {

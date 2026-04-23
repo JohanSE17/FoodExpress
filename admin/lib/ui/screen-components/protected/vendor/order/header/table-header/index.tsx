@@ -15,7 +15,7 @@ const OrderTableHeader: React.FC<IOrderVendorHeaderProps> = ({
   selectedActions,
   onSearch,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {theme } = useTheme()
   // States

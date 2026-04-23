@@ -11,10 +11,10 @@ import { useTranslations } from 'next-intl';
 import { useContext } from 'react';
 
 const FoodHeader = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { onFoodFormVisible } = useContext(FoodsContext);
 
   return (

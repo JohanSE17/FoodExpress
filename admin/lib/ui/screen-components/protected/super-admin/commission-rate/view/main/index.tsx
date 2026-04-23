@@ -1,7 +1,7 @@
 // GraphQL API imports
 import { GET_COMMISSION_RATES_PAGINATED, updateCommission } from '@/lib/api/graphql';
 
-// Context imports
+// Contexto imports
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Custom hooks
@@ -58,7 +58,7 @@ export default function CommissionRateMain() {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
 
   // Query

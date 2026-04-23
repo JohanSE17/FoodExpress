@@ -1,7 +1,7 @@
-// Core
+// Núcleo (Core)
 import { StyleSheet, Text, View } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import { WorkSchedule } from "@/lib/utils/interfaces";
 import { Dispatch, SetStateAction } from "react";
@@ -38,7 +38,7 @@ export default function WorkScheduleStack({
   >;
   isTogglingDay: number;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

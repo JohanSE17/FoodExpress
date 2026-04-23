@@ -10,7 +10,7 @@ import {
 // UI
 import CustomTab from "@/lib/ui/useable-components/custom-tab";
 import Spinner from "@/lib/ui/useable-components/spinner";
-// Constants
+// Constantes
 import { NO_ORDER_PROMPT, ORDER_DISPATCH_TYPE } from "@/lib/utils/constants";
 
 // Interface
@@ -31,7 +31,7 @@ function HomeDeliveredOrdersMain(props: IOrderTabsComponentProps) {
   // Props
   const { route } = props;
 
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const {

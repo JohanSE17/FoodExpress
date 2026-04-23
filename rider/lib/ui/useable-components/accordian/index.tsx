@@ -14,7 +14,7 @@ export default function AccordionItem({
   children,
   title,
 }: AccordionItemPros): JSX.Element {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const [expanded, setExpanded] = useState(false);

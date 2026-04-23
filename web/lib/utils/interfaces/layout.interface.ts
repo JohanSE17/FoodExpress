@@ -6,7 +6,7 @@ import React, {
 
 import { IGlobalProps } from "./global.interface";
 
-// Layout
+// Diseño (Layout)
 export interface IProvider extends IGlobalProps {}
 
 /* Layoyt */

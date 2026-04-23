@@ -50,7 +50,7 @@ const generateTimeSlots = () => {
 const timeOptions = generateTimeSlots();
 
 export default function WorkScheduleMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   // States
@@ -67,7 +67,7 @@ export default function WorkScheduleMain() {
   const translateYAnim = useRef(new Animated.Value(20)).current;
   const parallaxAnim = useRef(new Animated.Value(0)).current;
 
-  // Context
+  // Contexto
   const { dataProfile } = useUserContext();
 
   // API Hook

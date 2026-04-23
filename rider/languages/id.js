@@ -1,5 +1,5 @@
 export const id = {
-  // Navigation
+  // Navegación
   continue: "Lanjutkan",
   Wallet: "Dompet",
   Home: "Beranda",
@@ -29,7 +29,7 @@ export const id = {
   faq7Description:
     "Sayangnya, Anda tidak dapat memilih dari beberapa restoran dalam pesanan yang sama. Namun, Anda dapat melakukan pesanan terpisah dari restoran yang berbeda pada waktu yang sama.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Ringkasan Pendapatan",
   Deliveries: "Pengiriman",
   "Total Earnings": "Total Pendapatan",
@@ -312,7 +312,7 @@ export const id = {
   "Message sent": "Pesan terkirim",
   "Message failed": "Pesan gagal",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Silakan pilih rentang tanggal",
   "Please select a start date": "Silakan pilih tanggal mulai",
   "Please select an end date": "Silakan pilih tanggal akhir",
@@ -321,7 +321,7 @@ export const id = {
   "Please log in to view your earnings":
     "Silakan login untuk melihat pendapatan Anda",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Tidak dapat memperbarui ketersediaan",
   "rider name": "Nama Rider",
   "rider id": "ID Rider",

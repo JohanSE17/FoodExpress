@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 export default function UnavailableStatus() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const pathName = usePathname();

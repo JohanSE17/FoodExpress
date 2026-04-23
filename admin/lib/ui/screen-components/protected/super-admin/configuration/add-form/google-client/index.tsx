@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components
@@ -9,13 +9,13 @@ import CustomPasswordTextField from '@/lib/ui/useable-components/password-input-
 // Toast
 import useToast from '@/lib/hooks/useToast';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 // Interfaces and Types
 import { IGoogleClientForm } from '@/lib/utils/interfaces/configurations.interface';
 
-// Utils and Constants
+// Utilidades and Constants
 import { GoogleClientValidationSchema } from '@/lib/utils/schema';
 
 // GraphQL

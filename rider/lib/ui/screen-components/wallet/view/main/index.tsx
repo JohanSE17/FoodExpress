@@ -7,7 +7,7 @@ import {
   IRiderTransactionHistoryResponse,
 } from "@/lib/utils/interfaces/rider.interface";
 
-// Components
+// Componentes
 import {
   CustomContinueButton,
   FlashMessageComponent,
@@ -16,7 +16,7 @@ import {
 import WithdrawModal from "../form";
 import RecentTransaction from "../recent-transactions";
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useLazyQueryQL } from "@/lib/hooks/useLazyQueryQL";
 import { useMutation } from "@apollo/client";
@@ -35,7 +35,7 @@ import { GraphQLError } from "graphql";
 // Expo
 import { router } from "expo-router";
 
-// Core
+// Núcleo (Core)
 import { Alert, ScrollView, Text, View } from "react-native";
 
 // Skeletons
@@ -43,7 +43,7 @@ import { useApptheme } from "@/lib/context/global/theme.context";
 import { WalletScreenMainLoading } from "@/lib/ui/skeletons";
 
 export default function WalletMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 
@@ -52,7 +52,7 @@ export default function WalletMain() {
   const [amountErrMsg, setAmountErrMsg] = useState("");
   const { userId } = useUserContext();
 
-  // Queries
+  // Consultas (Queries)
 
   const {
     data: riderTransactionData,

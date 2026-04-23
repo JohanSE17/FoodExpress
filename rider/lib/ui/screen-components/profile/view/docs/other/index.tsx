@@ -1,16 +1,16 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 import { app_theme } from "@/lib/utils/types/theme";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, View } from "react-native";
 import { Switch } from "react-native-switch";
 
 export default function OtherDetailsSection() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { dataProfile } = useUserContext();
   const { currentTheme, toggleTheme, appTheme } = useApptheme();

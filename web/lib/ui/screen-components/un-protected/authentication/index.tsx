@@ -6,7 +6,7 @@ import {
   ILoginProfile,
 } from "@/lib/utils/interfaces";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { useGoogleLogin } from "@react-oauth/google";
 import { useEffect, useRef, useState } from "react";
@@ -17,7 +17,7 @@ import { Dialog } from "primereact/dialog";
 import { Stepper } from "primereact/stepper";
 import { StepperPanel } from "primereact/stepperpanel";
 
-// Components
+// Componentes
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 import useToast from "@/lib/hooks/useToast";
 import EmailVerification from "./email-verification";
@@ -65,7 +65,7 @@ export default function AuthModal({
   // Refs
   const authenticationPanelRef = useRef(null);
 
-  // Hooks
+  // Ganchos (Hooks)
   const {
     handleUserLogin,
     activePanel,

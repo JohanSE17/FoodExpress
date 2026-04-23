@@ -11,7 +11,7 @@ export default function WelldoneComponent({
   status = "Delivered",
   setOrderId,
 }: IWellDoneComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
 

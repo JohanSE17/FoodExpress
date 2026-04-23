@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// Components
+// Componentes
 import AppTopbar from "@/lib/ui/screen-components/un-protected/layout/app-bar";
 
 // Interface & Types
@@ -17,14 +17,14 @@ import AppFooter from "../../screen-components/un-protected/layout/app-footer";
 // Search Context 
 import { useSearchUI } from "@/lib/context/search/search.context";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { usePathname } from "next/navigation";
 
 const AppLayout = ({ children }: IProvider) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
-  // Hooks
+  // Ganchos (Hooks)
   const { isAuthModalVisible, setIsAuthModalVisible, setActivePanel } = useAuth();
   const { isSearchFocused } = useSearchUI();
 

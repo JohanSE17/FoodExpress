@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useTranslation } from "react-i18next";
 
@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { TRiderProfileBottomBarBit } from "@/lib/utils/types/rider";
 import { Dispatch, SetStateAction } from "react";
 
-// Core
+// Núcleo (Core)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { Text, TouchableOpacity, View } from "react-native";
 
@@ -15,7 +15,7 @@ export default function DocumentsSection({
 }: {
   setIsFormOpened: Dispatch<SetStateAction<TRiderProfileBottomBarBit>>;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { dataProfile } = useUserContext();

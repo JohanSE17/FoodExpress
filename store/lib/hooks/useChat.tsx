@@ -3,7 +3,7 @@ import { Alert } from "react-native";
 import { useState, useEffect, useContext } from "react";
 import { useMutation, useQuery } from "@apollo/client";
 
-// Context
+// Contexto
 import UserContext from "../context/global/user.context";
 
 // API

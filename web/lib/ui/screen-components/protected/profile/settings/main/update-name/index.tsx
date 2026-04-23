@@ -6,12 +6,12 @@ import { InputText } from "primereact/inputtext";
 // Api
 import { useLazyQuery, useMutation } from "@apollo/client";
 import { GET_USER_PROFILE, UPDATE_USER } from "@/lib/api/graphql";
-// Components
+// Componentes
 import CustomDialog from "@/lib/ui/useable-components/custom-dialog";
 import CustomButton from "@/lib/ui/useable-components/button";
 // Icons
 import { LaptopSvg } from "@/lib/utils/assets/svg";
-// Hooks
+// Ganchos (Hooks)
 import useToast from "@/lib/hooks/useToast";
 import useDebounceFunction from "@/lib/hooks/useDebounceForFunction";
 import { useTranslations } from "next-intl";
@@ -39,7 +39,7 @@ export default function NameUpdateModal({
     lastName: "",
   });
 
-  // Hooks    
+  // Ganchos (Hooks)    
   const { showToast } = useToast();
 
   // Queries and Mutations

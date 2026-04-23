@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components
@@ -10,13 +10,13 @@ import CustomNumberField from '@/lib/ui/useable-components/number-input-field';
 // Toast
 import useToast from '@/lib/hooks/useToast';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 // Interfaces and Types
 import { IAppConfigForm } from '@/lib/utils/interfaces/configurations.interface';
 
-// Utils and Constants
+// Utilidades and Constants
 import { AppConfigValidationSchema } from '@/lib/utils/schema';
 
 // GraphQL
@@ -24,7 +24,7 @@ import { GET_CONFIGURATION, SAVE_APP_CONFIGURATION } from '@/lib/api/graphql';
 import { useMutation } from '@apollo/client';
 
 const AppConfigAddForm = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const { APP_TERMS, APP_PRIVACY, APP_TEST_OTP } = useConfiguration();
   const { showToast } = useToast();
 

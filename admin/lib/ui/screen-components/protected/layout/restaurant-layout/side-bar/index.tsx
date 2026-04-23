@@ -1,7 +1,7 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
-// Context
+// Contexto
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
 // Interface & Types
@@ -30,7 +30,7 @@ import { onUseLocalStorage } from '@/lib/utils/methods';
 import { useTranslations } from 'next-intl';
 
 function AdminSidebar({ children }: IGlobalComponentProps) {
-  // Context
+  // Contexto
   const { isRestaurantSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);
 
@@ -51,7 +51,7 @@ function AdminSidebar({ children }: IGlobalComponentProps) {
 }
 
 export default function MakeSidebar() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   const { isRestaurantSidebarVisible } =

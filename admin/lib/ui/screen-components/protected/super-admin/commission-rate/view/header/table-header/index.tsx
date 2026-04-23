@@ -19,7 +19,7 @@ const CommissionRateHeader: React.FC<ICommissionRateHeaderProps> = ({
   selectedActions,
   onSearch,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {theme } = useTheme()
   // States

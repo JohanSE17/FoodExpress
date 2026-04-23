@@ -7,7 +7,7 @@ import OtherDetailsSection from "../docs/other";
 export default function ProfileMain({
   setIsFormOpened,
 }: IRiderProfileMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <View

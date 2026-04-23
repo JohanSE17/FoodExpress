@@ -9,7 +9,7 @@ export default function RidersTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IRidersTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

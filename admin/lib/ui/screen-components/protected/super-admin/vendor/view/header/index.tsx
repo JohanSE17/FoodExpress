@@ -1,23 +1,23 @@
-// Core
+// Núcleo (Core)
 import { faAdd } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 
-// Context
+// Contexto
 import { VendorContext } from '@/lib/context/super-admin/vendor.context';
 
 // Components
 import CustomTextField from '@/lib/ui/useable-components/input-field';
 import TextIconClickable from '@/lib/ui/useable-components/text-icon-clickable';
 
-// Constants
+// Constantes
 import HeaderText from '@/lib/ui/useable-components/header-text';
 import { useTranslations } from 'next-intl';
 
 export default function VendorHeader() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { onSetVendorFormVisible, globalFilter, onSetGlobalFilter } =
     useContext(VendorContext);
 

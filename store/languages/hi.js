@@ -1,5 +1,5 @@
 export const hi = {
-  // Navigation
+  // Navegación
   continue: "जारी रखें",
   Wallet: "वॉलेट",
   Home: "होम",

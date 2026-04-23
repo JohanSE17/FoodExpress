@@ -12,7 +12,7 @@ import { useTranslations } from 'next-intl';
 export default function CuisineScreenHeader({
   handleButtonClick,
 }: ICuisineScreenHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

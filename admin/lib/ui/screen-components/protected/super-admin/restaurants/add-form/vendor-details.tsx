@@ -1,20 +1,20 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { ApolloError, useMutation } from '@apollo/client';
 import { Form, Formik } from 'formik';
 import { useContext, useEffect, useState } from 'react';
 
 // Prime React
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Interface and Types
 import { ICreateVendorResponseGraphQL } from '@/lib/utils/interfaces';
 import { IRestauransVendorDetailsForm } from '@/lib/utils/interfaces/forms';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods/error';
 
@@ -65,10 +65,10 @@ export default function VendorDetails({
     order: -1,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { restaurantsContextData, onSetRestaurantsContextData } =
     useContext(RestaurantsContext);
@@ -80,7 +80,7 @@ export default function VendorDetails({
     });
   const [showAddForm, setShowAddForm] = useState<boolean>(false);
 
-  // Constants
+  // Constantes
 
   // API
   // Mutations

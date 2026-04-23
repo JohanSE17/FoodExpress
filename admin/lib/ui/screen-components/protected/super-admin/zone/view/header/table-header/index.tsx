@@ -7,7 +7,7 @@ export default function ZoneTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IZoneTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="mb-4 flex flex-col gap-6">

@@ -2,13 +2,13 @@
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { Stack } from "expo-router";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function ProfileLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const {top} = useSafeAreaInsets()

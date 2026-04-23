@@ -4,7 +4,7 @@ import { Stack } from "expo-router";
 import SpinnerComponent from "../../useable-components/spinner";
 
 export default function RootStackLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   return (

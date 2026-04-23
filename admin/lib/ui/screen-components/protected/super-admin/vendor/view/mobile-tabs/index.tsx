@@ -6,7 +6,7 @@ export default function VendorMobilesTabs({
   activeTab,
   setActiveTab,
 }: IVendorMobileTabsComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="flex border-b bg-gray-100 dark:bg-dark-950 dark:text-white sm:hidden">

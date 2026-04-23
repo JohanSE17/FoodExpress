@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { Bubble, GiftedChat, Send } from "react-native-gifted-chat";
 
 export default function ChatMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const { messages, onSend, inputMessage, setInputMessage, profile } =

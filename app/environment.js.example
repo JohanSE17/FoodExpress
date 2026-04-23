@@ -1,38 +1,49 @@
-/*****************************
-* environment.js
-* path: '/environment.js' (root of your project)
-******************************/
+// /*****************************
+//  * environment.js
+//  * path: '/environment.js' (root of your project)
+//  ******************************/
 
-import Constants from 'expo-constants';
+import { useContext } from 'react'
+import ConfigurationContext from './src/context/Configuration'
+import * as Updates from 'expo-updates'
 
-const ENV = {
-    development: {
-        GRAPHQL_URL:'' ,
-        SERVER_URL: '', // put / at the end of server url
-        IOS_CLIENT_ID_GOOGLE: "",
-        ANDROID_CLIENT_ID_GOOGLE: "",
-        AMPLITUDE_API_KEY: "",
-    },
-    production: {
-       GRAPHQL_URL:'' ,
-        SERVER_URL: '', // put / at the end of server url
-        IOS_CLIENT_ID_GOOGLE: "",
-        ANDROID_CLIENT_ID_GOOGLE: "",
-        AMPLITUDE_API_KEY: "",
+const useEnvVars = (env = Updates.channel) => {
+  const configuration = useContext(ConfigurationContext)
+  if (env === 'production' || env === 'staging') {
+    return {
+        GRAPHQL_URL:'https://foodexpressapi.snepsej.space/graphql' ,
+        WS_GRAPHQL_URL: 'wss://foodexpressapi.snepsej.space/graphql',
+        SERVER_URL: 'https://foodexpressapi.snepsej.space/graphql',
+        SERVER_REST_URL: 'https://foodexpressapi.snepsej.space/',
+        IOS_CLIENT_ID_GOOGLE: configuration?.iOSClientID,
+        ANDROID_CLIENT_ID_GOOGLE: configuration?.androidClientID,
+        AMPLITUDE_API_KEY: configuration?.appAmplitudeApiKey,
+        GOOGLE_MAPS_KEY: configuration?.googleApiKey,
+        EXPO_CLIENT_ID: configuration?.expoClientID,
+        SENTRY_DSN: configuration?.customerAppSentryUrl,
+        TERMS_AND_CONDITIONS: configuration?.termsAndConditions,
+        PRIVACY_POLICY: configuration?.privacyPolicy,
+        TEST_OTP: configuration?.testOtp,
+        GOOGLE_PACES_API_BASE_URL: configuration?.googlePlacesApiBaseUrl
     }
-};
+  }
 
-const getEnvVars = (env = Constants.manifest.releaseChannel) => {
-    // What is __DEV__ ?
-    // This variable is set to true when react-native is running in Dev mode.
-    // __DEV__ is true when run locally, but false when published.
-    if (__DEV__) {
-        return ENV.development;
-    } else if (env === 'production') {
-        return ENV.production;
-    } else {
-        return ENV.development;
-    }
-};
+  return {
+       GRAPHQL_URL:'https://foodexpressapi.snepsej.space/graphql' ,
+       WS_GRAPHQL_URL: 'wss://foodexpressapi.snepsej.space/graphql',
+       SERVER_URL: 'https://foodexpressapi.snepsej.space/graphql',
+       SERVER_REST_URL: 'https://foodexpressapi.snepsej.space/',
+       IOS_CLIENT_ID_GOOGLE: configuration?.iOSClientID,
+       ANDROID_CLIENT_ID_GOOGLE: configuration?.androidClientID,
+       AMPLITUDE_API_KEY: configuration?.appAmplitudeApiKey,
+       GOOGLE_MAPS_KEY: configuration?.googleApiKey,
+       EXPO_CLIENT_ID: configuration?.expoClientID,
+       SENTRY_DSN: configuration?.customerAppSentryUrl,
+       TERMS_AND_CONDITIONS: configuration?.termsAndConditions,
+       PRIVACY_POLICY: configuration?.privacyPolicy,
+       TEST_OTP: configuration?.testOtp,
+       GOOGLE_PACES_API_BASE_URL: configuration?.googlePlacesApiBaseUrl
+  }
+}
 
-export default getEnvVars;
+export default useEnvVars

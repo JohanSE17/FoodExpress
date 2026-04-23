@@ -5,7 +5,7 @@
 // Pista: Intenta separar la lógica de Google Maps, la gestión del carrito y el formulario de checkout en archivos o hooks distintos.
 
 
-// Core
+// Núcleo (Core)
 import { faBicycle, faStore } from "@fortawesome/free-solid-svg-icons";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons/faSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,12 +33,12 @@ import { PaddingContainer } from "@/lib/ui/useable-components/containers";
 import Divider from "@/lib/ui/useable-components/custom-divider";
 import UserAddressComponent from "@/lib/ui/useable-components/address";
 
-// Context
+// Contexto
 import { GoogleMapsContext } from "@/lib/context/global/google-maps.context";
 import { CartItem } from "@/lib/context/User/User.context";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 
-// Hooks
+// Ganchos (Hooks)
 import useUser from "@/lib/hooks/useUser";
 import useToast from "@/lib/hooks/useToast";
 import useRestaurant from "@/lib/hooks/useRestaurant";
@@ -48,7 +48,7 @@ import { useAuth } from "@/lib/context/auth/auth.context";
 // Asssets
 import { InfoSvg } from "@/lib/utils/assets/svg";
 
-// Constants
+// Constantes
 import { DAYS } from "@/lib/utils/constants/orders";
 // Importación de constantes eliminada para el laboratorio de mantenimiento
 // TIP: ¿Por qué las constantes se han eliminado de su archivo central? 
@@ -66,7 +66,7 @@ import {
   IOrder,
 } from "@/lib/utils/interfaces";
 
-// Types
+// Tipos (Types)
 import { OrderTypes } from "@/lib/utils/types/order";
 
 // Methods
@@ -119,7 +119,7 @@ export default function OrderCheckoutScreen() {
   const [couponText, setCouponText] = useState("");
   const [coupon, setCoupon] = useState<ICouponData | null>(null);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   const { CURRENCY_SYMBOL, CURRENCY, DELIVERY_RATE, COST_TYPE, SERVER_URL } =
     useConfig();
@@ -338,7 +338,7 @@ export default function OrderCheckoutScreen() {
   // Use local restaurant data if GraphQL data is not available
   const finalRestaurantData = restaurantData || localRestaurantData;
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // Ref

@@ -17,7 +17,7 @@ import { FilterMatchMode } from 'primereact/api';
 //  Contexts
 import { ToastContext } from '@/lib/context/global/toast.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useLazyQueryQL } from '@/lib/hooks/useLazyQueryQL';
 import { useMutation } from '@apollo/client';
 import { useContext, useEffect, useState } from 'react';
@@ -49,7 +49,7 @@ export default function CuisinesMain({
     onCompleted: () => setIsLoading(false),
   }) as ILazyQueryResult<IGetCuisinesData | undefined, undefined>;
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useContext(ToastContext);
 

@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { createContext, useCallback, useEffect, useState } from 'react';
 // Interfaces and Types
 import {
@@ -14,7 +14,7 @@ import {
 // API
 import { GET_VENDORS } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 
 // Methods

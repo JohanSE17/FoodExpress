@@ -1,5 +1,5 @@
 export const ar = {
-  // Navigation
+  // Navegación
   continue: "متابعة",
   Wallet: "المحفظة",
   Home: "الرئيسية",
@@ -29,7 +29,7 @@ export const ar = {
   faq7Description:
     "للأسف، لا يمكنك الاختيار من عدة مطاعم ضمن نفس الطلب. ولكن يمكنك تقديم طلبات منفصلة من مطاعم مختلفة في نفس الوقت.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "ملخص الأرباح",
   Deliveries: "التوصيلات",
   "Total Earnings": "إجمالي الأرباح",
@@ -245,7 +245,7 @@ export const ar = {
   "Message sent": "تم إرسال الرسالة",
   "Message failed": "فشل إرسال الرسالة",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "الرجاء تحديد نطاق التاريخ",
   "Please select a start date": "الرجاء تحديد تاريخ البداية",
   "Please select an end date": "الرجاء تحديد تاريخ النهاية",
@@ -254,7 +254,7 @@ export const ar = {
   "Tips": "الإكراميات",
 
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "تعذر تحديث التوفر",
   "rider name": "اسم السائق",
   "rider id": "معرف السائق",

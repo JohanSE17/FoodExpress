@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { createContext, useState } from 'react';
 
 // Interface
@@ -66,7 +66,7 @@ export const RestaurantsProvider = ({ children }: IRestaurantsProvider) => {
     onActiveStepChange,
     // Clear
     onClearRestaurntsData,
-    // Context Data
+    // Contexto Data
     restaurantsContextData,
     onSetRestaurantsContextData,
     // Tabs

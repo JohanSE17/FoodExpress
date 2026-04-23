@@ -1,11 +1,11 @@
 // Expo
 import { Stack } from "expo-router";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 
 export default function Layout() {
-  // Hooks
+  // Ganchos (Hooks)
   const {t} = useTranslation();
   return (
     <Stack

@@ -13,7 +13,7 @@ export function Collapsible({
   // States
   const [isOpen, setIsOpen] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <ThemedView>

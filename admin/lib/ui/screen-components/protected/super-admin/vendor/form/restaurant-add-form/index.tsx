@@ -1,6 +1,6 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import { useContext, useRef } from 'react';
 
 // Interfaces
@@ -24,13 +24,13 @@ import { useTranslations } from 'next-intl';
 const RestaurantsForm = ({
   position = 'right',
 }: IRestaurantsAddFormComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Ref
   const stepperRef = useRef(null);
 
-  // Context
+  // Contexto
   const {
     isRestaurantFormVisible,
     onSetRestaurantFormVisible,

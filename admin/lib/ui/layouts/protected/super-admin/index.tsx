@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext, useEffect } from 'react';
 import { initialize, isFirebaseSupported } from '@/firebase';
 import { getToken, onMessage } from 'firebase/messaging';
 
-// Context
+// Contexto
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
 // Components
@@ -16,7 +16,7 @@ import SuperAdminSidebar from '@/lib/ui/screen-components/protected/layout/super
 // Interface
 import { IProvider, LayoutContextProps } from '@/lib/utils/interfaces';
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from '@/lib/hooks/useUser';
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
@@ -25,11 +25,11 @@ import { UPLOAD_TOKEN } from '@/lib/api/graphql/queries/token';
 import { useApolloClient } from '@apollo/client';
 
 const Layout = ({ children }: IProvider) => {
-  // Context
+  // Contexto
   const { isSuperAdminSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const client = useApolloClient();
   const { user } = useUserContext();
   const {

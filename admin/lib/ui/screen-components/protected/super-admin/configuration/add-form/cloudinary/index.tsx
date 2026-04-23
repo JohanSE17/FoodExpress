@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components
@@ -9,13 +9,13 @@ import ConfigCard from '../../view/card';
 // Toast
 import useToast from '@/lib/hooks/useToast';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 // Interfaces and Types
 import { ICloudinaryForm } from '@/lib/utils/interfaces/configurations.interface';
 
-// Utils and Constants
+// Utilidades and Constants
 import { CloudinaryValidationSchema } from '@/lib/utils/schema';
 
 // GraphQL

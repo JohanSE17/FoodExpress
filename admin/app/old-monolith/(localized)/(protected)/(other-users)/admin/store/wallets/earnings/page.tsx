@@ -1,5 +1,5 @@
 'use client';
-// Screens
+// Pantallas
 import EarningsRestaurantScreen from "@/lib/ui/screens/admin/restaurant/wallet/earnings";
 
 export default function EarningSuperAdminPage() {

@@ -3,14 +3,14 @@
 // Interface and Types
 import { INumberTextFieldProps } from '@/lib/utils/interfaces';
 
-// Hooks
+// Ganchos (Hooks)
 import { useFormikContext } from 'formik';
 
 // Components
 import { InputNumber } from 'primereact/inputnumber';
 import InputSkeleton from '../custom-skeletons/inputfield.skeleton';
 
-// Styles
+// Estilos
 import classes from './custom-input.module.css';
 
 import { useConfiguration } from '@/lib/hooks/useConfiguration';

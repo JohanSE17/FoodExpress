@@ -1,9 +1,9 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 
-// Context
+// Contexto
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
 // Interface & Types
@@ -22,7 +22,7 @@ import {
   faWallet,
 } from '@fortawesome/free-solid-svg-icons';
 
-// Constants and Utiils
+// Constantes and Utiils
 import useCheckAllowedRoutes from '@/lib/hooks/useCheckAllowedRoutes';
 
 // Components
@@ -31,7 +31,7 @@ import { useTranslations } from 'next-intl';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons/faHeadset';
 
 function SuperAdminSidebar({ children }: IGlobalComponentProps) {
-  // Contexts
+  // Contextos
   const { isSuperAdminSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);
 
@@ -52,10 +52,10 @@ function SuperAdminSidebar({ children }: IGlobalComponentProps) {
 }
 
 export default function MakeSidebar() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Contexts
+  // Contextos
   const { isSuperAdminSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);
 
@@ -63,7 +63,7 @@ export default function MakeSidebar() {
     {
       text: 'My Website',
       label: t('My Website'),
-      route: 'https://multivendor.foodexpress.com/',
+      route: 'https://foodexpressapi.snepsej.space/',
       isParent: true,
       icon: faUpRightFromSquare,
       isClickable: true,
@@ -223,7 +223,7 @@ export default function MakeSidebar() {
       },
     },
     {
-      text: 'CustomerSupport',  
+      text: 'CustomerSupport',
       label: t('CustomerSupport'),
       route: '/customerSupport',
       icon: faHeadset,

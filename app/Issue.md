@@ -1,22 +1,24 @@
-# RTL/LTR Language Issue resolved
-## Key Changes Implemented
+# Problema de Idioma RTL/LTR resuelto
 
-1. **Removed Unnecessary Listener:**
-   - The `i18next.on('languageChanged')` listener that previously handled language changes and forced RTL/LTR direction has been removed.
-2. **Utilizing `i18n.dir()` for Direction Handling:**
-   - Instead of managing RTL/LTR direction manually, we now use the `i18n.dir()` function. This method automatically determines whether the app should use a right-to-left (RTL) or left-to-right (LTR) layout based on the selected language of the application.
+## Cambios Clave Implementados
 
-3. **Updated App Configuration (`app.json`):**
-   - In order to support application level language and ensure the app's language direction is handled properly, the `supportsRTL` and `forcesRTL` flags in `app.json` have been set to `false`.
+1. **Eliminación de Escucha Innecesaria:**
+   - Se ha eliminado el escucha (listener) `i18next.on('languageChanged')` que anteriormente manejaba los cambios de idioma y forzaba la dirección RTL/LTR.
 
-### Sample `app.json` Configuration:
+2. **Uso de `i18n.dir()` para el Manejo de la Dirección:**
+   - En lugar de gestionar la dirección RTL/LTR manualmente, ahora utilizamos la función `i18n.dir()`. Este método determina automáticamente si la aplicación debe usar un diseño de derecha a izquierda (RTL) o de izquierda a derecha (LTR) basado en el idioma seleccionado.
+
+3. **Actualización de la Configuración de la Aplicación (`app.json`):**
+   - Para soportar el idioma a nivel de aplicación y asegurar que la dirección del idioma se maneje correctamente, las banderas `supportsRTL` y `forcesRTL` en `app.json` se han establecido en `false`.
+
+### Ejemplo de Configuración en `app.json`:
 
 ```json
 {
   "expo": {
     "extra": {
       "eas": {
-        "projectId": "project-id"
+        "projectId": "id-del-proyecto"
       },
       "supportsRTL": false,
       "forcesRTL": false
@@ -26,4 +28,4 @@
     ]
   }
 }
-
+```

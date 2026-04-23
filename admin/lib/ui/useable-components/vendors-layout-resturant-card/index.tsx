@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -28,7 +28,7 @@ import {
   HARD_DELETE_RESTAURANT,
 } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Components
@@ -56,7 +56,7 @@ export default function VendorsLayoutRestaurantCard({
     unique_restaurant_id,
   } = restaurant;
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useContext(ToastContext);
 
@@ -71,7 +71,7 @@ export default function VendorsLayoutRestaurantCard({
   }
 
   const { deliveryRate } = configuration;
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // API

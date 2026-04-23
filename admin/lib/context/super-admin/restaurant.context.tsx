@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { createContext, useContext, useEffect, useState } from 'react';
 
 // Interface
@@ -16,10 +16,10 @@ import {
 // API
 import { GET_RESTAURANTS_BY_OWNER } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 
-// Context
+// Contexto
 import { VendorContext } from './vendor.context';
 
 // Method
@@ -32,7 +32,7 @@ export const RestaurantContext = createContext<IRestaurantContextProps>(
 );
 
 export const RestaurantProvider = ({ children }: IProvider) => {
-  // Context
+  // Contexto
   const { vendorId } = useContext(VendorContext);
   // States
   const [restaurantContextData, setRestaurantContextData] =

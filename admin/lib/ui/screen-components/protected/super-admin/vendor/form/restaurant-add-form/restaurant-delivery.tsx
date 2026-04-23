@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import { useContext } from 'react';
 
@@ -10,17 +10,17 @@ import {
   IRestaurantsRestaurantDeliveryComponentProps,
 } from '@/lib/utils/interfaces';
 
-// Core
+// Núcleo (Core)
 import { RestaurantContext } from '@/lib/context/super-admin/restaurant.context';
 
 // Component
 import CustomButton from '@/lib/ui/useable-components/button';
 import CustomNumberField from '@/lib/ui/useable-components/number-input-field';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Schema
@@ -53,10 +53,10 @@ export default function RestaurantDelivery({
     type: '',
     order: -1,
   };
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
   const { showToast } = useContext(ToastContext);
   const { vendorId } = useContext(RestaurantContext);

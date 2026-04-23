@@ -10,7 +10,7 @@ import { faAdd } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from 'next-intl';
 
 const OptionHeader = ({ setIsAddOptionsVisible }: IOptionsHeaderProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

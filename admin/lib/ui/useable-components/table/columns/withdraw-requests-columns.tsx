@@ -33,7 +33,7 @@ export const WITHDRAW_REQUESTS_TABLE_COLUMNS = ({
   search: string;
   selectedActions: string[];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useContext(ToastContext);
   const t = useTranslations();
 

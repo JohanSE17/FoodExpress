@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 
 // UI Components
@@ -7,7 +7,7 @@ import CustomTextField from '@/lib/ui/useable-components/input-field';
 import TextIconClickable from '@/lib/ui/useable-components/text-icon-clickable';
 import CustomRestaurantCardSkeleton from '@/lib/ui/useable-components/custom-skeletons/restaurant.card.skeleton';
 
-// Context
+// Contexto
 import { VendorLayoutRestaurantContext } from '@/lib/context/vendor/restaurant.context';
 
 // Icons
@@ -23,7 +23,7 @@ export default function VendorRestaurantsMain() {
     restaurantContextData,
     onSetRestaurantContextData,
   } = useContext(VendorLayoutRestaurantContext);
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const restaurants = restaurantContextData?.globalFilter
     ? restaurantContextData?.filtered

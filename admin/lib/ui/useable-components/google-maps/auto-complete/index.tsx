@@ -40,7 +40,7 @@ const CountryService: Country[] = [
 ];
 
 export default function TemplateDemo() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

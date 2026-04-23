@@ -1,8 +1,8 @@
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, TouchableOpacity, View } from "react-native";
 
 // Expo
@@ -13,7 +13,7 @@ import { router } from "expo-router";
 import { Switch } from "react-native-switch";
 
 export default function DocumentsSection() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme, toggleTheme } = useApptheme();
   const { t } = useTranslation();
   const { dataProfile } = useUserContext();

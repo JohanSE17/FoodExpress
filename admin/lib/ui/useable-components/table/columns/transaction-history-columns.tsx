@@ -12,7 +12,7 @@ export const TRANSACTION_HISTORY_COLUMNS = ({
   openMenuId: string;
   setOpenMenuId: (id: string) => void;
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Columns

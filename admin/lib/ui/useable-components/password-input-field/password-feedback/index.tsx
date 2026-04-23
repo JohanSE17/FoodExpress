@@ -1,4 +1,4 @@
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

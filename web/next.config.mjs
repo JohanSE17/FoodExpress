@@ -58,7 +58,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "media-src 'self' https://*.amazonaws.com https://*.s3.amazonaws.com https://assets.foodexpress.com data: blob:",
+              "media-src 'self' https://*.amazonaws.com https://*.s3.amazonaws.com https://assets.foodexpress.com https://foodexpressapi.snepsej.space data: blob:",
           },
         ],
       },
@@ -102,7 +102,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "api.foodexpress.com",
+        hostname: "foodexpressapi.snepsej.space",
+      },
+      {
+        protocol: "https",
+        hostname: "foodexpressapi.snepsej.space",
       },
       {
         protocol: "https",

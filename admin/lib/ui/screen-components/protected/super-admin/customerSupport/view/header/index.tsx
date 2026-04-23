@@ -13,7 +13,7 @@ import HeaderText from '@/lib/ui/useable-components/header-text';
 type CustomerSupportTabType = 'tickets' | 'chats';
 
 export default function CustomerSupportScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   
   // States

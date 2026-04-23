@@ -1,5 +1,5 @@
 export const ku = {
-  // Navigation
+  // Navegación
   continue: "Bidomîne",
   Wallet: "Cizdan",
   Home: "Mal",
@@ -29,7 +29,7 @@ export const ku = {
   faq7Description:
     "Mixabin, hûn nikarin di heman fermanê de ji çend restoranan hilbijêrin. Lêbelê, hûn dikarin di heman demê de fermanên cuda ji restorananên cuda bidin.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Kurteya Dahatan",
   Deliveries: "Teslîmkirin",
   "Total Earnings": "Tevahiya Dahatan",
@@ -316,7 +316,7 @@ export const ku = {
   "Message sent": "Peyam hate şandin",
   "Message failed": "Peyam bi ser neket",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Ji kerema xwe polê dîrokê hilbijêrin",
   "Please select a start date": "Ji kerema xwe dîroka destpêkê hilbijêrin",
   "Please select an end date": "Ji kerema xwe dîroka dawiyê hilbijêrin",
@@ -325,7 +325,7 @@ export const ku = {
   "Please log in to view your earnings":
     "Ji kerema xwe ji bo dîtina dahatên xwe têkevin",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Nekarî berdestbûnê nûve bike",
   "rider name": "Navê Rider",
   "rider id": "Nasnameya Rider",

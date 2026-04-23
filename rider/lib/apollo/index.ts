@@ -105,15 +105,15 @@ const setupApollo = () => {
       connectionParams: async () => {
         const token = await AsyncStorage.getItem(RIDER_TOKEN);
         const publicToken = await getValidPublicToken(
-          GRAPHQL_URL ?? "https://aws-server-v2.foodexpress.com/graphql"
+          GRAPHQL_URL ?? "https://foodexpressapi.snepsej.space/graphql"
         ).catch((err) => {
-          console.log("⚠️ Could not get public token for WebSocket:", err.message);
+          console.log("No se pudo obtener el token publico para WebSocket:", err.message);
           return null;
         });
         const nonce = await getOrCreateNonce();
 
-        console.log("🔌 WebSocket connecting with user token:", token ? "✓" : "✗");
-        console.log("🔌 WebSocket connecting with public token:", publicToken ? "✓" : "✗");
+        console.log("Conectando WebSocket con token de usuario:", token ? "✓" : "✗");
+        console.log("Conectando WebSocket con token publico:", publicToken ? "✓" : "✗");
 
         return {
           authorization: token ? `Bearer ${token}` : "",
@@ -123,9 +123,9 @@ const setupApollo = () => {
       },
       connectionCallback: (error) => {
         if (error) {
-          console.error("❌ WebSocket connection error:", error);
+          console.error("Error en la conexión WebSocket:", error);
         } else {
-          console.log("✅ WebSocket connected successfully");
+          console.log("WebSocket conectado exitosamente");
         }
       },
     },
@@ -134,11 +134,11 @@ const setupApollo = () => {
 
   // Add event listeners for debugging (can be removed in production)
   wsClient.onConnected(() => {
-    console.log("✅ WebSocket connected");
+    console.log("WebSocket conectado");
   });
 
   wsClient.onReconnected(() => {
-    console.log("🔄 WebSocket reconnected");
+    console.log("WebSocket reconectado");
   });
 
   const wsLink = new WebSocketLink(wsClient);
@@ -148,9 +148,9 @@ const setupApollo = () => {
 
     // Try to get public token, but don't fail if it's not available yet
     const publicToken = await getValidPublicToken(
-      GRAPHQL_URL ?? "https://aws-server-v2.foodexpress.com/graphql"
+      GRAPHQL_URL ?? "https://foodexpressapi.snepsej.space/graphql"
     ).catch((err) => {
-      console.log("⚠️ Could not get public token for request:", err.message);
+      console.log("No se pudo obtener el token publico para la solicitud:", err.message);
       return null;
     });
 
@@ -203,33 +203,33 @@ const setupApollo = () => {
   const errorLink = onError(({ graphQLErrors, networkError }) => {
     if (graphQLErrors) {
       graphQLErrors.forEach(({ message, locations, path }) => {
-        // IMPORTANT: Only remove user token for actual user auth failures
-        // Do NOT remove token for public auth failures (bop-auth related)
+        // IMPORTANTE: Solo eliminar el token de usuario para errores de autenticación de usuario reales
+        // NO eliminar el token para errores de autenticación pública (relacionados con bop-auth)
         const isPublicAuthError =
           message.toLowerCase().includes("fingerprint mismatch") ||
           message.toLowerCase().includes("token expired") ||
           message.toLowerCase().includes("invalid token") ||
           message.toLowerCase().includes("token missing");
 
-        // Only remove rider token if it's a user auth error (not public auth error)
+        // Solo eliminar el token de usuario si es un error de autenticación de usuario (no un error de autenticación pública)
         if (
           !isPublicAuthError &&
           (message.toLowerCase().includes("unauthenticate") ||
-           message.toLowerCase().includes("unauthorize"))
+            message.toLowerCase().includes("unauthorize"))
         ) {
-          console.log("❌ User authentication failed, removing rider token");
+          console.log("Error de autenticación de usuario, eliminando token de usuario");
           AsyncStorage.removeItem(RIDER_TOKEN)
-            .then(() => {})
+            .then(() => { })
             .catch((err) => console.log(err));
         }
 
         console.log(
-          `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`,
+          `Error de GraphQL: Mensaje: ${message}, Ubicación: ${locations}, Ruta: ${path}`,
         );
       });
     }
     if (networkError) {
-      console.log(`[Network error]: ${networkError}`);
+      console.log(`Error de red: ${networkError}`);
     }
   });
 
@@ -242,9 +242,9 @@ const setupApollo = () => {
           const definition = getMainDefinition(query) as
             | DefinitionNode
             | (FragmentDefinitionNode & {
-                kind: string;
-                operation?: string;
-              });
+              kind: string;
+              operation?: string;
+            });
           return (
             definition.kind === "OperationDefinition" &&
             definition.operation === "subscription"

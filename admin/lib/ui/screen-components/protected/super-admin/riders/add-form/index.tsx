@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Form, Formik, FormikHelpers } from 'formik';
 
 // Prime React
@@ -61,7 +61,7 @@ export default function RiderAddForm({
   };
 
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

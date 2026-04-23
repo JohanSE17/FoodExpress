@@ -5,7 +5,7 @@ import { Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function UnavailableStatus() {
-  // Hooks
+  // Ganchos (Hooks)
   const pathName = usePathname();
   const { dataProfile } = useUserContext();
   const insets = useSafeAreaInsets(); // Get Safe Area Insets

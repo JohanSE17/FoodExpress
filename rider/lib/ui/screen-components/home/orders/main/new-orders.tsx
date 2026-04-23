@@ -3,11 +3,11 @@ import { NetworkStatus } from "@apollo/client";
 import { useContext, useEffect, useState } from "react";
 import { Dimensions, Platform, StyleSheet, Text, View } from "react-native";
 
-// Context
+// Contexto
 import UserContext from "@/lib/context/global/user.context";
 // UI
 import Order from "@/lib/ui/useable-components/order";
-// Constants
+// Constantes
 import { NO_ORDER_PROMPT } from "@/lib/utils/constants";
 // Interface
 import { IOrderTabsComponentProps } from "@/lib/utils/interfaces";
@@ -26,7 +26,7 @@ export default function HomeNewOrdersMain(props: IOrderTabsComponentProps) {
   // Props
   const { route } = props;
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const {

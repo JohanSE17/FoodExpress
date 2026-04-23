@@ -11,7 +11,7 @@ const ItemDetails = ({
   orderData: IOrder;
   tab: string;
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const configuration = useContext(ConfigurationContext);

@@ -1,6 +1,6 @@
 "use client";
 
-// Core
+// Núcleo (Core)
 import React, { useRef } from "react";
 
 // Interfaces
@@ -8,7 +8,7 @@ import React, { useRef } from "react";
 // Prime React
 import { Toast } from "primereact/toast";
 
-// Components
+// Componentes
 import CustomNotification from "@/lib/ui/useable-components/notification";
 import {
   IToast,

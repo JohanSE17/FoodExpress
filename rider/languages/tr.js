@@ -1,5 +1,5 @@
 export const tr = {
-  // Navigation
+  // Navegación
   continue: "Devam Et",
   Wallet: "Cüzdan",
   Home: "Ana Sayfa",
@@ -29,7 +29,7 @@ export const tr = {
   faq7Description:
     "Maalesef aynı sipariş içinde birden fazla restorandan seçim yapamazsınız. Ancak aynı anda farklı restoranlardan ayrı siparişler verebilirsiniz.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Kazanç Özeti",
   Deliveries: "Teslimatlar",
   "Total Earnings": "Toplam Kazanç",
@@ -292,14 +292,14 @@ export const tr = {
   "Message sent": "Mesaj gönderildi",
   "Message failed": "Mesaj gönderilemedi",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Lütfen bir tarih aralığı seçin",
   "Please select a start date": "Lütfen bir başlangıç tarihi seçin",
   "Please select an end date": "Lütfen bir bitiş tarihi seçin",
   "Start date cannot be after end date": "Başlangıç tarihi bitiş tarihinden sonra olamaz",
   "Please log in to view your earnings": "Kazançlarınızı görüntülemek için lütfen giriş yapın",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Müsaitlik güncellenemedi",
   "rider name": "Kurye Adı",
   "rider id": "Kurye ID",

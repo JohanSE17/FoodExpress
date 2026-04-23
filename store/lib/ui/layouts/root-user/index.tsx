@@ -8,12 +8,12 @@ import { Stack } from "expo-router";
 // i18n
 import { changeLanguage } from "i18next";
 
-// Hooks
+// Ganchos (Hooks)
 import { useEffect } from "react";
 import { SafeAreaView } from "react-native";
 
 export default function RootUserLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   // Handlers

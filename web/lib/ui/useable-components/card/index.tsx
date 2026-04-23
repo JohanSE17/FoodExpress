@@ -10,7 +10,7 @@ import { FiClock } from "react-icons/fi";
 import { CycleSvg, FaceSvg } from "@/lib/utils/assets/svg";
 import IconWithTitle from "../icon-with-title";
 
-// Hooks
+// Ganchos (Hooks)
 import { useSearchUI } from "@/lib/context/search/search.context";
 
 // Interface

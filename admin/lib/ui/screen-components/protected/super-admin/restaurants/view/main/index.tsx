@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ApolloError, useMutation } from '@apollo/client';
@@ -8,7 +8,7 @@ import { ApolloError, useMutation } from '@apollo/client';
 // PrimeReact
 import { FilterMatchMode } from 'primereact/api';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { RestaurantsContext } from '@/lib/context/super-admin/restaurants.context';
 
@@ -22,7 +22,7 @@ import RestaurantsTableHeader from '../header/table-header';
 import Table from '@/lib/ui/useable-components/table';
 import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 
-// Constants and Interfaces
+// Constantes and Interfaces
 import {
   IActionMenuItem,
   IQueryResult,
@@ -47,14 +47,14 @@ import { useTranslations } from 'next-intl';
 import { RESTAURANT_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/restaurant-column';
 
 export default function RestaurantsMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { currentTab } = useContext(RestaurantsContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // State for pagination and search
@@ -152,7 +152,7 @@ export default function RestaurantsMain() {
     setRowsPerPage(rows);
   };
 
-  // Constants
+  // Constantes
   const menuItems: IActionMenuItem<IRestaurantResponse>[] = [
     {
       label: t('View'),

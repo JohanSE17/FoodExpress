@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Platform } from "react-native";
 
 export default function OrderDetailLayour() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
 

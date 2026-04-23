@@ -8,10 +8,10 @@ import { Dialog } from 'primereact/dialog';
 import CustomButton from '@/lib/ui/useable-components/button';
 import CustomDropdownComponent from '@/lib/ui/useable-components/custom-dropdown';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 
 // API
@@ -36,10 +36,10 @@ const RestaurantDuplicateDialog = ({
   visible,
   onHide,
 }: IRestaurantDuplicateDialogComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
 
   // States

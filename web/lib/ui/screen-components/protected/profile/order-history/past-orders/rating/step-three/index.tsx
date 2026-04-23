@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 
-// Components
+// Componentes
 import ActionButton from "@/lib/ui/useable-components/action-button";
 import RenderAspects from "@/lib/ui/useable-components/render-aspects";
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomTextAreaField from "@/lib/ui/useable-components/custom-text-area-field";
 
-// Types
+// Tipos (Types)
 import { IRenderStepThreeProps } from "@/lib/utils/interfaces/ratings.interface";
 
 // i18n

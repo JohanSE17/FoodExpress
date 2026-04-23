@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { useState } from 'react';
 
 // Components

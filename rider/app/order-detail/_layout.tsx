@@ -4,7 +4,7 @@ import { Platform, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function OrderDetailLayour() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const {top} = useSafeAreaInsets()
   return (

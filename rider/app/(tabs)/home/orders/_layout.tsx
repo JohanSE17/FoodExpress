@@ -1,15 +1,15 @@
 // Expo
 import { Tabs } from "expo-router";
 
-// Core
+// Núcleo (Core)
 import { Platform, Pressable, Text, View } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useTranslation } from "react-i18next";
 
 export default function Layout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   return (

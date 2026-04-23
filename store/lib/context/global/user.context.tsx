@@ -22,7 +22,7 @@ import {
   IStoreEarningsArray,
 } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Services
+// Servicios
 import { asyncStorageEmitter } from "@/lib/services";
 
 const UserContext = createContext<IUserContextProps>({} as IUserContextProps);

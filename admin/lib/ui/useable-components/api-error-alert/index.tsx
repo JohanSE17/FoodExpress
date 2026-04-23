@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from 'next-intl';
 
 // Interface for component props

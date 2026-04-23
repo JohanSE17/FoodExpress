@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { createContext, useState } from 'react';
 
 // Interface
@@ -13,7 +13,7 @@ import {
   RestaurantLayoutContextProps,
 } from '@/lib/utils/interfaces';
 
-// Utils
+// Utilidades
 import { SELECTED_RESTAURANT, SELECTED_SHOPTYPE } from '../../utils/constants';
 import { onUseLocalStorage } from '../../utils/methods';
 

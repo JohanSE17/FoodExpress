@@ -27,7 +27,7 @@ export default function EarningTableHeader({
 }: IEarningTableHeaderProps) {
   const [errors, setErrors] = useState({ startDate: '', endDate: '' });
   const [userType, setUserType] = useState<UserTypeEnum>();
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Query
@@ -51,7 +51,7 @@ export default function EarningTableHeader({
     [data?.riders]
   );
 
-  // Constants
+  // Constantes
   const userTypes = [
     { label: t('All'), value: UserTypeEnum.ALL },
     { label: t('Rider'), value: UserTypeEnum.RIDER },

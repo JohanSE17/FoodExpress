@@ -1,6 +1,6 @@
 "use client";
 
-// Hooks
+// Ganchos (Hooks)
 import useToast from "@/lib/hooks/useToast";
 import { useTranslations } from "next-intl";
 import {
@@ -13,7 +13,7 @@ import {
   useState,
 } from "react";
 
-// Context
+// Contexto
 import { useConfig } from "../configuration/configuration.context";
 
 // GQL
@@ -66,7 +66,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   const [isRegistering, setIsRegistering] = useState(false);
   const [refetchProfileData, setRefetchProfileData] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const {
     GOOGLE_CLIENT_ID,
     SKIP_EMAIL_VERIFICATION,

@@ -1,5 +1,5 @@
 export const az = {
-  // Navigation
+  // Navegación
   continue: "Davam et",
   Wallet: "Pul kisəsi",
   Home: "Əsas səhifə",
@@ -29,7 +29,7 @@ export const az = {
   faq7Description:
     "Təəssüf ki, eyni sifariş daxilində bir neçə restorandan seçim edə bilməzsiniz. Ancaq eyni zamanda fərqli restoranlardan ayrı-ayrılıqda sifariş verə bilərsiniz.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Qazanc Xülasəsi",
   Deliveries: "Çatdırılmalar",
   "Total Earnings": "Ümumi Qazanc",
@@ -292,14 +292,14 @@ export const az = {
   "Message sent": "Mesaj göndərildi",
   "Message failed": "Mesaj uğursuz oldu",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Zəhmət olmasa, tarix aralığı seçin",
   "Please select a start date": "Zəhmət olmasa, başlama tarixini seçin",
   "Please select an end date": "Zəhmət olmasa, bitmə tarixini seçin",
   "Start date cannot be after end date": "Başlama tarixi bitmə tarixindən sonra ola bilməz",
   "Please log in to view your earnings": "Qazancınızı görmək üçün daxil olun",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Mövcudluq yenilənə bilmədi",
   "rider name": "Kuryer Adı",
   "rider id": "Kuryer ID",

@@ -1,6 +1,6 @@
 "use client";
 
-// Layout
+// Diseño (Layout)
 import GlobalLayout from "@/lib/ui/layouts/protected/global";
 
 export default function RootLayout({

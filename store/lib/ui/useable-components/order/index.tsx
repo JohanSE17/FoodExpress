@@ -11,7 +11,7 @@ import CountdownTimer from "../custom-timer";
 import SpinnerComponent from "../spinner";
 import { TimeLeftIcon } from "../svg";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import useCancelOrder from "@/lib/hooks/useCancelOrder";
 import useOrderPickedUp from "@/lib/hooks/useOrderPickedUp";
@@ -36,13 +36,13 @@ const Order = ({
     return null; // Return early if order is not available
   }
 
-  // Hooks can be called safely now
+  // Ganchos (Hooks) can be called safely now
   const { appTheme } = useApptheme();
   const configuration = useContext(ConfigurationContext);
   const { t } = useTranslation();
 
   if (!configuration) {
-    return null; // Configuration context is not available yet
+    return null; // Configuración context is not available yet
   }
   const { cancelOrder, loading: loadingCancelOrder } = useCancelOrder();
   const { pickedUp, loading: loadingPicked } = useOrderPickedUp();

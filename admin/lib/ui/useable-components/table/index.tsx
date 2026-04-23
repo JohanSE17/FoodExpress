@@ -47,7 +47,7 @@ const Table = <T extends ITableExtends>({
     }
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Handlers

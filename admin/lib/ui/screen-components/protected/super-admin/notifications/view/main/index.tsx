@@ -8,7 +8,7 @@ import { ChangeEvent, useState } from 'react';
 import NotificationTableHeader from '../header/table-header';
 import Table from '@/lib/ui/useable-components/table';
 
-// Constants
+// Constantes
 import { generateDummyNotifications } from '@/lib/utils/dummy';
 import { NOTIFICATIONS_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/notification-columns';
 

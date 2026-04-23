@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
 interface TimerProps {
@@ -9,7 +9,7 @@ interface TimerProps {
 }
 
 const CountdownTimer: React.FC<TimerProps> = ({ duration }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   // States

@@ -9,7 +9,7 @@ import { ADD_FAVOURITE_RESTAURANT } from "@/lib/api/graphql/mutations/restaurant
 import { GET_USER_PROFILE } from "@/lib/api/graphql";
 import { useQuery } from "@apollo/client";
 
-// Context & Hooks
+// Contexto & Hooks
 import useUser from "@/lib/hooks/useUser";
 import useRestaurant from "@/lib/hooks/useRestaurant";
 
@@ -17,7 +17,7 @@ import useRestaurant from "@/lib/hooks/useRestaurant";
 import { ClockSvg, HeartSvg, InfoSvg, RatingSvg } from "@/lib/utils/assets/svg";
 import { faPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-// Components
+// Componentes
 import Spacer from "@/lib/ui/useable-components/spacer";
 import { PaddingContainer } from "@/lib/ui/useable-components/containers";
 import CustomIconTextField from "@/lib/ui/useable-components/input-icon-field";

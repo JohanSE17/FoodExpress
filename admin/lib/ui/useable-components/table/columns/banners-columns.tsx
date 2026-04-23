@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import Image from 'next/image';
 // Custom Components
 import ActionMenu from '@/lib/ui/useable-components/action-menu';
@@ -12,7 +12,7 @@ export const BANNERS_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IBannersResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return [
     {

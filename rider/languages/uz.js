@@ -1,5 +1,5 @@
 export const uz = {
-  // Navigation
+  // Navegación
   continue: "Davom etish",
   Wallet: "Hamyon",
   Home: "Bosh sahifa",
@@ -29,7 +29,7 @@ export const uz = {
   faq7Description:
     "Afsuski, bir xil buyurtma ichida bir nechta restorandan tanlov qila olmaysiz. Biroq, bir vaqtning o'zida turli restoranlardan alohida buyurtma berishingiz mumkin.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Daromad Xulosasi",
   Deliveries: "Yetkazib berishlar",
   "Total Earnings": "Jami Daromad",
@@ -292,14 +292,14 @@ export const uz = {
   "Message sent": "Xabar yuborildi",
   "Message failed": "Xabar yuborilmadi",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Iltimos, sana oralig'ini tanlang",
   "Please select a start date": "Iltimos, boshlanish sanasini tanlang",
   "Please select an end date": "Iltimos, tugash sanasini tanlang",
   "Start date cannot be after end date": "Boshlanish sanasi tugash sanasidan keyin bo'lishi mumkin emas",
   "Please log in to view your earnings": "Daromadingizni ko'rish uchun iltimos, tizimga kiring",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Mavjudlikni yangilab bo'lmadi",
   "rider name": "Kuryer Ismi",
   "rider id": "Kuryer ID",

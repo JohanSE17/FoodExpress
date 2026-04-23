@@ -28,12 +28,12 @@ import {
   OtherSvg,
 } from "@/lib/utils/assets/svg";
 
-// Components
+// Componentes
 import CustomButton from "../button";
 import CustomLoader from "../custom-progress-indicator";
 import CustomDropdownComponent from "../custom-dropdown";
 
-// Context
+// Contexto
 import { useUserAddress } from "@/lib/context/address/address.context";
 import { GoogleMapsContext } from "@/lib/context/global/google-maps.context";
 import { useLocationContext } from "@/lib/context/Location/Location.context";
@@ -116,7 +116,7 @@ export default function UserAddressComponent(
   const { isLocationFetching, onSetUserLocation } = useSetUserCurrentLocation();
   const { showToast } = useToast();
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
   const { cities } = useLocationContext();
 

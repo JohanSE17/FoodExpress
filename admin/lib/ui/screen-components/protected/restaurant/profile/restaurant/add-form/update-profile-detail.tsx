@@ -55,10 +55,10 @@ export default function UpdateRestaurantDetails({
     order: -1,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Contexts
+  // Contextos
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const { restaurantId } = restaurantLayoutContextData;
 

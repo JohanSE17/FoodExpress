@@ -22,7 +22,7 @@ export default function CuisineTableHeader({
   selectedActions,
   setSelectedActions,
 }: ICuisineTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {theme } = useTheme()
 

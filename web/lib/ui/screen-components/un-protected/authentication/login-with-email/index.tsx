@@ -1,4 +1,4 @@
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomTextField from "@/lib/ui/useable-components/input-field";
 
@@ -8,7 +8,7 @@ import { ILoginWithEmailProps } from "@/lib/utils/interfaces";
 // Icons
 import EmailIcon from "@/public/assets/images/svgs/email";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import useToast from "@/lib/hooks/useToast";
 import { useTranslations } from "next-intl";
@@ -24,7 +24,7 @@ export default function LoginWithEmail({
   formData,
   handleFormChange,
 }: ILoginWithEmailProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { setUser, checkEmailExists, isLoading } = useAuth();
   const { showToast } = useToast();

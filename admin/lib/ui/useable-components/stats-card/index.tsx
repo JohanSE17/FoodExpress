@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import Link from 'next/link';
 
 // Interface

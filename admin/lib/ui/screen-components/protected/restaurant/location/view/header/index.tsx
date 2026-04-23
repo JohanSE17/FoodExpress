@@ -3,7 +3,7 @@ import HeaderText from '@/lib/ui/useable-components/header-text';
 import { useTranslations } from 'next-intl';
 
 const LocationHeader = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="w-full flex-shrink-0 dark:text-white">

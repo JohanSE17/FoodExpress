@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 
-// Context
+// Contexto
 import { IConfiguration } from '@/lib/utils/interfaces';
 
 // Interface
@@ -73,9 +73,14 @@ export const useConfiguration = () => {
   const CURRENCY_SYMBOL = configuration?.currency;
   const ISPAID_VERSION = configuration?.isPaidVersion;
 
+  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://foodexpressapi.snepsej.space/";
+  const WS_SERVER_URL = process.env.NEXT_PUBLIC_WS_SERVER_URL || SERVER_URL.replace("http", "ws");
+  const GRAPHQL_URL = process.env.NEXT_PUBLIC_GRAPHQL_URL || `${SERVER_URL}graphql`;
+
   return {
-    SERVER_URL: process.env.NEXT_PUBLIC_SERVER_URL,
-    WS_SERVER_URL: process.env.NEXT_PUBLIC_WS_SERVER_URL,
+    SERVER_URL,
+    WS_SERVER_URL,
+    GRAPHQL_URL,
     COLORS,
 
     // EMAIL CONFIG

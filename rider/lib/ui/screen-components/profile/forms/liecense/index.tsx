@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import {
   Keyboard,
@@ -25,7 +25,7 @@ import { showMessage } from "react-native-flash-message";
 import { UploadIcon } from "@/lib/assets/svg";
 import { Ionicons } from "@expo/vector-icons";
 
-// Components
+// Componentes
 import { CustomContinueButton } from "@/lib/ui/useable-components";
 
 // Expo
@@ -37,7 +37,7 @@ import { Link } from "expo-router";
 import { MotiView } from "moti";
 import { Skeleton } from "moti/skeleton";
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useMutation } from "@apollo/client";
 import { useTranslation } from "react-i18next";
@@ -57,7 +57,7 @@ export default function DrivingLicenseForm({
 }: {
   setIsFormOpened: Dispatch<SetStateAction<TRiderProfileBottomBarBit>>;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { userId, dataProfile } = useUserContext();
   const { appTheme } = useApptheme();
@@ -85,7 +85,7 @@ export default function DrivingLicenseForm({
     message: null,
   });
 
-  // Mutations
+  // Mutaciones (Mutations)
   const [uploadImageToS3] = useMutation(UPLOAD_IMAGE_TO_S3);
   
   const [mutateLicense] = useMutation(UPDATE_LICENSE, {

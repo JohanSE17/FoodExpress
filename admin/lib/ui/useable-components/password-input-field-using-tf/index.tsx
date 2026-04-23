@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ import { IPasswordTextFieldProps } from '@/lib/utils/interfaces';
 
 // Prime React
 
-// Styles
+// Estilos
 
 export default function CustomPasswordTextField({
   className,

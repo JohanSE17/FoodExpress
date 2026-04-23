@@ -1,5 +1,5 @@
 export const fr = {
-  // Navigation
+  // Navegación
   continue: "Continuer",
   Wallet: "Portefeuille",
   Home: "Accueil",
@@ -316,7 +316,7 @@ export const fr = {
   "Message sent": "Message envoyé",
   "Message failed": "Échec de l'envoi",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Veuillez sélectionner une plage de dates",
   "Please select a start date": "Veuillez sélectionner une date de début",
   "Please select an end date": "Veuillez sélectionner une date de fin",
@@ -324,7 +324,7 @@ export const fr = {
   "Please log in to view your earnings": "Veuillez vous connecter pour voir vos gains",
 
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Impossible de mettre à jour la disponibilité",
   "rider name": "Nom du livreur",
   "rider id": "ID du livreur",

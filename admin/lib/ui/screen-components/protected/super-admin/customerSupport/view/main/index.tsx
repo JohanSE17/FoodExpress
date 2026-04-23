@@ -46,7 +46,7 @@ interface UserWithLatestTicket {
 }
 
 export default function CustomerSupportMain({ activeTab = 'tickets' }: ICustomerSupportMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const client = useApolloClient();
 

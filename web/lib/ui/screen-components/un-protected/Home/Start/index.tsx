@@ -3,11 +3,11 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-// Components
+// Componentes
 import HomeSearch from "@/lib/ui/useable-components/Home-search";
 import TextFlyingAnimation from "@/lib/ui/useable-components/FlyingText";
 
-// Hooks
+// Ganchos (Hooks)
 import useLocation from "@/lib/hooks/useLocation";
 import useSetUserCurrentLocation from "@/lib/hooks/useSetUserCurrentLocation";
 import LoginInForSavedAddresses from "@/lib/ui/useable-components/LoginForSavedAddresses";
@@ -18,7 +18,7 @@ import { useAuth } from "@/lib/context/auth/auth.context";
 import { useTranslations } from "next-intl";
 
 const Start: React.FC = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   const { getCurrentLocation } = useLocation();
   const { onSetUserLocation } = useSetUserCurrentLocation();

@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { ApolloError, useMutation } from '@apollo/client';
 import { Form, Formik } from 'formik';
 import { useContext, useEffect, useState } from 'react';
@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 // Prime React
 import { Sidebar } from 'primereact/sidebar';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { ProfileContext } from '@/lib/context/vendor/profile.context';
 
@@ -14,7 +14,7 @@ import { ProfileContext } from '@/lib/context/vendor/profile.context';
 import { IVendorUpdateFormComponentProps } from '@/lib/utils/interfaces';
 import { IVendorForm } from '@/lib/utils/interfaces/forms';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods/error';
 
@@ -48,10 +48,10 @@ export default function VendorUpdateForm({
   vendorFormVisible,
   setIsUpdateProfileVisible,
 }: IVendorUpdateFormComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { vendorProfileResponse } = useContext(ProfileContext);
   let vendor = vendorProfileResponse.data?.getVendor;

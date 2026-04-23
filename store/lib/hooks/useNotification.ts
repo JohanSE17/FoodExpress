@@ -25,7 +25,7 @@ export default function useNotification() {
     });
   };
 
-  // Notification Handler
+  // Notificación Handler
   async function registerForPushNotificationsAsync() {
     if (!Device.isDevice) {
       alert("Must use physical device for Push Notifications");

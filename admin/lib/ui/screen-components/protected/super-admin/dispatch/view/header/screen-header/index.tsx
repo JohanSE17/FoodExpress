@@ -1,11 +1,11 @@
 //Components
 import HeaderText from '@/lib/ui/useable-components/header-text';
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from 'next-intl';
 
 export default function DispatchHeader() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="sticky top-0 z-10 w-full flex-shrink-0 bg-white dark:bg-dark-950 dark:text-white p-3 shadow-sm">

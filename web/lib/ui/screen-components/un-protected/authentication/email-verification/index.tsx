@@ -1,11 +1,11 @@
-// Hooks and Context
+// Ganchos (Hooks) and Context
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 import { useTranslations } from "next-intl";
 import useVerifyOtp from "@/lib/hooks/useVerifyOtp";
 
-// Components and Utilities
+// Componentes and Utilities
 import CustomButton from "@/lib/ui/useable-components/button";
 import useToast from "@/lib/hooks/useToast";
 import useUser from "@/lib/hooks/useUser";

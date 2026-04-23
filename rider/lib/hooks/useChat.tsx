@@ -3,7 +3,7 @@ import { useRoute } from "@react-navigation/native";
 import { useContext, useEffect, useState } from "react";
 import { Alert } from "react-native";
 
-// Context
+// Contexto
 import UserContext from "../context/global/user.context";
 
 // API

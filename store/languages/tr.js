@@ -1,5 +1,5 @@
 export const tr = {
-  // Navigation
+  // Navegación
   continue: "Devam Et",
   Wallet: "Cüzdan",
   Home: "Ana Sayfa",

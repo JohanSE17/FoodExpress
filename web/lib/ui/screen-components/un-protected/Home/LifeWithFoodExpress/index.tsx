@@ -1,7 +1,7 @@
 // libraries
 import React from "react";
 
-// Components
+// Componentes
 import HomeCard from "@/lib/ui/useable-components/Home-Card";
 import MoveableCard from "@/lib/ui/useable-components/Moveable-Card";
 

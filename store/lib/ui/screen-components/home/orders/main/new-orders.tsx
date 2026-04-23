@@ -9,7 +9,7 @@ import {
 } from "react-native";
 // UI
 import CustomTab from "@/lib/ui/useable-components/custom-tab";
-// Constants
+// Constantes
 import { NO_ORDER_PROMPT, ORDER_DISPATCH_TYPE } from "@/lib/utils/constants";
 
 // Interface
@@ -39,7 +39,7 @@ function HomeNewOrdersMain(props: IOrderTabsComponentProps) {
   // Props
   const { route } = props;
 
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const {
@@ -60,7 +60,7 @@ function HomeNewOrdersMain(props: IOrderTabsComponentProps) {
   const [orders, setOrders] = useState<IOrder[]>([]);
   const [selectedOrder, setSelectedOrder] = useState<IOrder | null>(null);
   const [showDetails, setShowDetails] = useState<Record<string, boolean>>({});
-  // Printer States
+  // Impresora States
 
   //////////
 

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 
 // Useable components

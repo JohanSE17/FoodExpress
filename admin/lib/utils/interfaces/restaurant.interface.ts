@@ -29,7 +29,7 @@ export interface IRestaurantContextProps {
   onActiveStepChange: (activeStep: number) => void;
   onClearRestaurntsData: () => void;
 
-  // Context Data Management
+  // Contexto Data Management
   onSetRestaurantContextData: (data: Partial<IRestaurantContextData>) => void;
   isRestaurantModifed: boolean;
   setRestaurantModifed: (status: boolean) => void;

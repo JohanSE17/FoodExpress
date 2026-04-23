@@ -1,6 +1,6 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import React, {
   useCallback,
   useContext,
@@ -50,12 +50,12 @@ const autocompleteService: {
 const CustomGoogleMapsLocationZoneBounds: React.FC<
   IZoneCustomGoogleMapsBoundComponentProps
 > = ({ _path, onSetZoneCoordinates }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
 
 
-  // Context
+  // Contexto
   const googleMapsContext = useContext(GoogleMapsContext);
 
   // States

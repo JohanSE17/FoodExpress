@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 
 // Moti
@@ -6,7 +6,7 @@ import { MotiView } from "moti";
 import { Skeleton } from "moti/skeleton";
 
 export default function EarningTopChartSkeleton() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme } = useApptheme();
   return (
     <MotiView

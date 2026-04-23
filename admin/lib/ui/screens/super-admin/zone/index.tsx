@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import React, { useState } from 'react';
 
 // Interfaces

@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useMutation } from '@apollo/client';
 import { useState } from 'react';
 
@@ -23,7 +23,7 @@ import { RIDER_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/r
 // Utilities and Data
 import { IActionMenuItem } from '@/lib/utils/interfaces/action-menu.interface';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import useToast from '@/lib/hooks/useToast';
 
@@ -40,7 +40,7 @@ export default function RidersMain({
   setIsAddRiderVisible,
   setRider,
 }: IRidersMainComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
   const router = useRouter();

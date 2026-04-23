@@ -1,5 +1,5 @@
 'use client';
-// Screens
+// Pantallas
 import NotificationsScreen from '@/lib/ui/screens/super-admin/management/notifications';
 
 export default function NotificationsPage() {

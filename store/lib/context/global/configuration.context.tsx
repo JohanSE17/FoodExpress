@@ -1,6 +1,6 @@
 "use client";
 
-// Core
+// Núcleo (Core)
 import { createContext, useCallback, useEffect, useState } from "react";
 
 // Interfaces§
@@ -13,7 +13,7 @@ import {
 // API
 import { GET_CONFIGURATION } from "@/lib/api/graphql";
 
-// Hooks
+// Ganchos (Hooks)
 import { useLazyQueryQL } from "@/lib/hooks/useLazyQueryQL";
 
 export const ConfigurationContext = createContext<IConfiguration | undefined>({

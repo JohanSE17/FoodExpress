@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Custom Components
@@ -22,7 +22,7 @@ export const RIDER_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IRiderResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

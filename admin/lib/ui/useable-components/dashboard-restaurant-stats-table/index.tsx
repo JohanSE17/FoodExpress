@@ -14,7 +14,7 @@ export default function DashboardRestaurantStatsTable({
   data,
   amountConfig,
 }: IDashboardRestaurantStatsTableComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   if (loading) return <DashboardStatsTableSkeleton />;

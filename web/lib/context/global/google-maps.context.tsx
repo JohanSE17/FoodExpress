@@ -1,12 +1,12 @@
 "use client";
 
-// Core
+// Núcleo (Core)
 import React, { createContext, useContext, useEffect } from "react";
 
 // Third-party libraries
 import { useJsApiLoader } from "@react-google-maps/api";
 
-// Components
+// Componentes
 
 // Interfaces
 import {
@@ -14,7 +14,7 @@ import {
   IGoogleMapsProviderProps,
 } from "../../utils/interfaces";
 
-// Context
+// Contexto
 import { ToastContext } from "@/lib/context/global/toast.context";
 
 export const GoogleMapsContext = createContext<IGoogleMapsContext>(

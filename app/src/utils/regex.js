@@ -4,7 +4,7 @@ export const nameRegex = /^[\p{L}][\p{L}\s'-]+$/u
 export const phoneRegex = /^\d{7,15}$/
 
 
-// Handlers
+// Controladores (Handlers)
 export const escapeRegExp = (string) => {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // $& means the whole matched string
   }

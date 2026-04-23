@@ -4,7 +4,7 @@ import { useApptheme } from "@/lib/context/global/theme.context";
 import WorkScheduleMainScreen from "@/lib/ui/screen-components/work-schedule/main";
 
 export default function WorkScheduleScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
  

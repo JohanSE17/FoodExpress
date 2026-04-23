@@ -14,7 +14,7 @@ import OrderDetailModal from '@/lib/ui/useable-components/popup-menu/order-detai
 import { useTranslations } from 'next-intl';
 
 export default function OrderVendorMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

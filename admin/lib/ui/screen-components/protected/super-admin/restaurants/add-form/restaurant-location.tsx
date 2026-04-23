@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import { useContext, useState } from 'react';
 
@@ -28,7 +28,7 @@ export default function RestaurantLocation({
     onStepChange: () => {},
   };
 
-  // Contexts
+  // Contextos
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // States

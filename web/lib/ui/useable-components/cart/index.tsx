@@ -7,7 +7,7 @@ import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { useQuery, useApolloClient } from "@apollo/client";
 import { RELATED_ITEMS, FOOD } from "@/lib/api/graphql";
 
-// Hooks
+// Ganchos (Hooks)
 import useUser from "@/lib/hooks/useUser";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 import Image from "next/image";

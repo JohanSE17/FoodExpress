@@ -1,8 +1,8 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { ErrorMessage, Form, Formik, FormikErrors } from 'formik';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -24,7 +24,7 @@ import {
   ITimingResponseGQL,
 } from '@/lib/utils/interfaces/timing.interface';
 
-// Context
+// Contexto
 import { RestaurantsContext } from '@/lib/context/super-admin/restaurants.context';
 
 // Utilities and Constants
@@ -46,10 +46,10 @@ const RestaurantTiming = ({
     onStepChange: () => {},
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     restaurantsContextData,
     onSetRestaurantsContextData,
@@ -57,7 +57,7 @@ const RestaurantTiming = ({
   } = useContext(RestaurantsContext);
   const restaurantId = restaurantsContextData?.restaurant?._id?.code || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   const { data, loading } = useQuery(GET_RESTAURANT_PROFILE, {

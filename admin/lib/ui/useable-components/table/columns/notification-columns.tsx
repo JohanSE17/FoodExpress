@@ -2,19 +2,19 @@
 import { INotification } from '@/lib/utils/interfaces/notification.interface';
 import CustomButton from '../../button';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useMemo } from 'react';
 import { useMutation } from '@apollo/client';
 
 // GrahpQL
 import { GET_NOTIFICATIONS, SEND_NOTIFICATION_USER } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { useTranslations } from 'next-intl';
 
 export const NOTIFICATIONS_TABLE_COLUMNS = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useContext(ToastContext);
 

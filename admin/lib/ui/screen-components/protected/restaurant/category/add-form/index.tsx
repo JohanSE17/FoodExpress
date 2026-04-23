@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { FieldArray, Form, Formik } from 'formik';
 
 // Prime React
@@ -35,13 +35,13 @@ import {
 } from '@/lib/api/graphql';
 import { DELETE_SUB_CATEGORY } from '@/lib/api/graphql/mutations/sub-category';
 
-// Contexts
+// Contextos
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
 // Icons
 import { faAdd, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-// Hooks
+// Ganchos (Hooks)
 import { useMutation, useQuery } from '@apollo/client';
 import { useContext, useEffect } from 'react';
 import {
@@ -59,7 +59,7 @@ export default function CategoryAddForm({
   isAddCategoryVisible,
   onCategoryAdded,
 }: ICategoryAddFormComponentProps & { onCategoryAdded?: () => void }) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   // Queries
   const {
@@ -98,10 +98,10 @@ export default function CategoryAddForm({
     ...category,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
-  // Context
+  // Contexto
 
   // const shopType = restaurantLayoutContextData?.shopType || '';
   // console.log("🚀 ~ shopType:", shopType)

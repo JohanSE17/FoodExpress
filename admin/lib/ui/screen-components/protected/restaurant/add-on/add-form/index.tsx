@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { FieldArray, Form, Formik, FormikErrors } from 'formik';
 
 // Prime React
@@ -75,11 +75,11 @@ export default function AddonAddForm({
   isAddAddonVisible,
 
 }: IAddonAddFormComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
   const { showToast } = useToast();
-  // Context
+  // Contexto
 
   const { restaurantLayoutContextData, setIsAddOptionsVisible,
     option,

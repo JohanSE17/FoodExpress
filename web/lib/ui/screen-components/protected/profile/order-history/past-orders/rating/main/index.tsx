@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-// Hooks
+// Ganchos (Hooks)
 import useDebounceFunction from "@/lib/hooks/useDebounceForFunction";
-// Components
+// Componentes
 import RenderStepTwo from "../step-two";
 import RenderStepOne from "../step-one";
 import RenderStepThree from "../step-three";

@@ -10,7 +10,7 @@ import {
   ISubCategoryByParentIdResponse,
 } from '@/lib/utils/interfaces';
 
-// Hooks
+// Ganchos (Hooks)
 import { QueryResult, useQuery } from '@apollo/client';
 import { useTranslations } from 'next-intl';
 
@@ -22,7 +22,7 @@ export default function SubCategoriesPreiwModal({
   isSubCategoryModalOpen,
   setIsSubCategoryModalOpen,
 }: ISubCategoriesPreviewModalProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Queries

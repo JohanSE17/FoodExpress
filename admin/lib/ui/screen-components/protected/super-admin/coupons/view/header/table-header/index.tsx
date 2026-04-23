@@ -22,7 +22,7 @@ export default function CouponTableHeader({
   selectedActions,
   setSelectedActions,
 }: ICouponTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
 

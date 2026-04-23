@@ -1,8 +1,8 @@
 'use client';
-// Contexts
+// Contextos
 import { CREATE_CUISINE, EDIT_CUISINE, GET_CUISINES } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Components
@@ -21,7 +21,7 @@ import { Form, Formik } from 'formik';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { Sidebar } from 'primereact/sidebar';
 
-// Hooks
+// Ganchos (Hooks)
 import { ApolloError, useMutation } from '@apollo/client';
 import { useContext } from 'react';
 import CustomUploadImageComponent from '@/lib/ui/useable-components/upload/upload-image';
@@ -45,7 +45,7 @@ export default function CuisineForm({
     return str.charAt(0).toUpperCase() + str.slice(1);
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useContext(ToastContext);
 

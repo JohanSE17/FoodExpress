@@ -11,7 +11,7 @@ export default function TransactionHistoryTableHeader({
   dateFilters,
   setDateFilters,
 }: ITransactionHistoryTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

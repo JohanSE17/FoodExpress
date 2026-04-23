@@ -1,12 +1,12 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 // Screen
 
 export default function GeneralPage() {
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // Effects

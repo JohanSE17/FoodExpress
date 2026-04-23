@@ -1,5 +1,5 @@
 export const ar = {
-  // Navigation
+  // Navegación
   continue: "متابعة",
   Wallet: "المحفظة",
   Home: "الرئيسية",

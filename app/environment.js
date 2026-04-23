@@ -9,12 +9,15 @@ import * as Updates from 'expo-updates'
 
 const useEnvVars = (env = Updates.channel) => {
   const configuration = useContext(ConfigurationContext)
+  const GRAPHQL_URL = process.env.GRAPHQL_URL || 'https://foodexpressapi.snepsej.space/graphql'
+  const WS_GRAPHQL_URL = process.env.WS_GRAPHQL_URL || 'wss://foodexpressapi.snepsej.space/graphql'
+
   if (env === 'production' || env === 'staging') {
     return {
-      GRAPHQL_URL: 'https://aws-server-v2.foodexpress.com/graphql',
-      WS_GRAPHQL_URL: 'wss://aws-server-v2.foodexpress.com/graphql',
-      SERVER_URL: 'https://aws-server-v2.foodexpress.com/graphql',
-      SERVER_REST_URL: 'https://aws-server-v2.foodexpress.com/',
+      GRAPHQL_URL,
+      WS_GRAPHQL_URL,
+      SERVER_URL: GRAPHQL_URL,
+      SERVER_REST_URL: GRAPHQL_URL.replace('/graphql', '/'),
       IOS_CLIENT_ID_GOOGLE: configuration?.iOSClientID,
       ANDROID_CLIENT_ID_GOOGLE: configuration?.androidClientID,
       AMPLITUDE_API_KEY: configuration?.appAmplitudeApiKey,
@@ -29,10 +32,10 @@ const useEnvVars = (env = Updates.channel) => {
   }
 
   return {
-    GRAPHQL_URL: 'https://api.foodexpress.com/graphql',
-    WS_GRAPHQL_URL: 'wss://api.foodexpress.com/graphql',
-    SERVER_URL: 'https://api.foodexpress.com/graphql',
-    SERVER_REST_URL: 'https://api.foodexpress.com/',
+    GRAPHQL_URL,
+    WS_GRAPHQL_URL,
+    SERVER_URL: GRAPHQL_URL,
+    SERVER_REST_URL: GRAPHQL_URL.replace('/graphql', '/'),
     IOS_CLIENT_ID_GOOGLE: configuration?.iOSClientID,
     ANDROID_CLIENT_ID_GOOGLE: configuration?.androidClientID,
     AMPLITUDE_API_KEY: configuration?.appAmplitudeApiKey,

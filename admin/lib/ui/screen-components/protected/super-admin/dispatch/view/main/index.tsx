@@ -14,7 +14,7 @@ import {
 //Hooks
 import { useEffect, useRef, useState } from 'react';
 
-// Constants
+// Constantes
 import { generateDummyDispatchOrders } from '@/lib/utils/dummy';
 import { DISPATCH_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/dispatch-columns';
 import { useLazyQuery, useSubscription } from '@apollo/client';

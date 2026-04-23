@@ -9,7 +9,7 @@ export default function StaffTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IStaffTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

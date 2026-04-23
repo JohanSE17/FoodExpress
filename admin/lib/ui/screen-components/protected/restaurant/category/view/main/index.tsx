@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Prime React
@@ -44,10 +44,10 @@ export default function CategoryMain({
   setCategory,
   setIsAddSubCategoriesVisible,
 }: ICategoryMainComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     restaurantLayoutContextData,
     subCategoryParentId,
@@ -60,7 +60,7 @@ export default function CategoryMain({
   console.log("🚀 ~ shopType:", shopType)
   // console.log("🚀 ~ restaurantLayoutContextData:", restaurantLayoutContextData)
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   // State - Table
@@ -140,7 +140,7 @@ export default function CategoryMain({
     });
   }
 
-  // Constants
+  // Constantes
   const menuItems: IActionMenuItem<ICategory>[] = [
     {
       label: t('Edit'),

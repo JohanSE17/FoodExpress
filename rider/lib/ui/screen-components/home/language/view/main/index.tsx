@@ -1,4 +1,4 @@
-// Constants
+// Constantes
 import { useApptheme } from "@/lib/context/global/theme.context";
 import {
   CustomContinueButton,
@@ -10,7 +10,7 @@ import i18next, { changeLanguage } from "i18next";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Image, ScrollView, Text, View } from "react-native";
 
 export default function LanguageMain() {
@@ -18,7 +18,7 @@ export default function LanguageMain() {
   const [isSelected, setIsSelected] = useState(i18next.language);
   const [isChangingLang, setIsChangingLang] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 

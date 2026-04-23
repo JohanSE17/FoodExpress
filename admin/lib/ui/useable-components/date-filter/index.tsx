@@ -10,7 +10,7 @@ export default function DashboardDateFilter({
   dateFilter,
   setDateFilter,
 }: IDashboardDateFilterComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // State

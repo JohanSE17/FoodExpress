@@ -1,4 +1,4 @@
-// Screens
+// Pantallas
 export default function RootLayout({
   children,
 }: Readonly<{

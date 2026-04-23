@@ -3,7 +3,7 @@
 
 'use client';
 
-// Core
+// Núcleo (Core)
 import {
   useCallback,
   useContext,
@@ -33,10 +33,10 @@ import TextIconClickable from '@/lib/ui/useable-components/text-icon-clickable';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Layout
+// Diseño (Layout)
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from '@/lib/hooks/useUser';
 import { useRouter } from 'next/navigation';
 
@@ -46,7 +46,7 @@ import {
   LayoutContextProps,
 } from '@/lib/utils/interfaces';
 
-// Constants
+// Constantes
 import {
   'FoodExpress',
   languageTypes,
@@ -58,7 +58,7 @@ import {
 // Methods
 import { onUseLocalStorage } from '@/lib/utils/methods';
 
-// Styles
+// Estilos
 import classes from './app-bar.module.css';
 import { AppLogo } from '@/lib/utils/assets/svgs/logo';
 import { useQuery } from '@apollo/client';
@@ -69,7 +69,7 @@ import { TLocale } from '@/lib/utils/types/locale';
 import ThemeToggle from '@/lib/ui/useable-components/theme-button';
 
 const VendorAppTopbar = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const currentLocale = useLocale();
 
@@ -86,11 +86,11 @@ const VendorAppTopbar = () => {
   const menuRef = useRef<Menu>(null);
   const languageMenuRef = useRef<Menu>(null);
 
-  // Context
+  // Contexto
   const { showVendorSidebar } = useContext<LayoutContextProps>(LayoutContext);
   const { user, setUser } = useUserContext();
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   const [, startTransition] = useTransition();
 

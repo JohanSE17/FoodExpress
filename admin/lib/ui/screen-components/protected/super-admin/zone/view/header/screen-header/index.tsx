@@ -8,7 +8,7 @@ import { IZoneHeaderProps } from '@/lib/utils/interfaces';
 import { useTranslations } from 'next-intl';
 
 const ZoneHeader = ({ onSetAddFormVisible }: IZoneHeaderProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="w-full flex-shrink-0">

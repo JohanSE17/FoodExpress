@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Form, Formik } from 'formik';
 import { useContext, useMemo, useState } from 'react';
@@ -15,7 +15,7 @@ import {
   IRestaurantsByOwnerResponseGraphQL,
 } from '@/lib/utils/interfaces';
 
-// Core
+// Núcleo (Core)
 import { RestaurantContext } from '@/lib/context/super-admin/restaurant.context';
 import { IEditState, IShopType } from '@/lib/utils/interfaces';
 
@@ -31,7 +31,7 @@ import CustomUploadImageComponent from '@/lib/ui/useable-components/upload/uploa
 import ShopTypesForm from '@/lib/ui/screen-components/protected/super-admin/shop-types/form';
 import CuisineForm from '@/lib/ui/screen-components/protected/super-admin/cuisines/form';
 
-// Constants
+// Constantes
 import {
   2 * 1024 * 1024,
   500 * 1000,
@@ -95,10 +95,10 @@ export default function RestaurantDetails({
     order: -1,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { vendorId, onSetRestaurantContextData } =
     useContext(RestaurantContext);

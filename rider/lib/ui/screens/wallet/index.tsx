@@ -7,7 +7,7 @@ import {
 } from "@/lib/apollo/queries";
 import { useQuery } from "@apollo/client";
 export default function WalletScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const [refreshing, setRefreshing] = useState(false);
 

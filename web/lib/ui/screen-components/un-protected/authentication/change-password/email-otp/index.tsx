@@ -9,7 +9,7 @@ import useToast from "@/lib/hooks/useToast";
 import { IVerificationEmailForChangePasswordProps } from "@/lib/utils/interfaces";
 import EmailIcon from "@/public/assets/images/svgs/email";
 
-// Hooks
+// Ganchos (Hooks)
 import useVerifyOtp from "@/lib/hooks/useVerifyOtp";
 import { useTranslations } from "next-intl";
 
@@ -25,7 +25,7 @@ const VerificationEmailForChangePassword = ({
   const { showToast } = useToast();
   const { verifyOTP, error } = useVerifyOtp();
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // useEffect to handle resend email otp on first render

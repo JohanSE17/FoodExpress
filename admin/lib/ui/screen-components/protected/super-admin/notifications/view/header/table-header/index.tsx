@@ -9,7 +9,7 @@ export default function NotificationTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: ICuisineTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useMemo } from 'react';
 import { Form, Formik } from 'formik';
 import { ApolloCache, ApolloError, useMutation } from '@apollo/client';
@@ -33,7 +33,7 @@ import CustomNumberField from '@/lib/ui/useable-components/number-input-field';
 import CustomUploadImageComponent from '@/lib/ui/useable-components/upload/upload-image';
 import ShopTypesForm from '@/lib/ui/screen-components/protected/super-admin/shop-types/form';
 import CuisineForm from '@/lib/ui/screen-components/protected/super-admin/cuisines/form';
-// Constants and Utils
+// Constantes and Utils
 import {
   2 * 1024 * 1024,
   500 * 1000,
@@ -51,11 +51,11 @@ import {
   GET_RESTAURANTS_BY_OWNER,
 } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { VendorLayoutRestaurantContext } from '@/lib/context/vendor/restaurant.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import { useTranslations } from 'next-intl';
 import CustomPhoneTextField from '@/lib/ui/useable-components/phone-input-field';
@@ -86,7 +86,7 @@ export default function RestaurantDetails({
     order: -1,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const [isAddShopTypeVisible, setIsAddShopTypeVisible] = useState(false);
   const [isEditShopType, setIsEditShopType] = useState<IEditState<IShopType>>({
@@ -112,7 +112,7 @@ export default function RestaurantDetails({
     },
   });
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { vendorId, onSetRestaurantContextData } = useContext(
     VendorLayoutRestaurantContext

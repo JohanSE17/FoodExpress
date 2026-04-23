@@ -1,5 +1,5 @@
 export const nl = {
-  // Navigation
+  // Navegación
   continue: "Doorgaan",
   Wallet: "Portemonnee",
   Home: "Home",
@@ -29,7 +29,7 @@ export const nl = {
   faq7Description:
     "Helaas kunt u niet van meerdere restaurants in dezelfde bestelling kiezen. U kunt echter wel tegelijkertijd aparte bestellingen plaatsen bij verschillende restaurants.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Inkomstenoverzicht",
   Deliveries: "Bezorgingen",
   "Total Earnings": "Totale Inkomsten",
@@ -292,14 +292,14 @@ export const nl = {
   "Message sent": "Bericht verzonden",
   "Message failed": "Bericht verzenden mislukt",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Selecteer een datumbereik",
   "Please select a start date": "Selecteer een startdatum",
   "Please select an end date": "Selecteer een einddatum",
   "Start date cannot be after end date": "Startdatum kan niet na einddatum zijn",
   "Please log in to view your earnings": "Log in om uw inkomsten te bekijken",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Kan beschikbaarheid niet bijwerken",
   "rider name": "Bezorgersnaam",
   "rider id": "Bezorger ID",

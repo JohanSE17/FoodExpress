@@ -2,7 +2,7 @@ import { Stack } from "expo-router";
 import { useTranslation } from "react-i18next";
 
 export default function Layout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   return (
     <Stack

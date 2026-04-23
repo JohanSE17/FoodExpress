@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
 
 export const USERS_TABLE_COLUMNS = (openMenuId?: string | null, setOpenMenuId?: (id: string | null) => void) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return [
     { headerName: t('user_id'), propertyName: '_id' },

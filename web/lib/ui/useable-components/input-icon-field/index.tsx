@@ -14,10 +14,10 @@ import { InputText } from "primereact/inputtext";
 // Utilities
 import { twMerge } from "tailwind-merge";
 
-// Components
+// Componentes
 import InputSkeleton from "../custom-skeletons/inputfield.skeleton";
 
-// Styles
+// Estilos
 
 export default function CustomIconTextField({
   className,

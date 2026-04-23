@@ -3,7 +3,7 @@
 // Interfaces
 import { IUserAddress, IUserAddressProps } from "@/lib/utils/interfaces";
 
-// Core
+// Núcleo (Core)
 import React, { ReactNode, useContext } from "react";
 
 const UserAddressContext = React.createContext({} as IUserAddressProps);

@@ -3,7 +3,7 @@ import { getMessaging, Messaging, isSupported } from 'firebase/messaging';
 import { IFirebaseConfig } from './lib/utils/interfaces';
 
 export const initialize = (config: IFirebaseConfig): Messaging | null => {
-  // Check if any critical Firebase config variables are missing or empty
+  // Verificar si faltan variables críticas de configuración de Firebase o si están vacías
   if (
     !config.FIREBASE_KEY ||
     !config.FIREBASE_AUTH_DOMAIN ||
@@ -14,16 +14,16 @@ export const initialize = (config: IFirebaseConfig): Messaging | null => {
     !config.FIREBASE_MEASUREMENT_ID
   ) {
     console.error(
-      '🔥 Missing Firebase configuration values. Firebase will not be initialized.'
+      '🔥 Faltan valores en la configuración de Firebase. Firebase no será inicializado.'
     );
-    return null; // Return null if config is incomplete
+    return null; // Retornar null si la configuración está incompleta
   }
 
   try {
-    // Check if Firebase App is already initialized
+    // Verificar si la aplicación de Firebase ya está inicializada
     const existingApps = getApps();
     if (existingApps.length > 0) {
-      return getMessaging(existingApps[0]); // Use the first initialized app
+      return getMessaging(existingApps[0]); // Usar la primera aplicación inicializada
     }
 
     const firebaseConfig = {
@@ -36,7 +36,7 @@ export const initialize = (config: IFirebaseConfig): Messaging | null => {
       measurementId: config.FIREBASE_MEASUREMENT_ID,
     };
 
-    // Initialize Firebase
+    // Inicializar Firebase
     const app: FirebaseApp = initializeApp(firebaseConfig);
     return getMessaging(app);
   } catch (error) {

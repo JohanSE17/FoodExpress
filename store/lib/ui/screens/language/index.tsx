@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { SafeAreaView } from "react-native";
 
 // Componnets
@@ -6,7 +6,7 @@ import { useApptheme } from "@/lib/context/theme.context";
 import LanguageMain from "../../screen-components/home/language/view/main";
 
 const index = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

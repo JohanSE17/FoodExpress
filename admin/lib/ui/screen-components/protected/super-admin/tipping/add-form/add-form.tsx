@@ -32,7 +32,7 @@ const TippingAddForm = () => {
     fetchPolicy: 'cache-and-network',
   }) as IQueryResult<ITippingResponse | undefined, undefined>;
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // State
@@ -42,7 +42,7 @@ const TippingAddForm = () => {
     tip3: data?.tips?.tipVariations[2] ?? 3,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   // Mutation

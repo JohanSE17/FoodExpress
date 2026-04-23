@@ -3,7 +3,7 @@ import HeaderText from '@/lib/ui/useable-components/header-text';
 import { useTranslations } from 'use-intl';
 
 const TransactionHistoryRestaurantHeader = () => {
- // Hooks
+ // Ganchos (Hooks)
  const t = useTranslations();
 
   return (

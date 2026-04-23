@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-// Components
+// Componentes
 import OrderCardSkeleton from "@/lib/ui/useable-components/custom-skeletons/order.card.skelton";
 import OrderCard from "@/lib/ui/useable-components/order-card";
 import EmptyState from "@/lib/ui/useable-components/orders-empty-state";
@@ -12,7 +12,7 @@ import {
   IOrder,
   IPastOrdersProps,
 } from "@/lib/utils/interfaces/orders.interface";
-// Hooks
+// Ganchos (Hooks)
 import useToast from "@/lib/hooks/useToast";
 // Querys and Mutations
 import { useMutation } from "@apollo/client";

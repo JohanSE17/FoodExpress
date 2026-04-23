@@ -1,5 +1,5 @@
 export const mr = {
-  // Navigation
+  // Navegación
   continue: "सुरू ठेवा",
   Wallet: "वॉलेट",
   Home: "होम",

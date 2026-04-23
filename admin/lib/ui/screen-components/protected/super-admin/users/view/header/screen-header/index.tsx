@@ -4,7 +4,7 @@ import HeaderText from '@/lib/ui/useable-components/header-text';
 import CustomTextInput from '@/lib/ui/useable-components/custom-text-input';
 import CustomMultiSelectComponent from '@/lib/ui/useable-components/custom-multi-select';
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from 'next-intl';
 
 // Types
@@ -27,7 +27,7 @@ const UserHeader: React.FC<UserHeaderProps> = ({
   accountStatusFilter,
   setAccountStatusFilter,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   const registrationMethodOptions = [

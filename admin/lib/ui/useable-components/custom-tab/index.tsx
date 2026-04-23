@@ -10,7 +10,7 @@ const CustomTab = ({
   dateFilter,
   setDateFilter,
 }: ICustomTabProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div>

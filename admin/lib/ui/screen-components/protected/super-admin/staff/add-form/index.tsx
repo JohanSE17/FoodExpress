@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Form, Formik, FormikHelpers } from 'formik';
 
 // Prime React
@@ -39,7 +39,7 @@ export default function StaffAddForm({
   position = 'right',
   isAddStaffVisible,
 }: IStaffAddFormComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States
@@ -58,7 +58,7 @@ export default function StaffAddForm({
       : [],
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   // Mutation

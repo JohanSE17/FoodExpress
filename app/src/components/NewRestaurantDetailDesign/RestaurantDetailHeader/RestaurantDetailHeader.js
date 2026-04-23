@@ -11,12 +11,12 @@ import {
 } from '@expo/vector-icons'
 import { IconButton } from 'react-native-paper'
 
-// Components
+// Componentes
 import TextDefault from '../../Text/TextDefault/TextDefault'
 import FavoriteButton from '../../FavButton/FavouriteButton'
 import Bicycle from '../../../assets/SVG/Bicycle'
 
-// Utils
+// Utilidades
 import { scale } from '../../../utils/scaling'
 import styles from './styles'
 

@@ -1,5 +1,5 @@
 export const az = {
-  // Navigation
+  // Navegación
   continue: "Davam et",
   Wallet: "Pul kisəsi",
   Home: "Əsas səhifə",

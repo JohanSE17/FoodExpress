@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
@@ -6,7 +6,7 @@ import {
 import { useContext } from "react";
 import { Linking, Text, TouchableOpacity, View } from "react-native";
 
-// Context
+// Contexto
 import { AuthContext } from "@/lib/context/global/auth.context";
 
 // Drawer
@@ -31,7 +31,7 @@ import SpinnerComponent from "@/lib/ui/useable-components/spinner";
 export default function CustomDrawerContent(
   props: DrawerContentComponentProps
 ) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme } = useApptheme();
   const { t } = useTranslation();
   const { logout } = useContext(AuthContext);

@@ -1,10 +1,10 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import Image from 'next/image';
 import { useContext, useState } from 'react';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // Apollo Client
@@ -28,10 +28,10 @@ export const RESTAURANT_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IRestaurantResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
 
   // State

@@ -12,7 +12,7 @@ import FlashMessage from "react-native-flash-message";
 import setupApollo from "@/lib/apollo";
 import { initSentry } from "@/lib/utils/service";
 
-// Providers
+// Proveedores
 import { AuthProvider } from "@/lib/context/global/auth.context";
 import { ConfigurationProvider } from "@/lib/context/global/configuration.context";
 import { LocationProvider } from "@/lib/context/global/location.context";
@@ -43,7 +43,7 @@ SplashScreen?.preventAutoHideAsync();
 
 
 function RootLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   const [loaded] = useFonts({
     SpaceMono: require("../lib/assets/fonts/SpaceMono-Regular.ttf"),
     Inter: require("../lib/assets/fonts/Inter.ttf"),

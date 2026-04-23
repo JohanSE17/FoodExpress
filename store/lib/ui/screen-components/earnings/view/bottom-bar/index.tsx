@@ -1,4 +1,4 @@
-// Contexts
+// Contextos
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useApptheme } from "@/lib/context/theme.context";
 
@@ -12,7 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, TouchableOpacity, View } from "react-native";
 
 // React Native Modal
@@ -24,11 +24,11 @@ export default function EarningBottomBar({
   modalVisible,
   setModalVisible,
 }: IEarningBottomProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 
-  // Contexts
+  // Contextos
   const { setStoreOrderEarnings } = useUserContext();
   return (
     <ReactNativeModal

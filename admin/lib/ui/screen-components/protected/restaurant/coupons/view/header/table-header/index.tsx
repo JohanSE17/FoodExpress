@@ -9,7 +9,7 @@ export default function CouponsTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: ICouponRestaurantTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

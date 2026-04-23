@@ -6,7 +6,7 @@ import {
   ISoundContext,
   ISoundContextProviderProps,
 } from "@/lib/utils/interfaces";
-// Context/Hooks
+// Contexto/Hooks
 
 // Hook
 import useOrders from "@/lib/hooks/useOrders";
@@ -16,7 +16,7 @@ const SoundContext = createContext<ISoundContext>({} as ISoundContext);
 export const SoundProvider = ({ children }: ISoundContextProviderProps) => {
   // State
   const [sound, setSound] = useState<Audio.SoundObject | null>(null);
-  // Context/Hooks
+  // Contexto/Hooks
   const { hasNewOrders } = useOrders();
 
   // Handlers

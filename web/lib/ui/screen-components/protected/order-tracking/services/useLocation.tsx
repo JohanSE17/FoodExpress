@@ -9,7 +9,7 @@ import { useUserAddress } from "@/lib/context/address/address.context";
 import { onUseLocalStorage } from "@/lib/utils/methods/local-storage";
 
 function useLocation() {
-  // Hooks
+  // Ganchos (Hooks)
   const { location, setLocation } = useLocationContext();
   const { userAddress } = useUserAddress();
   const { restaurant: restaurantId } = useUser();

@@ -1,5 +1,5 @@
 import { ActivityIndicator } from "react-native";
-// Constants
+// Constantes
 import { Colors } from "@/lib/utils/constants";
 //Interface
 import { ISpinnerComponentProps } from "@/lib/utils/interfaces";

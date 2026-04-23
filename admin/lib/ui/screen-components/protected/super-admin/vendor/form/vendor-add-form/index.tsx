@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { ApolloError, useMutation } from '@apollo/client';
 import { Form, Formik } from 'formik';
 import { useContext, useEffect, useState } from 'react';
@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 // Prime React
 import { Sidebar } from 'primereact/sidebar';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { VendorContext } from '@/lib/context/super-admin/vendor.context';
 
@@ -18,7 +18,7 @@ import {
 } from '@/lib/utils/interfaces';
 import { IVendorForm } from '@/lib/utils/interfaces/forms';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods/error';
 
@@ -59,10 +59,10 @@ const initialValues: IVendorForm = {
 export default function VendorAddForm({
   position = 'right',
 }: IVendorAddFormComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     vendorFormVisible,
     onSetVendorFormVisible,

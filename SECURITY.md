@@ -1,32 +1,32 @@
-# Security Policy
+# Política de Seguridad
 
-## Supported Versions
+## Versiones Soportadas
 
-The following versions of the FoodExpress Multi Vendor Food Delivery System are currently supported with security updates:
+Las siguientes versiones del Sistema de Entrega de Comida Multi Vendor FoodExpress cuentan actualmente con el soporte de actualizaciones de seguridad:
 
-| Version | Supported          |
+| Versión | Soportada          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 
 
-## Reporting a Vulnerability
+## Reportar una Vulnerabilidad
 
-If you discover a security vulnerability, please follow the steps below to report it:
+Si descubre una vulnerabilidad de seguridad, siga estos pasos para reportarla:
 
-1. **Contact Us**: Report the vulnerability by emailing our security team at [sales@foodexpress.com](mailto:sales@foodexpress.com). Please provide as much information as possible, including:
-    - A detailed description of the vulnerability.
-    - Steps to reproduce the vulnerability.
-    - Any potential impact of the vulnerability.
-    - Suggested fixes, if any
+1. **Contacto**: Reporte la vulnerabilidad enviando un correo electrónico a nuestro equipo de seguridad a [sales@foodexpress.com](mailto:sales@foodexpress.com). Proporcione la mayor cantidad de información posible, incluyendo:
+    - Una descripción detallada de la vulnerabilidad.
+    - Pasos para reproducir la vulnerabilidad.
+    - Cualquier impacto potencial de la vulnerabilidad.
+    - Sugerencias de corrección, si las tiene.
 
-2. **Acknowledgment**: You will receive an acknowledgment of your report within 48 hours. Our security team will work to verify the vulnerability and determine its impact.
+2. **Reconocimiento**: Recibirá un acuse de recibo de su informe en un plazo de 48 horas. Nuestro equipo de seguridad trabajará para verificar la vulnerabilidad y determinar su impacto.
 
-3. **Updates**: You will receive regular updates on the status of your report. We aim to provide updates at least once a week.
+3. **Actualizaciones**: Recibirá actualizaciones regulares sobre el estado de su reporte. Nuestro objetivo es proporcionar actualizaciones al menos una vez por semana.
 
-4. **Resolution**: If the vulnerability is accepted, we will work on a fix and release a security update. You will be credited for the discovery unless you wish to remain anonymous. If the vulnerability is declined, we will provide a detailed explanation.
+4. **Resolución**: Si se acepta la vulnerabilidad, trabajaremos en una solución y lanzaremos una actualización de seguridad. Se le dará crédito por el descubrimiento, a menos que desee permanecer en el anonimato. Si la vulnerabilidad es rechazada, proporcionaremos una explicación detallada.
 
-5. **Disclosure**: To protect our users, we request that you do not disclose the vulnerability publicly until we have released a fix and informed our users.
+5. **Divulgación**: Para proteger a nuestros usuarios, solicitamos que no divulgue la vulnerabilidad públicamente hasta que hayamos lanzado una solución e informado a nuestros usuarios.
 
-Thank you for helping us keep the FoodExpress Multi Vendor Food Delivery System secure.
+Gracias por ayudarnos a mantener seguro el Sistema de Entrega de Comida Multi Vendor FoodExpress.
 
-For any other security-related questions or concerns, please contact us at [sales@foodexpress.com](mailto:sales@foodexpress.com).
+Para cualquier otra pregunta o inquietud relacionada con la seguridad, contáctenos en [sales@foodexpress.com](mailto:sales@foodexpress.com).

@@ -1,6 +1,6 @@
 "use client";
 
-// Core
+// Núcleo (Core)
 import { Sidebar } from "primereact/sidebar";
 import { Menu } from "primereact/menu";
 import { useRouter } from "next/navigation";
@@ -14,7 +14,7 @@ import {
   useTransition,
 } from "react";
 
-// Components
+// Componentes
 import Cart from "@/lib/ui/useable-components/cart";
 import UserAddressComponent from "@/lib/ui/useable-components/address";
 import { PaddingContainer } from "@/lib/ui/useable-components/containers";
@@ -95,7 +95,7 @@ const AppTopbar = ({ handleModalToggle }: IAppBarProps) => {
       setPosition(dir === "rtl" ? "left" : "right");
     }
   }, []);
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   const { GOOGLE_MAPS_KEY, CURRENCY_SYMBOL } = useConfig();
   const {

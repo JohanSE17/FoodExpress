@@ -1,6 +1,6 @@
 "use client";
 
-// Components
+// Componentes
 import { PaddingContainer } from "@/lib/ui/useable-components/containers";
 import GoogleMapTrackingComponent from "@/lib/ui/screen-components/protected/order-tracking/components/gm-tracking-comp";
 import TrackingOrderDetails from "../../../../screen-components/protected/order-tracking/components/tracking-order-details";
@@ -8,7 +8,7 @@ import TrackingHelpCard from "../../../../screen-components/protected/order-trac
 import TrackingStatusCard from "@/lib/ui/screen-components/protected/order-tracking/components/tracking-status-card";
 import TrackingOrderDetailsDummy from "../../../../screen-components/protected/order-tracking/components/tracking-order-details-dummy";
 
-// Services
+// Servicios
 import useLocation from "@/lib/ui/screen-components/protected/order-tracking/services/useLocation";
 import useTracking from "@/lib/ui/screen-components/protected/order-tracking/services/useTracking";
 import { useEffect, useMemo, useState } from "react";

@@ -1,17 +1,17 @@
-// Components
+// Componentes
 import { UPDATE_BUSINESS_DETAILS } from "@/lib/apollo/mutations/rider.mutation";
 import { RIDER_PROFILE } from "@/lib/apollo/queries";
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 import { CustomContinueButton } from "@/lib/ui/useable-components";
 
-// Hooks
+// Ganchos (Hooks)
 import { useMutation } from "@apollo/client";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Alert } from "react-native";
 
-// Core
+// Núcleo (Core)
 import {
   Keyboard,
   Text,
@@ -22,7 +22,7 @@ import {
 import { showMessage } from "react-native-flash-message";
 
 export default function BankManagementMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { userId, dataProfile } = useUserContext();
@@ -39,7 +39,7 @@ export default function BankManagementMain() {
     accountCode: "",
   });
 
-  // Mutations
+  // Mutaciones (Mutations)
   const [mutateBankDetails, { loading: areBankDetailsLoading }] = useMutation(
     UPDATE_BUSINESS_DETAILS,
     {

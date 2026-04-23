@@ -1,5 +1,5 @@
 "use client";
-// Core
+// Núcleo (Core)
 import { useLayoutEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 

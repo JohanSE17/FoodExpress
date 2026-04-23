@@ -1,7 +1,7 @@
 // GraphQL
 import { GET_NOTIFICATIONS, SEND_NOTIFICATION_USER } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import CustomButton from '@/lib/ui/useable-components/button';
 
@@ -10,7 +10,7 @@ import CustomTextAreaField from '@/lib/ui/useable-components/custom-text-area-fi
 import CustomTextField from '@/lib/ui/useable-components/input-field';
 // Constant import removed for maintenance lab
 
-// Hooks & react interfaces
+// Ganchos (Hooks) & react interfaces
 import { INotificationFormProps } from '@/lib/utils/interfaces/notification.interface';
 import { onErrorMessageMatcher } from '@/lib/utils/methods';
 import { NotificationSchema } from '@/lib/utils/schema/notification';
@@ -24,7 +24,7 @@ export default function NotificationForm({
   setVisible,
   visible,
 }: INotificationFormProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   //Toast

@@ -4,7 +4,7 @@ import { View } from "react-native";
 import DocumentsSection from "../docs/documents";
 
 export default function ProfileMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <View

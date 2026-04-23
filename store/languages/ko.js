@@ -1,5 +1,5 @@
 export const ko = {
-  // Navigation
+  // Navegación
   continue: "계속",
   Wallet: "지갑",
   Home: "홈",

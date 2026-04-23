@@ -21,7 +21,7 @@ export const LocationProvider = ({ children }: ILocationProvider) => {
   // Ref
   const isInitialRender = useRef(true);
 
-  // Hooks
+  // Ganchos (Hooks)
   const isOnline = useNetworkStatus();
 
   // API

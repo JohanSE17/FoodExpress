@@ -1,24 +1,24 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { ApolloProvider } from '@apollo/client';
 
 // Prime React
 import { PrimeReactProvider } from 'primereact/api';
 
-// Providers
+// Proveedores
 import { LayoutProvider } from '@/lib/context/global/layout.context';
 import { SidebarProvider } from '@/lib/context/global/sidebar.context';
 import { UserProvider } from '@/lib/context/global/user-context';
 
-// Context
+// Contexto
 import { ConfigurationProvider } from '@/lib/context/global/configuration.context';
 import { ToastProvider } from '@/lib/context/global/toast.context';
 
-// Configuration
+// Configuración
 import { FontawesomeConfig } from '@/lib/config';
 
-// Styles
+// Estilos
 import 'primereact/resources/primereact.css';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
@@ -36,7 +36,7 @@ export default function RootLayout({
   // Apollo
   const client = useSetupApollo();
 
-  // Constants
+  // Constantes
   const value = {
     ripple: true,
   };

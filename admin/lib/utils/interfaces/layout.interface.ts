@@ -8,7 +8,7 @@ import { IGlobalProps } from './global.interface';
 import { ICategory, ISubCategory } from './category.interface';
 import { IOptions } from './options.interface';
 
-// Layout
+// Diseño (Layout)
 export interface IProvider extends IGlobalProps {}
 
 /* Layoyt */

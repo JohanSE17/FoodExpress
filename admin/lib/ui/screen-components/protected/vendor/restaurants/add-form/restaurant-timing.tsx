@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { ErrorMessage, Form, Formik, FormikErrors } from 'formik';
 import { useContext } from 'react';
 
@@ -18,7 +18,7 @@ import {
   ITimingResponseGQL,
 } from '@/lib/utils/interfaces/timing.interface';
 
-// Context
+// Contexto
 import { VendorLayoutRestaurantContext } from '@/lib/context/vendor/restaurant.context';
 
 // Utilities and Constants
@@ -48,7 +48,7 @@ const RestaurantTiming = ({
   } = useContext(VendorLayoutRestaurantContext);
   const restaurantId = restaurantContextData?.id || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

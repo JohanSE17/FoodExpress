@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import LanguageMain from "../../screen-components/home/language/view/main";
 
 const index = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

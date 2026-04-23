@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useState } from 'react';
 
 // Custom Components
@@ -19,7 +19,7 @@ export const STAFF_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IStaffResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

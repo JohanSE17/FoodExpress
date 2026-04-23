@@ -11,7 +11,7 @@ const dateOptions: Intl.DateTimeFormatOptions = {
 };
 
 export const ORDER_COLUMNS = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return [
     {

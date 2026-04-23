@@ -1,5 +1,5 @@
 export const jp = {
-  // Navigation
+  // Navegación
   continue: "続ける",
   Wallet: "ウォレット",
   Home: "ホーム",
@@ -29,7 +29,7 @@ export const jp = {
   faq7Description:
     "申し訳ありませんが、同じ注文内で複数のレストランから選択することはできません。ただし、異なるレストランから別々の注文を同時に行うことはできます。",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "収益概要",
   Deliveries: "配送件数",
   "Total Earnings": "総収益",
@@ -292,14 +292,14 @@ export const jp = {
   "Message sent": "メッセージを送信しました",
   "Message failed": "メッセージの送信に失敗しました",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "日付範囲を選択してください",
   "Please select a start date": "開始日を選択してください",
   "Please select an end date": "終了日を選択してください",
   "Start date cannot be after end date": "開始日は終了日より後にできません",
   "Please log in to view your earnings": "収益を表示するにはログインしてください",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "利用可能状況を更新できません",
   "rider name": "ライダー名",
   "rider id": "ライダーID",

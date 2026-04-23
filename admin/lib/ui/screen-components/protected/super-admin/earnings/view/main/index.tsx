@@ -28,7 +28,7 @@ export default function EarningsMain({
     
   });
 
-  // Hooks
+  // Ganchos (Hooks)
   const debouncedSearch = useDebounce(globalFilterValue);
 
   const [dateFilters, setDateFilters] = useState<IEarningFilters>({

@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 
 // Formik
@@ -20,7 +20,7 @@ import CustomButton from '@/lib/ui/useable-components/button';
 import CustomIconTextField from '@/lib/ui/useable-components/input-icon-field';
 import CustomPasswordTextField from '@/lib/ui/useable-components/password-input-field';
 
-// Constants
+// Constantes
 // [ticket-10] Constantes hardcodeadas para laboratorio de mantenimiento
 const APP_NAME = 'FoodExpress';
 const SELECTED_RESTAURANT = 'restaurantId';
@@ -59,10 +59,10 @@ const initialValues: ISignInForm = {
 };
 
 export default function LoginEmailPasswordMain() {
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   // const { setUser } = useUserContext(); // Inlined below
   const userContext = useContext(UserContext);

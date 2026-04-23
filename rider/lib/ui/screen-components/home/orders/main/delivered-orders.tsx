@@ -20,7 +20,7 @@ function HomeDeliveredOrdersMain(props: IOrderTabsComponentProps) {
   // Props
   const { route } = props;
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const {

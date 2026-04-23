@@ -1,15 +1,15 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import { useContext, useMemo, useRef } from 'react';
 
 // API and GraphQL
 import { GET_VENDORS } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 
-// Context
+// Contexto
 import { RestaurantsContext } from '@/lib/context/super-admin/restaurants.context';
 
 // Interfaces
@@ -36,13 +36,13 @@ import { useTranslations } from 'next-intl';
 const RestaurantsForm = ({
   position = 'right',
 }: IRestaurantsAddFormComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Ref
   const stepperRef = useRef(null);
 
-  // Context
+  // Contexto
   const {
     isRestaurantsFormVisible,
     onRestaurantsFormVisible,

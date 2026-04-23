@@ -3,7 +3,7 @@
 // formik imports
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-// Components from primeReact
+// Componentes from primeReact
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Checkbox } from "primereact/checkbox";

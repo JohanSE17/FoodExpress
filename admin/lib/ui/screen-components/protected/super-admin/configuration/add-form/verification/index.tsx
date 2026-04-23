@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components
@@ -8,7 +8,7 @@ import ConfigCard from '../../view/card';
 // Toast
 import useToast from '@/lib/hooks/useToast';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 // Interfaces and Types
@@ -23,7 +23,7 @@ import { useMutation } from '@apollo/client';
 import CustomInputSwitch from '@/lib/ui/useable-components/custom-input-switch';
 
 const VerificationAddForm = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const {
     SKIP_EMAIL_VERIFICATION,
     SKIP_MOBILE_VERIFICATION,

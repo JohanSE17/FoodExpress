@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import {
   LazyQueryResultTuple,
   QueryResult,
@@ -35,12 +35,12 @@ import { FOODS_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/f
 import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import { generateDummyFoods } from '@/lib/utils/dummy';
 
-// Context
+// Contexto
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import { FoodsContext } from '@/lib/context/restaurant/foods.context';
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
-// Hooks
+// Ganchos (Hooks)
 import useToast from '@/lib/hooks/useToast';
 
 // GraphQL
@@ -56,12 +56,12 @@ import {
 import { useTranslations } from 'next-intl';
 
 export default function FoodsMain() {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const { onSetFoodContextData, onFoodFormVisible } = useContext(FoodsContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 
@@ -194,7 +194,7 @@ export default function FoodsMain() {
     });
   }
 
-  // Constants
+  // Constantes
   const menuItems: IActionMenuItem<IFoodNew>[] = [
     {
       label: t('Edit'),

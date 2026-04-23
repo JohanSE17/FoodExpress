@@ -40,7 +40,7 @@ const generateTimeSlots = () => {
 const timeOptions = generateTimeSlots();
 
 export default function ScheduleScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   // States
@@ -57,7 +57,7 @@ export default function ScheduleScreen() {
   const translateYAnim = useRef(new Animated.Value(20)).current; // Slide up
   const parallaxAnim = useRef(new Animated.Value(0)).current; // Parallax effect
 
-  // Context
+  // Contexto
   const { dataProfile, refetchProfile, loadingProfile } = useUserContext();
 
   // API Hook

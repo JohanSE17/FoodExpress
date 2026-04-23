@@ -5,7 +5,7 @@ import { RightArrowIcon } from "@/lib/ui/useable-components/svg";
 
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { useApptheme } from "@/lib/context/theme.context";
 import { Text, TouchableOpacity, View } from "react-native";
 
@@ -19,7 +19,7 @@ export default function EarningStack({
   totalOrderAmount,
   isLast,
 }: IEarningStackProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 

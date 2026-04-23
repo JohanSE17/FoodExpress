@@ -4,10 +4,10 @@
 import { IPhoneTextFieldProps } from "@/lib/utils/interfaces";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-// Hooks
+// Ganchos (Hooks)
 import { useState } from "react";
 
-// Components & Skeletons
+// Componentes & Skeletons
 import InputSkeleton from "../custom-skeletons/inputfield.skeleton";
 
 export default function CustomPhoneTextField({

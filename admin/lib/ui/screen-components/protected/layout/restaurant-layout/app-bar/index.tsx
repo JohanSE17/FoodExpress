@@ -3,7 +3,7 @@
 
 'use client';
 
-// Core
+// Núcleo (Core)
 import {
   useCallback,
   useContext,
@@ -38,10 +38,10 @@ import { Menu } from 'primereact/menu';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Layout
+// Diseño (Layout)
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from '@/lib/hooks/useUser';
 
 // Interface/Types
@@ -50,7 +50,7 @@ import {
   LayoutContextProps,
 } from '@/lib/utils/interfaces';
 
-// Constants
+// Constantes
 import {
   'FoodExpress',
   languageTypes,
@@ -62,7 +62,7 @@ import {
 // Methods
 import { onUseLocalStorage } from '@/lib/utils/methods';
 
-// Styles
+// Estilos
 import classes from './app-bar.module.css';
 import { AppLogo } from '@/lib/utils/assets/svgs/logo';
 import { useQuery } from '@apollo/client';
@@ -73,7 +73,7 @@ import { setUserLocale } from '@/lib/utils/methods/locale';
 import ThemeToggle from '@/lib/ui/useable-components/theme-button';
 
 const AppTopbar = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const router = useRouter();
   const [, startTransition] = useTransition();
@@ -102,7 +102,7 @@ const AppTopbar = () => {
   const menuRef = useRef<Menu>(null);
   const languageMenuRef = useRef<Menu>(null);
 
-  // Context
+  // Contexto
   const { showRestaurantSidebar } =
     useContext<LayoutContextProps>(LayoutContext);
   const { user, setUser } = useUserContext();

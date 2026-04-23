@@ -1,7 +1,7 @@
 import { memo, useContext } from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 
-// Components
+// Componentes
 import { IconSymbol } from "@/lib/ui/useable-components/IconSymbol";
 // Interface
 import { IOrderComponentProps } from "@/lib/utils/interfaces/interface";
@@ -13,7 +13,7 @@ import useOrder from "@/lib/hooks/useOrder";
 // Cion
 import { BikeRidingIcon, ChatIcon, ClockIcon } from "../svg";
 
-// Hooks
+// Ganchos (Hooks)
 import { ConfigurationContext } from "@/lib/context/global/configuration.context";
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { IOrder } from "@/lib/utils/interfaces/order.interface";
@@ -35,7 +35,7 @@ const Order = ({
   user,
   tab,
 }: IOrderComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
   const { time, mutateAssignOrder, loadingAssignOrder } = useOrder({

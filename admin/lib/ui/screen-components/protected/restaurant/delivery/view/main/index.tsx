@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import React, { useContext } from 'react';
 
@@ -7,7 +7,7 @@ import CustomButton from '@/lib/ui/useable-components/button';
 import CustomNumberField from '@/lib/ui/useable-components/number-input-field';
 import UpdateRestaurantLocationBounds from '@/lib/ui/useable-components/google-maps/location-bounds-profile-restaurants';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 import { ProfileContext } from '@/lib/context/restaurant/profile.context';

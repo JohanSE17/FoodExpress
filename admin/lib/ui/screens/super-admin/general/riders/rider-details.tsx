@@ -3,7 +3,7 @@
 // GraphQL Query
 import { GET_RIDER } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
@@ -19,7 +19,7 @@ import VehicleDetails from '@/lib/ui/screen-components/protected/super-admin/rid
 import HeaderText from '@/lib/ui/useable-components/header-text';
 
 export default function RidersDetailScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { id } = useParams();
 

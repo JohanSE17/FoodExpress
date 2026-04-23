@@ -1,4 +1,4 @@
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomTextField from "@/lib/ui/useable-components/input-field";
 
@@ -8,7 +8,7 @@ import { ISaveEmailAddressProps } from "@/lib/utils/interfaces";
 // Icons
 import EmailIcon from "@/public/assets/images/svgs/email";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import useToast from "@/lib/hooks/useToast";
 import useUser from "@/lib/hooks/useUser";
@@ -17,7 +17,7 @@ import { useTranslations } from "next-intl";
 export default function SaveEmailAddress({
   handleChangePanel,
 }: ISaveEmailAddressProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {showToast} = useToast();
   const { setUser, user, sendOtpToEmailAddress, setIsAuthModalVisible, isLoading} = useAuth();

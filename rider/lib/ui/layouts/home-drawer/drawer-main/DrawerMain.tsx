@@ -1,7 +1,7 @@
 // Expo
 import { Drawer } from "expo-router/drawer";
 
-// Components
+// Componentes
 import CustomDrawerContent from "@/lib/ui/screen-components/home/drawer/drawer-content";
 
 // Icons
@@ -16,12 +16,12 @@ import {
 } from "@/lib/ui/useable-components/svg";
 import { Ionicons } from "@expo/vector-icons";
 
-// Core
+// Núcleo (Core)
 import { ColorSchemeName, TouchableOpacity } from "react-native";
 
 // React Navigation
 import { DrawerActions } from "@react-navigation/native";
-// Hooks
+// Ganchos (Hooks)
 
 import { AppTheme } from "@/lib/utils/interfaces/app-theme";
 import { memo } from "react";

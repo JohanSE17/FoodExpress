@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { useRouter } from "next/navigation";
 
-// Context
+// Contexto
 import { GoogleMapsContext } from "@/lib/context/global/google-maps.context";
 
 // Hook
@@ -20,7 +20,7 @@ const CitySearch: React.FC = () => {
   const router = useRouter();
   const { setUserAddress } = useUserAddress();
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // States

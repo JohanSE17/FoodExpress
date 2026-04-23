@@ -19,7 +19,7 @@ import useDebounce from '@/lib/hooks/useDebounce';
 export default function EarningsRestaurantMain({
   setTotalEarnings,
 }: IEarningsRestaurantMainComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States
@@ -34,7 +34,7 @@ export default function EarningsRestaurantMain({
     },
   });
 
-  // Hooks
+  // Ganchos (Hooks)
   const debouncedSearch = useDebounce(globalFilterValue);
 
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);

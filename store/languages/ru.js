@@ -1,5 +1,5 @@
 export const ru = {
-  // Navigation
+  // Navegación
   continue: "Продолжить",
   Wallet: "Кошелек",
   Home: "Главная",

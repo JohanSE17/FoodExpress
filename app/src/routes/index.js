@@ -301,7 +301,7 @@ function AppContainer() {
     [lastNotificationResponse]
   )
 
-  // Handlers
+  // Controladores (Handlers)
   const init = async () => {
     try {
       const permission_state = await LocationImport.getForegroundPermissionsAsync()

@@ -1,6 +1,6 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import { useContext, useRef } from 'react';
 
 // Interfaces
@@ -14,7 +14,7 @@ import { Sidebar } from 'primereact/sidebar';
 import { Stepper } from 'primereact/stepper';
 import { StepperPanel } from 'primereact/stepperpanel';
 
-// Context
+// Contexto
 import { VendorLayoutRestaurantContext } from '@/lib/context/vendor/restaurant.context';
 
 // Local components
@@ -26,13 +26,13 @@ import { useTranslations } from 'next-intl';
 const VendorRestaurantsForm = ({
   position = 'right',
 }: IRestaurantsAddFormComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Ref
   const stepperRef = useRef(null);
 
-  // Context
+  // Contexto
   const {
     isRestaurantFormVisible,
     onSetRestaurantFormVisible,

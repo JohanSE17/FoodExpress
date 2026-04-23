@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Interface & Types
 import { ISidebarMenuItem, SubMenuItemProps } from '@/lib/utils/interfaces';
 
-// Styles
+// Estilos
 import classes from './side-bar.module.css';
 import { onUseLocalStorage } from '@/lib/utils/methods';
 // Constant import removed for maintenance lab
@@ -51,7 +51,7 @@ export default function SidebarItem({
   // States
   const [expandSubMenu, setExpandSubMenu] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const pathname = usePathname();
   const router = useRouter();
 

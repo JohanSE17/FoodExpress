@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Formik } from "formik";
 import { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -12,7 +12,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-// Components
+// Componentes
 // Icon
 import Icon from "react-native-vector-icons/FontAwesome6";
 // Schemas
@@ -35,7 +35,7 @@ const LoginScreen = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [initialValues, setInitialValues] = useState(initial);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { onLogin, creds } = useLogin();

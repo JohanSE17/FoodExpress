@@ -1,6 +1,6 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import { useContext, useRef } from 'react';
 
 // PrimeReact components
@@ -8,7 +8,7 @@ import { Sidebar } from 'primereact/sidebar';
 import { Stepper } from 'primereact/stepper';
 import { StepperPanel } from 'primereact/stepperpanel';
 
-// Context
+// Contexto
 import { FoodsContext } from '@/lib/context/restaurant/foods.context';
 
 // Interfaces
@@ -20,13 +20,13 @@ import VariationAddForm from './variations';
 import { useTranslations } from 'next-intl';
 
 const FoodForm = ({ position = 'right' }: IFoodAddFormComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Ref
   const stepperRef = useRef(null);
 
-  // Context
+  // Contexto
   const {
     activeIndex,
     isFoodFormVisible,

@@ -9,7 +9,7 @@ import { IItem, IReview } from '@/lib/utils/interfaces';
 import { useTranslations } from 'next-intl';
 
 const RatingMain: React.FC = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

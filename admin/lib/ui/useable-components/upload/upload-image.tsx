@@ -1,4 +1,4 @@
-// Contexts
+// Contextos
 // import { ConfigurationContext } from '@/lib/context/global/configuration.context';
 import { ToastContext } from '@/lib/context/global/toast.context';
 
@@ -12,10 +12,10 @@ import {
 } from '@/lib/utils/interfaces';
 import Image from 'next/image';
 
-// Hooks
+// Ganchos (Hooks)
 import { memo, useCallback, useContext, useState } from 'react';
 
-// Utils
+// Utilidades
 import { compressImage, compressVideo } from '@/lib/utils/methods';
 
 // Components
@@ -52,7 +52,7 @@ function CustomUploadImageComponent({
     'video/mp4',
   ],
 }: IImageUploadComponentProps) {
-  // Context
+  // Contexto
   // const configuration: IConfiguration | undefined =
   //   useContext(ConfigurationContext);
   const { showToast } = useContext(ToastContext);
@@ -69,7 +69,7 @@ function CustomUploadImageComponent({
     msg: '',
   });
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Filter Files

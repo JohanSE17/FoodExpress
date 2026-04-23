@@ -19,7 +19,7 @@ import { IFilterType } from '@/lib/utils/interfaces/table.interface';
 // Prime react
 import { FilterMatchMode } from 'primereact/api';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useMutation } from '@apollo/client';
@@ -30,7 +30,7 @@ import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import ShopTypesTableHeader from '../header/table-header';
 import Table from '@/lib/ui/useable-components/table';
 
-// Constants
+// Constantes
 import { generateDummyShopTypes } from '@/lib/utils/dummy';
 
 // Table COlumns
@@ -41,7 +41,7 @@ export default function ShopTypesMain({
   isEditing,
   setIsEditing,
 }: IShopTypesMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Toast

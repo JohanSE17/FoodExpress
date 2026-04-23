@@ -8,7 +8,7 @@ import {
 } from './global.interface';
 import { IProvider } from './layout.interface';
 
-// Context
+// Contexto
 export interface IFoodContextPropData {
   food?: {
     _id: string;

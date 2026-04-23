@@ -1,10 +1,10 @@
-// Components
+// Componentes
 import CustomPhoneTextField from "@/lib/ui/useable-components/phone-input-field";
 
 // Icons
 import PhoneIcon from "@/lib/utils/assets/svg/phone";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import useToast from "@/lib/hooks/useToast";
 import useUser from "@/lib/hooks/useUser";
@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 export default function SavePhoneNumber() {
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { sendOtpToPhoneNumber, setUser, user, isLoading } = useAuth();
   const {profile}=useUser();

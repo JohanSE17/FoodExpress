@@ -1,10 +1,10 @@
-// Core
+// Núcleo (Core)
 import { Animated } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 export default function CustomSpinner() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   // Spin Value

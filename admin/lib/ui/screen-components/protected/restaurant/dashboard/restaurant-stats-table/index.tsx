@@ -16,22 +16,22 @@ import {
 import DashboardRestaurantStatsTable from '@/lib/ui/useable-components/dashboard-restaurant-stats-table';
 import HeaderText from '@/lib/ui/useable-components/header-text';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 import DashboardStatsTableSkeleton from '@/lib/ui/useable-components/custom-skeletons/dashboard.stats.table.skeleton';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 import { useTranslations } from 'next-intl';
 
 export default function RestaurantStatesTable({
   dateFilter,
 }: IDashboardRestaurantStatesTableComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENCY_CODE } = useConfiguration();
 
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
 
   // API
@@ -61,7 +61,7 @@ export default function RestaurantStatesTable({
     );
   }, [salesDetailsData]);
 
-  // Constants
+  // Constantes
   const paymentMethod = Object.keys(
     dashboardOrderSalesDetailsByPaymentMethod ?? {}
   );

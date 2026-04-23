@@ -30,7 +30,7 @@ import { FlashMessageComponent } from "../ui/useable-components";
 import { IOrder } from "../utils/interfaces/order.interface";
 
 const useDetails = (orderData: IOrder) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { assignedOrders, loadingAssigned, userId } = useContext(UserContext);
   const [order, setOrder] = useState<IOrder>(orderData);

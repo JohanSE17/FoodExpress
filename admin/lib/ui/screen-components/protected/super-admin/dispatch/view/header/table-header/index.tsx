@@ -22,7 +22,7 @@ export default function DispatchTableHeader({
   search,
   setSearch,
 }: IDispatchTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {theme } = useTheme()
   // Ref

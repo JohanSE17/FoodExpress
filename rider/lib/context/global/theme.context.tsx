@@ -1,4 +1,4 @@
-// Constants
+// Constantes
 import { Colors } from "@/lib/utils/constants";
 
 // Interfaces & Types
@@ -8,7 +8,7 @@ import { app_theme } from "@/lib/utils/types/theme";
 // React Native AsyncStorage
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Hooks
+// Ganchos (Hooks)
 import {
   createContext,
   ReactNode,
@@ -17,10 +17,10 @@ import {
   useState,
 } from "react";
 
-// Core
+// Núcleo (Core)
 import { Appearance } from "react-native";
 
-// Context
+// Contexto
 const ThemeContext = createContext<AppThemeContext>({
   currentTheme: "light",
   toggleTheme: () => {},

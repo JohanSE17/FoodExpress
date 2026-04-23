@@ -1,15 +1,15 @@
 // Moti
 import { MotiScrollView, MotiView } from "moti";
 
-// Components
+// Componentes
 import EarningStackSkeleton from "../earnings/earning-stack";
 import EarningSummaryHeader from "./earnings-summary-header";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 
 export default function EarningsSummaryMainLoading() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <MotiView style={{ backgroundColor: appTheme.screenBackground }}>

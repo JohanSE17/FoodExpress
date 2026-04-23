@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-// Core
+// Núcleo (Core)
 import { useContext, useEffect, useState } from "react";
 
 import { NetworkStatus } from "@apollo/client";
 import { Dimensions, Platform, StyleSheet, Text, View } from "react-native";
 
-// Components
+// Componentes
 import Order from "@/lib/ui/useable-components/order";
 import { WalletIcon } from "@/lib/ui/useable-components/svg";
-// Context
+// Contexto
 import UserContext from "@/lib/context/global/user.context";
-// Constants
+// Constantes
 import { NO_ORDER_PROMPT } from "@/lib/utils/constants";
 // Interface
 import { IOrderTabsComponentProps } from "@/lib/utils/interfaces";
@@ -27,7 +27,7 @@ function HomeProcessingOrdersMain(props: IOrderTabsComponentProps) {
   // Props
   const { route } = props;
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const {

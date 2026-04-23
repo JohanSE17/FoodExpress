@@ -10,7 +10,7 @@ export default function HelpAccordian({
   heading: string;
   children: ReactNode;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);

@@ -3,7 +3,7 @@
 
 'use client';
 
-// Core
+// Núcleo (Core)
 import { usePathname, useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -39,17 +39,17 @@ import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import { Menu } from 'primereact/menu';
 import { Skeleton } from 'primereact/skeleton';
 
-// Layout
+// Diseño (Layout)
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from '@/lib/hooks/useUser';
 
 // Interface/Types
 import { LayoutContextProps } from '@/lib/utils/interfaces';
 import { IWebNotification } from '@/lib/utils/interfaces/notification.interface';
 
-// Constants
+// Constantes
 import {
   'FoodExpress',
   languageTypes,
@@ -62,7 +62,7 @@ import {
 import { onUseLocalStorage } from '@/lib/utils/methods';
 import { timeAgo } from '@/lib/utils/methods/timeAgo';
 
-// Styles
+// Estilos
 import classes from './app-bar.module.css';
 import { AppLogo } from '@/lib/utils/assets/svgs/logo';
 import { useLocale, useTranslations } from 'next-intl';
@@ -85,7 +85,7 @@ const AppTopbar = () => {
   const [isLogoutModalVisible, setLogoutModalVisible] = useState(false); // New state for the modal
   const [notifications, setNotifications] = useState<IWebNotification[]>([]);
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const pathname = usePathname();
   const router = useRouter();
@@ -100,7 +100,7 @@ const AppTopbar = () => {
   const ntfnDropdownRef = useRef<HTMLDivElement>(null);
   const languageMenuRef = useRef<Menu>(null);
 
-  // Context
+  // Contexto
   const { showSuperAdminSidebar } =
     useContext<LayoutContextProps>(LayoutContext);
   const { user, setUser } = useUserContext();

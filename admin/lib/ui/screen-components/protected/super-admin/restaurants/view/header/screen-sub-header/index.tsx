@@ -3,13 +3,13 @@
 // React imports
 import { useContext } from 'react';
 
-// Context imports
+// Contexto imports
 import CustomTab from '@/lib/ui/useable-components/custom-tab';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 
-// Context
+// Contexto
 import { RestaurantsContext } from '@/lib/context/super-admin/restaurants.context';
 
 export default function RestaurantsScreenSubHeader() {

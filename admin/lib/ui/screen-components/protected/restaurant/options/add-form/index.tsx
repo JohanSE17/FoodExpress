@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { FieldArray, Form, Formik, FormikErrors } from 'formik';
 
 // Prime React
@@ -61,17 +61,17 @@ export default function OptionAddForm({
   position = 'right',
   isAddOptionsVisible,
 }: IOptionsAddFormComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
   const { theme } = useTheme();
 
-  // Context
+  // Contexto
   const { CURRENT_SYMBOL } = useConfiguration();
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
-  // Constants
+  // Constantes
   const initialValues = {
     options: [
       {

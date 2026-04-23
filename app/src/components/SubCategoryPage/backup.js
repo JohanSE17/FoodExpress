@@ -221,7 +221,7 @@ const CategoryPage = ({ route, navigation }) => {
     )
   }
 
-  // Constants
+  // Constantes
   const total_filtered_items = filteredFood.length
 
   // Memoized List

@@ -9,7 +9,7 @@ import { useConfiguration } from '@/lib/hooks/useConfiguration';
 const EarningsSuperAdminHeader = ({
   earnings,
 }: IEarningsHeaderComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENT_SYMBOL } = useConfiguration();
   // Helper function to format numbers to 2 decimal places

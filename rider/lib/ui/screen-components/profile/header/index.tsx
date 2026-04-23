@@ -1,15 +1,15 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 
-// Constants
+// Constantes
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, View } from "react-native";
 
 export default function ProfileHeader() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { dataProfile } = useUserContext();

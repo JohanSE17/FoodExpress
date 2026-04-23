@@ -216,15 +216,15 @@ const CategoryPage = ({ route, navigation }) => {
   const translateX = useSharedValue(0)
   const opacity = useSharedValue(1)
 
-  // Hooks
+  // Ganchos (Hooks)
   const { t, i18n } = useTranslation()
 
-  // Context
+  // Contexto
   const configuration = useContext(ConfigurationContext)
   const themeContext = useContext(ThemeContext)
   const { cartCount } = useContext(UserContext)
 
-  // Constants
+  // Constantes
   const currentTheme = {
     isRTL: i18n.dir() === 'rtl',
     ...theme[themeContext.ThemeValue]
@@ -238,7 +238,7 @@ const CategoryPage = ({ route, navigation }) => {
   // Cart animation
   const scaleValue = useRef(new Animated.Value(1)).current
 
-  // Handlers
+  // Controladores (Handlers)
   const handleOpenSearch = () => {
     setIsSearchVisible(true)
   }

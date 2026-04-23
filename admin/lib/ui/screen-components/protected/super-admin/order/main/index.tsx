@@ -1,4 +1,4 @@
-// Hooks
+// Ganchos (Hooks)
 import { useState, useMemo, useEffect } from 'react';
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import useDebounce from '@/lib/hooks/useDebounce';

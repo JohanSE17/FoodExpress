@@ -4,7 +4,7 @@ import { ICustomButtonProps } from '@/lib/utils/interfaces';
 // Prime React
 import { Button } from 'primereact/button';
 
-// Styles
+// Estilos
 import classes from './button.module.css';
 
 export default function CustomButton({

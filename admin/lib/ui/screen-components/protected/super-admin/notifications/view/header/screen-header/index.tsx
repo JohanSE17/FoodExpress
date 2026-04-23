@@ -10,7 +10,7 @@ import { useTranslations } from 'next-intl';
 export default function NotificationHeader({
   handleButtonClick,
 }: INotificationHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

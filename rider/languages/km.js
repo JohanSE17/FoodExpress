@@ -1,5 +1,5 @@
 export const km = {
-  // Navigation
+  // Navegación
   continue: "បន្ត",
   Wallet: "កាបូបអេឡិចត្រូនិក",
   Home: "ទំព័រដើម",
@@ -29,7 +29,7 @@ export const km = {
   faq7Description:
     "អភ័យទោស អ្នកមិនអាចបញ្ជាទិញពីភោជនីយដ្ឋានច្រើនក្នុងការបញ្ជាទិញតែមួយបានទេ ប៉ុន្តែអ្នកអាចបញ្ជាទិញដោយឡែក។",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "សង្ខេបចំណូល",
   Deliveries: "ការដឹកជញ្ជូន",
   "Total Earnings": "ចំណូលសរុប",
@@ -252,7 +252,7 @@ export const km = {
   "Message sent": "បានផ្ញើសារ",
   "Message failed": "បរាជ័យក្នុងការផ្ញើសារ",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "សូមជ្រើសរើសចន្លោះកាលបរិច្ឆេទ",
   "Please select a start date": "សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម",
   "Please select an end date": "សូមជ្រើសរើសកាលបរិច្ឆេទបញ្ចប់",
@@ -264,12 +264,12 @@ export const km = {
   "whatsAppText": "ទាក់ទងយើងតាម WhatsApp",
   "Pull down to refresh": "ទាញចុះដើម្បីធ្វើបច្ចុប្បន្នភាព",
 
-  // Order Details
+  // Pedido Details
   "ITEMS AND QUANTITY": "ទំនិញនិងបរិមាណ",
   "PRICE": "តម្លៃ",
   "Total": "សរុប",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "មិនអាចធ្វើបច្ចុប្បន្នភាពភាពអាចរកបាន",
   "rider name": "ឈ្មោះអ្នកជិះ",
   "rider id": "អត្តលេខអ្នកជិះ",

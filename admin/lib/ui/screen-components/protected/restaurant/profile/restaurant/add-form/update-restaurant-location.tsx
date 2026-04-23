@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import { useContext, useState } from 'react';
 
@@ -31,7 +31,7 @@ export default function UpdateRestaurantLocation({
     order: -1,
   };
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // States

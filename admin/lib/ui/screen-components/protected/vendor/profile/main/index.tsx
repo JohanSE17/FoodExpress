@@ -1,17 +1,17 @@
-// Core
+// Núcleo (Core)
 import { ApolloError, useMutation } from '@apollo/client';
 import { Form, Formik } from 'formik';
 import { useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { ProfileContext } from '@/lib/context/vendor/profile.context';
 
 // Interface and Types
 import { IVendorForm } from '@/lib/utils/interfaces/forms';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods/error';
 
@@ -43,10 +43,10 @@ const initialValues: IVendorForm = {
 };
 
 export default function VendorUpdateForms() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const { vendorProfileResponse } = useContext(ProfileContext);
   let vendor = vendorProfileResponse.data?.getVendor;

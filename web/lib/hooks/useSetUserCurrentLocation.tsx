@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-// Hooks
+// Ganchos (Hooks)
 import useGeocoding from "./useGeocoding";
 import useToast from "./useToast";
 
-// Context
+// Contexto
 import { useUserAddress } from "../context/address/address.context";
 
-// Types
+// Tipos (Types)
 import { LocationNameSpace } from "../utils/types/location";
 import { onUseLocalStorage } from "../utils/methods/local-storage";
 import { USER_CURRENT_LOCATION_LS_KEY } from "../utils/constants";

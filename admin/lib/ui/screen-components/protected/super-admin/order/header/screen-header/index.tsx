@@ -1,11 +1,11 @@
 // Components
 import HeaderText from '@/lib/ui/useable-components/header-text';
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from 'next-intl';
 
 const OrdersSuperAdminHeader = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

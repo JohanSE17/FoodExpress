@@ -7,7 +7,7 @@ import {
   IStoreTransactionHistoryResponse,
 } from "@/lib/utils/interfaces/rider.interface";
 
-// Components
+// Componentes
 import {
   CustomContinueButton,
   NoRecordFound,
@@ -15,7 +15,7 @@ import {
 import WithdrawModal from "../form";
 import RecentTransaction from "../recent-transactions";
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { useLazyQueryQL } from "@/lib/hooks/useLazyQueryQL";
 import { useMutation } from "@apollo/client";
@@ -35,7 +35,7 @@ import { GraphQLError } from "graphql";
 // Expo
 import { router } from "expo-router";
 
-// Core
+// Núcleo (Core)
 import { Alert, FlatList, Text, View } from "react-native";
 
 // Skeletons
@@ -45,7 +45,7 @@ import { useTranslation } from "react-i18next";
 import { showMessage } from "react-native-flash-message";
 
 export default function WalletMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { userId } = useUserContext();
@@ -54,7 +54,7 @@ export default function WalletMain() {
   const [isBottomModalOpen, setIsBottomModalOpen] = useState(false);
   const [amountErrMsg, setAmountErrMsg] = useState("");
 
-  // Queries
+  // Consultas (Queries)
   const { fetch: fetchStoreEarnings, loading: isStoreEarningsLoading } =
     useLazyQueryQL(STORE_EARNINGS) as ILazyQueryResult<
       IStoreEarningsResponse | undefined,

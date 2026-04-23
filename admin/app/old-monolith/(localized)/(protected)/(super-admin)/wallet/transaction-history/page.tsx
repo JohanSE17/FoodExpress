@@ -1,5 +1,5 @@
 'use client';
-// Screens
+// Pantallas
 import TransactionSuperAdminScreen from "@/lib/ui/screens/super-admin/wallet/transactionHistory";
 
 export default function TransactionSuperAdminPage() {

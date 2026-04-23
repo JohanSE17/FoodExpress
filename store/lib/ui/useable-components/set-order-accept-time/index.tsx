@@ -9,11 +9,11 @@ import {
   View,
 } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import useAcceptOrder from "@/lib/hooks/useAcceptOrder";
 import useOrderRing from "@/lib/hooks/useOrderRing";
 
-// Constants
+// Constantes
 import { TIMES } from "@/lib/utils/constants";
 
 // Interface
@@ -33,7 +33,7 @@ const SetTimeScreenAndAcceptOrder = ({
   orderId,
   handleDismissModal,
 }: ISetOrderTimeComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 

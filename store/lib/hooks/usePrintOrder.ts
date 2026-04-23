@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useContext, useState } from "react";
 import { PermissionsAndroid, Platform } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import useOrders from "./useOrders";
 
 // Interface
@@ -11,7 +11,7 @@ import { IOrder } from "../utils/interfaces/order.interface";
 // Methods
 import { printAsync, selectPrinterAsync } from "../utils/methods/print";
 
-// Context
+// Contexto
 import { ConfigurationContext } from "../context/global/configuration.context";
 import Restaurant from "../context/global/restaurant";
 import ThermalPrinterModule from "react-native-thermal-printer";

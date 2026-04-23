@@ -2,14 +2,14 @@
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { Stack } from "expo-router";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Platform } from "react-native";
 
 export default function LoginLayour() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

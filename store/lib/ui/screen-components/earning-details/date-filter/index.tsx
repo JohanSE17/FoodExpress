@@ -1,4 +1,4 @@
-// Utils
+// Utilidades
 import { useApptheme } from "@/lib/context/theme.context";
 import { CustomContinueButton } from "@/lib/ui/useable-components";
 import { Colors } from "@/lib/utils/constants";
@@ -13,7 +13,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, TouchableOpacity, View } from "react-native";
 
 // React Native Calendars
@@ -29,7 +29,7 @@ export default function EarningDetailsDateFilter({
   setIsDateFilterVisible,
   refetchDeafult,
 }: IEarningDetailsMainProps & IEarningsDateFilterProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
   const { appTheme } = useApptheme();
 

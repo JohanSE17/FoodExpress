@@ -1,8 +1,8 @@
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomPasswordTextField from "@/lib/ui/useable-components/password-input-field";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import useToast from "@/lib/hooks/useToast";
 import { useTranslations } from "next-intl";
@@ -15,7 +15,7 @@ export default function ChangePassword({
   setFormData,
   formData,
 }: IEnterPasswordProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { handlePasswordReset, isLoading } =
     useAuth();

@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useState, useMemo, useContext } from 'react'; // Added useContext
 
 // Prime React
@@ -12,7 +12,7 @@ import { WITHDRAW_REQUESTS_ADMIN_TABLE_COLUMNS } from '@/lib/ui/useable-componen
 import { GET_ALL_WITHDRAW_REQUESTS } from '@/lib/api/graphql';
 import { useQuery } from '@apollo/client';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context'; // Add this import
 
 // Interfaces

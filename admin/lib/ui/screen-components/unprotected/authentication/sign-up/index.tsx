@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import { useState } from 'react';
 import * as Yup from 'yup';

@@ -1,16 +1,16 @@
 // Moti
 import { MotiView } from "moti";
 
-// Components
+// Componentes
 import WalletHeadingSkeleton from "./wallet-heading";
 import WalletRecentTransactionSkeleton from "./wallet-recent-transactions";
 import WalletTopInfoSkeleton from "./wallet-top-info";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
 export default function WalletScreenMainLoading() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <MotiView

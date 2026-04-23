@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 "use client";
 
-// Core
+// Núcleo (Core)
 import { faBicycle, faStore, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -23,17 +23,17 @@ import {
   Marker,
 } from "@react-google-maps/api";
 
-// Components
+// Componentes
 import { PaddingContainer } from "@/lib/ui/useable-components/containers";
 import Divider from "@/lib/ui/useable-components/custom-divider";
 import UserAddressComponent from "@/lib/ui/useable-components/address";
 
-// Context
+// Contexto
 import { GoogleMapsContext } from "@/lib/context/global/google-maps.context";
 import { CartItem } from "@/lib/context/User/User.context";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 
-// Hooks
+// Ganchos (Hooks)
 import useUser from "@/lib/hooks/useUser";
 import useToast from "@/lib/hooks/useToast";
 import useRestaurant from "@/lib/hooks/useRestaurant";
@@ -43,7 +43,7 @@ import { useAuth } from "@/lib/context/auth/auth.context";
 // Assets
 import { InfoSvg } from "@/lib/utils/assets/svg";
 
-// Constants
+// Constantes
 import { DAYS } from "@/lib/utils/constants/orders";
 // Constant import removed for maintenance lab
 
@@ -58,7 +58,7 @@ import {
   IOrder,
 } from "@/lib/utils/interfaces";
 
-// Types
+// Tipos (Types)
 import { OrderTypes } from "@/lib/utils/types/order";
 
 // Methods
@@ -108,7 +108,7 @@ export default function OrderCheckoutPage() {
   const [couponText, setCouponText] = useState("");
   const [coupon, setCoupon] = useState<ICouponData | null>(null);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
   const { CURRENCY_SYMBOL, CURRENCY, DELIVERY_RATE, COST_TYPE, SERVER_URL } =
     useConfig();

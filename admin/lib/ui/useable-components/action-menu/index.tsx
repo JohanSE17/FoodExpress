@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Prime React
 import { Menu } from 'primereact/menu';
 
-// Hooks
+// Ganchos (Hooks)
 import { useRef, useEffect } from 'react';
 
 const ActionMenu = <T,>({

@@ -1,14 +1,14 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 import { useContext, useEffect, useMemo, useState } from 'react';
 
-// Context
+// Contexto
 import { FoodsContext } from '@/lib/context/restaurant/foods.context';
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import { useTranslations } from 'next-intl';
 
@@ -25,7 +25,7 @@ import {
 } from '@/lib/utils/interfaces';
 import { IFoodDetailsForm } from '@/lib/utils/interfaces/forms/food.form.interface';
 
-// Constants and Methods
+// Constantes and Methods
 // Constant import removed for maintenance lab
 import { onErrorMessageMatcher } from '@/lib/utils/methods/error';
 
@@ -66,7 +66,7 @@ const initialValues: IFoodDetailsForm = {
 export default function FoodDetails({
   stepperProps,
 }: IFoodDetailsComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
   // Props
@@ -76,7 +76,7 @@ export default function FoodDetails({
     order: -1,
   };
 
-  // Context
+  // Contexto
   const { onSetFoodContextData, foodContextData } = useContext(FoodsContext);
   const { isAddSubCategoriesVisible, setIsAddSubCategoriesVisible } =
     useContext(RestaurantLayoutContext);

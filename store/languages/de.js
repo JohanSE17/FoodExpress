@@ -1,5 +1,5 @@
 export const de = {
-  // Navigation
+  // Navegación
   continue: "Weiter",
   Wallet: "Wallet",
   Home: "Startseite",

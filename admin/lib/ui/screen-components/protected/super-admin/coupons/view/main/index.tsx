@@ -21,7 +21,7 @@ import { IFilterType } from '@/lib/utils/interfaces/table.interface';
 // Prime react
 import { FilterMatchMode } from 'primereact/api';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useMutation } from '@apollo/client';
@@ -32,7 +32,7 @@ import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import Table from '@/lib/ui/useable-components/table';
 import CouponTableHeader from '../header/table-header';
 
-// Constants
+// Constantes
 import { generateDummyCoupons } from '@/lib/utils/dummy';
 import { COUPONS_TABLE_COLUMNS } from '@/lib/ui/useable-components/table/columns/coupons-columns';
 
@@ -41,7 +41,7 @@ export default function CouponsMain({
   isEditing,
   setIsEditing,
 }: ICouponMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Toast

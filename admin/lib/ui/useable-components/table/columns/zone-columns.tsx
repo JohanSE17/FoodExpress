@@ -7,7 +7,7 @@ export const ZONE_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IZoneResponse>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return [
     { headerName: t('Title'), propertyName: 'title' },

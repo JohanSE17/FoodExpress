@@ -5,7 +5,7 @@ import { INumberTextFieldProps } from '@/lib/utils/interfaces';
 import { InputNumber, InputNumberChangeEvent } from 'primereact/inputnumber';
 import InputSkeleton from '../custom-skeletons/inputfield.skeleton';
 
-// Hooks
+// Ganchos (Hooks)
 import useToast from '@/lib/hooks/useToast';
 
 export default function CustomNumberField({

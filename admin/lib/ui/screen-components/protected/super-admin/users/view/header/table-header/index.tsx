@@ -9,7 +9,7 @@ export default function UsersTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IUsersTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

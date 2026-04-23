@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// Core
+// Núcleo (Core)
 
 import { useContext, useEffect, useState } from 'react';
 
@@ -31,7 +31,7 @@ import { useTranslations } from 'next-intl';
 import useDebounce from '@/lib/hooks/useDebounce';
 
 export default function TransactionHistoryStoreMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States
@@ -49,7 +49,7 @@ export default function TransactionHistoryStoreMain() {
     },
   });
 
-  // Hooks
+  // Ganchos (Hooks)
   const debouncedSearch = useDebounce(globalFilterValue);
 
   // Pagination state

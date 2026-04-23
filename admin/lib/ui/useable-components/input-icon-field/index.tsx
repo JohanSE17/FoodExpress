@@ -17,7 +17,7 @@ import { twMerge } from 'tailwind-merge';
 // Components
 import InputSkeleton from '../custom-skeletons/inputfield.skeleton';
 
-// Styles
+// Estilos
 
 export default function CustomIconTextField({
   className,

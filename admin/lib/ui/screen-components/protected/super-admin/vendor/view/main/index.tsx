@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 
 // UI Components
@@ -8,13 +8,13 @@ import RestaurantCard from '@/lib/ui/useable-components/resturant-card';
 import TextIconClickable from '@/lib/ui/useable-components/text-icon-clickable';
 import VendorCard from '@/lib/ui/useable-components/vendor-card';
 
-// Context
+// Contexto
 import { VendorContext } from '@/lib/context/super-admin/vendor.context';
 
 // Interface
 import { IVendorMainComponentProps } from '@/lib/utils/interfaces';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 
 // Icons
@@ -28,10 +28,10 @@ import NoData from '@/lib/ui/useable-components/no-data';
 import { useTranslations } from 'next-intl';
 
 export default function VendorMain({ activeTab }: IVendorMainComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     onSetVendorFormVisible,
     globalFilter,

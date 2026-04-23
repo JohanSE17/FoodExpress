@@ -1,10 +1,10 @@
-// Core
+// Núcleo (Core)
 import { Text } from "react-native";
 
 // Interfaces
 import { IRiderEarningsDetailProps } from "@/lib/utils/interfaces/earning.interface";
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/global/theme.context";
 import NoRecordFound from "@/lib/ui/useable-components/no-record-found";
 import { useTranslation } from "react-i18next";
@@ -16,7 +16,7 @@ export default function EarningsDetailStacks({
   isRiderEarningsLoading,
   setModalVisible,
 }: IRiderEarningsDetailProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 

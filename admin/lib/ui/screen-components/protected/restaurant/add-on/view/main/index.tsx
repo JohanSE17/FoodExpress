@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useMutation } from '@apollo/client';
 import { useContext, useState } from 'react';
 
@@ -23,7 +23,7 @@ import CategoryTableHeader from '../header/table-header';
 import CustomDialog from '@/lib/ui/useable-components/delete-dialog';
 import { generateDummyAddons } from '@/lib/utils/dummy';
 
-// Context
+// Contexto
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import useToast from '@/lib/hooks/useToast';
 
@@ -31,7 +31,7 @@ import useToast from '@/lib/hooks/useToast';
 import { DELETE_ADDON, GET_OPTIONS_BY_RESTAURANT_ID } from '@/lib/api/graphql';
 import { GET_ADDONS_BY_RESTAURANT_ID } from '@/lib/api/graphql/queries/addon';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 import { useTranslations } from 'next-intl';
 
@@ -39,11 +39,11 @@ export default function OptionMain({
   setIsAddAddonVisible,
   setAddon,
 }: IAddonMainComponentsProps) {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 
@@ -105,7 +105,7 @@ export default function OptionMain({
     });
   }
 
-  // Constants
+  // Constantes
   const menuItems: IActionMenuItem<IAddon>[] = [
     {
       label: t('Edit'),

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// Core
+// Núcleo (Core)
 import { useState, useMemo, useEffect } from 'react';
 
 // Prime React
@@ -45,7 +45,7 @@ export default function WithdrawRequestsSuperAdminMain({
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
 
-  // Hooks
+  // Ganchos (Hooks)
   const debouncedSearch = useDebounce(globalFilterValue);
 
   // Get userType from selected actions (RIDER or STORE)

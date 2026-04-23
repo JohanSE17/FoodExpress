@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -30,10 +30,10 @@ import { VENDOR_STORE_DETAILS_COLUMN } from '@/lib/ui/useable-components/table/c
 // Dummy
 
 const VendorGrowthOverViewGraph = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     vendorLayoutContextData: { vendorId },
   } = useContext(VendorLayoutContext);
@@ -186,7 +186,7 @@ const VendorGrowthOverViewTabular = ({
     vendorLayoutContextData: { vendorId },
   } = useContext(VendorLayoutContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   const { data, loading } = useQueryGQL(

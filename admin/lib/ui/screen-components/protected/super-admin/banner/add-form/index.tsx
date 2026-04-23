@@ -40,7 +40,7 @@ const BannersAddForm = ({
     fetchPolicy: 'cache-and-network',
   }) as IQueryResult<IRestaurantsResponseGraphQL | undefined, undefined>;
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   
   const RESTAURANT_NAMES = useMemo(() => {
@@ -77,7 +77,7 @@ const BannersAddForm = ({
     file: banner?.file || '',
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   const mutation = banner ? EDIT_BANNER : CREATE_BANNER;

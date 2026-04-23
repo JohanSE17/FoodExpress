@@ -1,7 +1,7 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
-// Core
+// Núcleo (Core)
 import { Text, TouchableOpacity } from "react-native";
 
 function UpdateTimeBtn({
@@ -22,7 +22,7 @@ function UpdateTimeBtn({
   };
   time: string;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <TouchableOpacity

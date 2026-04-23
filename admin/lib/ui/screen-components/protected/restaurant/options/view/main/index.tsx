@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Prime React
@@ -36,11 +36,11 @@ export default function OptionMain({
   setIsAddOptionsVisible,
   setOption,
 }: IOptionsMainComponentsProps) {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 
@@ -101,7 +101,7 @@ export default function OptionMain({
     });
   }
 
-  // Constants
+  // Constantes
   const menuItems: IActionMenuItem<IOptions>[] = [
     {
       label: t('Edit'),

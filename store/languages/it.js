@@ -1,5 +1,5 @@
 export const it = {
-  // Navigation
+  // Navegación
   continue: "Continua",
   Wallet: "Portafoglio",
   Home: "Home",

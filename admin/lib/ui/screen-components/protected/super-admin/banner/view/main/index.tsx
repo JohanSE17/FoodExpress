@@ -1,10 +1,10 @@
-// Core
+// Núcleo (Core)
 import { useEffect, useState } from 'react';
 
 // PrimeReact
 import { FilterMatchMode } from 'primereact/api';
 
-// Hooks
+// Ganchos (Hooks)
 import useToast from '@/lib/hooks/useToast';
 
 // Custom Components
@@ -32,7 +32,7 @@ export default function BannersMain({
   setIsAddBannerVisible,
   setBanner,
 }: IBannersMainComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
   const t = useTranslations();
 

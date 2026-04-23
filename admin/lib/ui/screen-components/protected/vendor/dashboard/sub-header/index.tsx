@@ -9,7 +9,7 @@ export default function DashboardSubHeader({
   dateFilter,
   handleDateFilter,
 }: IDashboardSubHeaderComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

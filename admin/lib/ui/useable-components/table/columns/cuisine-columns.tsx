@@ -6,7 +6,7 @@ import { ICuisine } from '@/lib/utils/interfaces/cuisine.interface';
 import ActionMenu from '../../action-menu';
 import Image from 'next/image';
 
-// Hooks
+// Ganchos (Hooks)
 import { useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -15,7 +15,7 @@ export const CUISINE_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<ICuisine>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Cuisine Columns

@@ -1,12 +1,12 @@
-// Core
+// Núcleo (Core)
 import { SafeAreaView } from "react-native";
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/theme.context";
 import EarningsMain from "../../screen-components/earnings/view/main";
 
 export default function EarningsScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

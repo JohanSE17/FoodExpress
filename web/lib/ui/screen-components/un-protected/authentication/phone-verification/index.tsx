@@ -1,4 +1,4 @@
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 
 // Interfaces
@@ -9,7 +9,7 @@ import {
 } from "@/lib/utils/interfaces";
 import { ApolloError, useMutation } from "@apollo/client";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 import useToast from "@/lib/hooks/useToast";
@@ -33,7 +33,7 @@ export default function PhoneVerification({
   const [userotp, setuserOtp] = useState<string[]>(Array(6).fill(""));
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { SKIP_MOBILE_VERIFICATION, TEST_OTP } = useConfig();
   const t = useTranslations();
   const {

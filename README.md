@@ -13,7 +13,7 @@
 
 <div align="center">
   <h2>FoodExpress Multi Vendor Delivery Management System</h2>
-  <i>A modern and customizable platform for managing online ordering and logistics across industries.</i>
+  <i>Una plataforma moderna y personalizable para gestionar pedidos en línea y logística en todas las industrias.</i>
  <br/>
 <br />
 </div>
@@ -51,81 +51,81 @@
 
 <br>
 
-The FoodExpress Multi Vendor Delivery Management System is designed for businesses looking to deploy a complete, ready-to-use platform for running their online ordering and delivery operations. Whether it is food or grocery delivery, parcel logistics, home services, flowers, pharmacy orders, or other delivery-based businesses, FoodExpress can be adapted to your needs.
-Built with ease of use and intuitiveness in mind, the FoodExpress system supports multiple vendors and multiple service regions. With separate applications for customers, vendors and delivery agents, along with a powerful admin dashboard, FoodExpress enables you to launch and operate your own end-to-end ordering and delivery ecosystem without building everything from scratch.
+El Sistema de Gestión de Entregas Multi Vendor FoodExpress está diseñado para empresas que buscan implementar una plataforma completa y lista para usar para ejecutar sus operaciones de pedidos y logística en línea. Ya sea para entrega de alimentos o comestibles, logística de paquetes, servicios a domicilio, flores, pedidos de farmacia u otros negocios basados en entregas, FoodExpress se puede adaptar a sus necesidades.
+Construido pensando en la facilidad de uso y la intuición, el sistema FoodExpress admite múltiples proveedores y múltiples regiones de servicio. Con aplicaciones separadas para clientes, proveedores y agentes de entrega, junto con un potente panel de administración, FoodExpress le permite lanzar y operar su propio ecosistema de pedidos y entregas de extremo a extremo sin tener que construir todo desde cero.
 
-The solution is fully open source, but the backend and API are proprietary.
+La solución es completamente de código abierto, pero el backend y la API son propietarios.
 
 
-<!-- Add a horizontal rule for separation -->
+<!-- Add a horizontal rule para separación -->
 <hr/>
 
-## :fast_forward: Quick Links
+## :fast_forward: Enlaces rápidos
 
-- [:book: What is included](#heading-1)
-- [:rocket: Features](#heading-2)
-- [:wrench: Setup](#heading-3)
-- [:gear: Prerequisites](#heading-4)
-- [:computer: Technologies](#heading-5)
-- [:camera: Screenshots](#heading-6)
-- [:triangular_ruler: High Level Architecture](#heading-7)
-- [:page_with_curl: Documentation](#heading-8)
-- [:movie_camera: Demo Videos](#heading-14)
+- [:book: Qué está incluido](#heading-1)
+- [:rocket: Características](#heading-2)
+- [:wrench: Configuración](#heading-3)
+- [:gear: Requisitos](#heading-4)
+- [:computer: Tecnologías](#heading-5)
+- [:camera: Capturas de pantalla](#heading-6)
+- [:triangular_ruler: Arquitectura de Alto Nivel](#heading-7)
+- [:page_with_curl: Documentación](#heading-8)
+- [:movie_camera: Videos de Demostración](#heading-14)
 - [:video_game: Demos](#heading-9)
-- [:busts_in_silhouette: Contributors](#heading-10)
-- [:warning: Disclaimer](#heading-12)
-- [:email: Contact Us](#heading-13)
-- [:computer: Project Setup Guide](#heading-15)
+- [:busts_in_silhouette: Colaboradores](#heading-10)
+- [:warning: Descargo de responsabilidad](#heading-12)
+- [:email: Contacto](#heading-13)
+- [:computer: Guía de Configuración del Proyecto](#heading-15)
 
-<!-- Add a horizontal rule for separation -->
+<!-- Add a horizontal rule para separación -->
 <hr/>
 
-## :question: What is included: <a id="heading-1"></a>
+## :question: ¿Qué está incluido?: <a id="heading-1"></a>
 
-FoodExpress provides a complete set of software components, including:
+FoodExpress proporciona un conjunto completo de componentes de software, que incluyen:
 
-- FoodExpress Multi Vendor Customer App
-- FoodExpress Multi Vendor Rider/Driver App
-- FoodExpress Multi Vendor Vendor/Store App
-- Customer Ordering Website
-- Admin Web Dashboard
-- API Server
-- Analytics Dashboard using Expo Amplitude
-- Error monitoring and reporting with Sentry
+- Aplicación de Cliente Multi Vendor FoodExpress
+- Aplicación de Repartidor/Conductor Multi Vendor FoodExpress
+- Aplicación de Proveedor/Tienda Multi Vendor FoodExpress
+- Sitio Web de Pedidos para Clientes
+- Panel de Administración Web
+- Servidor API
+- Panel de Análisis usando Expo Amplitude
+- Monitoreo y reporte de errores con Sentry
 
-## :fire: Features: <a id="heading-2"></a>
+## :fire: Características: <a id="heading-2"></a>
 
-- Authentication using Google, Apple, and Facebook
-- Dynamic home sections for highlighting top vendors and services
-- Push notifications and email alerts for account creation, order updates, and delivery progress
-- Real-time tracking of delivery agents and in-app chat
-- Email and phone number verification
-- Location-based vendor discovery on Maps and Home Screen
-- Multi-language support and customizable themes
-- Ratings and reviews for orders and service experiences
-- Vendor/service details including ratings, schedules, delivery timelines, offerings, location, minimum order or service amount, and more
-- Payment integrations including PayPal and Stripe
-- Order and booking history with the ability to favorite vendors
-- Address management with Google Places suggestions and Maps integration
-- Analytics and error reporting with Amplitude and Sentry
-- Support for item/service variations, notes, pickup and delivery modes, and customizable timing options
+- Autenticación usando Google, Apple y Facebook
+- Secciones dinámicas del hogar para resaltar los principales proveedores y servicios
+- Notificaciones push y alertas por correo electrónico para la creación de cuentas, actualizaciones de pedidos y progreso de la entrega
+- Seguimiento en tiempo real de los agentes de entrega y chat en la aplicación
+- Verificación de correo electrónico y número de teléfono
+- Descubrimiento de proveedores basado en la ubicación en Mapas y Pantalla de Inicio
+- Soporte multi-idioma y temas personalizables
+- Calificaciones y reseñas para pedidos y experiencias de servicio
+- Detalles del proveedor/servicio que incluyen calificaciones, horarios, plazos de entrega, ofertas, ubicación, pedido mínimo o monto del servicio, y más
+- Integraciones de pago incluyendo PayPal y Stripe
+- Historial de pedidos y reservas con la capacidad de marcar proveedores favoritos
+- Gestión de direcciones con sugerencias de Google Places e integración con Mapas
+- Análisis y reporte de errores con Amplitude y Sentry
+- Soporte para variaciones de artículos/servicios, notas, modos de recogida y entrega, y opciones de tiempo personalizables
 
 
-## :repeat_one: Setup: <a id="heading-3"></a>
+## :repeat_one: Configuración: <a id="heading-3"></a>
 
-As we've mentioned above, the solution includes five separate modules. To setup these modules, follow the steps below:
+Como mencionamos anteriormente, la solución incluye cinco módulos separados. Para configurar estos módulos, siga los pasos a continuación:
 
-To run the module, you need to have nodejs installed on your machine. Once nodejs is installed, go to the directory and enter the following commands
+Para ejecutar el módulo, debe tener nodejs instalado en su máquina. Una vez que nodejs esté instalado, vaya al directorio e ingrese los siguientes comandos
 
-The required credentials and keys have been set already. You can setup your own keys and credentials
+Las credenciales y claves requeridas ya han sido configuradas. Puede configurar sus propias claves y credenciales
 
-The version of nodejs should be between 18 to 20 (with 16 as minor version and 0 as patch)
+La versión de nodejs debe estar entre 18 y 20 (con 16 como versión menor y 0 como parche)
 
-[![Guide Badge](https://img.shields.io/badge/Do_with_guided_tutorial-blue?style=for-the-badge&logo=book-reader)](https://foodexpress.com/multi-vendor-doc/)
+[![Guide Badge](https://img.shields.io/badge/Hazlo_con_tutorial_guiado-blue?style=for-the-badge&logo=book-reader)](https://foodexpress.com/multi-vendor-doc/)
 
-## :information_source: Prerequisites: <a id="heading-4"></a>
+## :information_source: Requisitos: <a id="heading-4"></a>
 
-App Ids for Mobile App in app.json
+IDs de Aplicación para la App Móvil en `app.json`
 
 - Facebook Scheme
 - Facebook App Id
@@ -135,7 +135,7 @@ App Ids for Mobile App in app.json
 - Amplitude Api Key
 - server url
 
-Set credentials in API in file helpers/config.js and helpers/credentials.js
+Establecer credenciales en API en el archivo helpers/config.js y helpers/credentials.js
 
 - Email User Name
 - Password For Email
@@ -148,7 +148,7 @@ Set credentials in API in file helpers/config.js and helpers/credentials.js
 - User Id
 - Name
 
-Set credentials in Admin Dashboard in file src/index.js
+Establecer credenciales en Admin Dashboard en el archivo src/index.js
 
 - Firebase Api Key
 - Auth Domain
@@ -158,9 +158,9 @@ Set credentials in Admin Dashboard in file src/index.js
 - Messaging Sender Id
 - App Id
 
-NOTE: Email provider has been only been tested for gmail accounts
+NOTA: El proveedor de correo electrónico solo ha sido probado para cuentas de Gmail
 
-## :hammer_and_wrench: Technologies: <a id="heading-5"></a>
+## :hammer_and_wrench: Tecnologías: <a id="heading-5"></a>
 
 |                                               Expo                                                |                                                   React-Navigation                                                   |                                                Apollo GraphQL                                                |                                               ReactJS                                                |                                                NodeJS                                                 |                                                 MongoDB                                                 |                                                   Firebase                                                   |
 | :-----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
@@ -170,7 +170,7 @@ NOTE: Email provider has been only been tested for gmail accounts
 | :----------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
 | <a href="https://reactnative.dev/"><img src="./assets/react-native.png" alt="FoodExpress Logos" width="100"></a> | <a href="https://reactrouter.com/"><img src="./assets/react-router-svgrepo-com.png" alt="FoodExpress Logos" width="100"></a> | <a href="https://graphql.org/"><img src="./assets/graphQl-1.png" alt="FoodExpress Logos" width="100"></a> | <a href="https://expressjs.com/"><img src="./assets/express-js.png" alt="FoodExpress Logos" width="100"></a> | <a href="https://reactstrap.github.io/"><img src="./assets/React-strap.png" alt="FoodExpress Logos" width="100"></a> | <a href="https://amplitude.com/"><img src="./assets/amplitude.png" alt="FoodExpress Logos" width="100"></a> |
 
-## :framed_picture: Screenshots: <a id="heading-6"></a>
+## :framed_picture: Capturas de pantalla: <a id="heading-6"></a>
 
 |          Rider App           |
 | :--------------------------: |
@@ -192,54 +192,54 @@ NOTE: Email provider has been only been tested for gmail accounts
 | :--------------------------------: |
 | ![](./assets/AdminDashboard.webp) |
 
-## :wrench: High Level Architecture: <a id="heading-7"></a>
+## :wrench: Arquitectura de Alto Nivel: <a id="heading-7"></a>
 
 ![](./assets/high-level.webp)
 
-## :book: Documentation <a id="heading-8"></a>
+## :book: Documentación <a id="heading-8"></a>
 
-Find the link for the complete documentation of the FoodExpress Multi Vendor Solution [here](https://foodexpress.com/multivendor-documentation/).
+Encuentra el enlace para la documentación completa de la Solución Multi Vendor de FoodExpress [aquí](https://foodexpress.com/multivendor-documentation/).
 
 ## :tv: Demo Videos: <a id="heading-14"></a>
 
-|                                               Admin Dashboard Demo                                               |                                                 Mobile App Demo                                                  |
+|                                               Demo del Panel de Administración                                               |                                                 Demo de la Aplicación Móvil                                                  |
 | :--------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
 | <iframe width="200" height="113" src="https://www.youtube.com/embed/Gb5DZWt_7Yw" title="Admin Dashboard Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> | <iframe width="200" height="113" src="https://www.youtube.com/embed/DR4Vuu_VSZA?list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6" title="Mobile App Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> |
 
 ## :iphone: Demos: <a id="heading-9"></a>
 
-|                                                                                                                                               Customer App                                                                                                                                                |                                                                                                                                                   Rider App                                                                                                                                                    |                                                                                                                                                       Store App                                                                                                                                                        |                                                   Customer Web                                                   |                                                    Admin Dashboard                                                     |
+|                                                                                                                                               Aplicación del Cliente                                                                                                                                                |                                                                                                                                                   Aplicación del Repartidor                                                                                                                                                    |                                                                                                                                                       Aplicación de la Tienda                                                                                                                                                        |                                                   Web del Cliente                                                   |                                                    Panel de Administración                                                     |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
 |                                                                                          <a href="#heading-9" style="pointer-events: none;"><img src="./assets/customer-app-logo.png" alt="FoodExpress Logos" width="180"></a>                                                                                           |                                                                                          <a href="#heading-9" style="pointer-events: none;"><img src="./assets/Rider-app-logo.png" alt="FoodExpress Logos" width="180"></a>                                                                                          |                                                                                            <a href="#heading-9" style="pointer-events: none;"><img src="./assets/Store-app-logo.png" alt="FoodExpress Logos" width="180"></a>                                                                                            | <a href="http://multivendor.foodexpress.com/"><img src="./assets/customer-app-logo.png" alt="FoodExpress Logos" width="180"></a> | <a href="http://multivendor-admin.foodexpress.com/"><img src="./assets/customer-app-logo.png" alt="FoodExpress Logos" width="180"></a> |
 | <a href="https://play.google.com/store/apps/details?id=com.foodexpress.multivendor"><img src="./assets/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/foodexpress-multivendor/id1526488093"><img src="./assets/social_10096939.png" alt="iOS Logo" width="25"></a> | <a href="https://play.google.com/store/apps/details?id=com.foodexpress.multirider"><img src="./assets/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/foodexpress-mulitvendor-rider/id1526674511"><img src="./assets/social_10096939.png" alt="iOS Logo" width="25"></a> | <a href="https://play.google.com/store/apps/details?id=multivendor.foodexpress.restaurant"><img src="./assets/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/foodexpress-multivendor-restaurant/id1526672537"><img src="./assets/social_10096939.png" alt="iOS Logo" width="25"></a> |
 
-## :people_holding_hands: Contributors: <a id="heading-10"></a>
+## :people_holding_hands: Colaboradores: <a id="heading-10"></a>
 
 <div align="center">
 <br>
 <a href="https://github.com/JohanSE17">
-  <img src="https://hub.docker.com/u/johanespitia17" style="max-width: 50%; height: auto;" />
+  <img src="https://hub.docker.com/u/johanespitia17"  style="max-width: 50%; height: auto;" />
 </a>
 </div>
 
-## :warning: Disclaimer: <a id="heading-12"></a>
+## :warning: Descargo de responsabilidad: <a id="heading-12"></a>
 
-El frontend source code para our solution is completely open source. However, the API and backend is proprietary and can be accessed via a paid license. For further information, contact us on the channels provided below.
+El código fuente del frontend para nuestra solución es completamente de código abierto. Sin embargo, la API y el backend son propietarios y se puede acceder a ellos mediante una licencia de pago. Para obtener más información, contáctenos a través de los canales proporcionados a continuación.
 
-## :mailbox_with_mail: Contact Us: <a id="heading-13"></a>
+## :mailbox_with_mail: Contáctenos: <a id="heading-13"></a>
 
 [Observa los Product Page y Pricing and more for FoodExpress Multivendor Food Delivery Solution](https://foodexpress.com/?utm_source=github&utm_medium=referral&utm_campaign=github_guide&utm_id=12345678)
 
-## :computer: Project Setup Guide <a id="heading-15"></a>
+## :computer: Guía de Configuración del Proyecto <a id="heading-15"></a>
 
-This section provides detailed instructions for setting up and running each component of the FoodExpress Multi-vendor Food Delivery Solution.
+Esta sección proporciona instrucciones detalladas para configurar y ejecutar cada componente de la Solución de Entrega de Comida Multi Vendor de FoodExpress.
 
 ### FoodExpress Admin Dashboard (Next.js)
 
-The admin dashboard allows you to manage restaurants, orders, riders, and more.
+El panel de administración le permite gestionar restaurantes, pedidos, repartidores y más.
 
 ```bash
-# Navigate to the admin dashboard directory
+# Navegar al directorio del panel de administración
 cd foodexpress-multivendor-admin
 
 # Install dependencies
@@ -249,14 +249,14 @@ npm install
 npm run dev
 ```
 
-After running these commands, open your browser and navigate to [http://localhost:3000](http://localhost:3000) to access the admin dashboard. You can also CTRL+click on the localhost link that appears in your terminal.
+Después de ejecutar estos comandos, abra su navegador y navegue a [http://localhost:3000](http://localhost:3000) para acceder al panel de administración. También puede hacer clic en CTRL+clic en el enlace localhost que aparece en su terminal.
 
 ### FoodExpress Customer Web (React.js)
 
-The customer web application allows users to browse restaurants and place orders through a web browser.
+La aplicación web del cliente permite a los usuarios navegar por los restaurantes y realizar pedidos a través de un navegador web.
 
 ```bash
-# Navigate to the customer web directory
+# Navegar al directorio web del cliente
 cd foodexpress-multivendor-web
 
 # Install dependencies
@@ -266,14 +266,14 @@ npm install
 npm start
 ```
 
-After running these commands, the application will be available at [http://localhost:3000](http://localhost:3000) in your web browser.
+Después de ejecutar estos comandos, la aplicación estará disponible en [http://localhost:3000](http://localhost:3000) en su navegador web.
 
 ### FoodExpress Customer App (React Native)
 
-The customer mobile application allows users to browse restaurants and place orders on their mobile devices.
+La aplicación móvil del cliente permite a los usuarios navegar por los restaurantes y realizar pedidos en sus dispositivos móviles.
 
 ```bash
-# Navigate to the customer app directory
+# Navegar al directorio de la aplicación del cliente
 cd foodexpress-multivendor-app
 
 # Install dependencies
@@ -285,19 +285,19 @@ npx expo start -c
 npm start -c
 ```
 
-#### Testing on a Physical Device with Expo Go
+#### Prueba en un dispositivo físico con Expo Go
 
-1. Press `s` in the terminal to switch to Expo Go mode
-2. Scan the QR code displayed in the terminal:
-   - Android: Open the Expo Go app and scan the QR code
-   - iOS: Use the device's camera app to scan the QR code
+1. Presione `s` en la terminal para cambiar al modo Expo Go
+2. Escanee el código QR que se muestra en la terminal:
+   - Android: Abra la aplicación Expo Go y escanee el código QR
+   - iOS: Use la cámara del dispositivo para escanear el código QR
 
 ### FoodExpress Rider App (React Native)
 
-The rider app allows delivery personnel to manage and complete deliveries.
+La aplicación del repartidor permite al personal de entrega gestionar y completar las entregas.
 
 ```bash
-# Navigate to the rider app directory
+# Navegar al directorio de la aplicación del repartidor
 cd foodexpress-multivendor-rider
 
 # Install dependencies
@@ -309,19 +309,19 @@ npx expo start -c
 npm start -c
 ```
 
-#### Testing on a Physical Device with Expo Go
+#### Prueba en un dispositivo físico con Expo Go
 
-1. Press `s` in the terminal to switch to Expo Go mode
-2. Scan the QR code displayed in the terminal:
-   - Android: Open the Expo Go app and scan the QR code
-   - iOS: Use the device's camera app to scan the QR code
+1. Presione `s` en la terminal para cambiar al modo Expo Go
+2. Escanee el código QR que se muestra en la terminal:
+   - Android: Abra la aplicación Expo Go y escanee el código QR
+   - iOS: Use la cámara del dispositivo para escanear el código QR
 
 ### FoodExpress Restaurant App (React Native)
 
-The restaurant app allows restaurant owners to manage orders and their menu.
+La aplicación del restaurante permite a los propietarios de restaurantes gestionar los pedidos y su menú.
 
 ```bash
-# Navigate to the restaurant app directory
+# Navegar al directorio de la aplicación del restaurante
 cd foodexpress-multivendor-restaurant
 
 # Install dependencies
@@ -333,25 +333,25 @@ npx expo start -c
 npm start -c
 ```
 
-#### Testing on a Physical Device with Expo Go
+#### Prueba en un dispositivo físico con Expo Go
 
-1. Press `s` in the terminal to switch to Expo Go mode
-2. Scan the QR code displayed in the terminal:
-   - Android: Open the Expo Go app and scan the QR code
-   - iOS: Use the device's camera app to scan the QR code
+1. Presione `s` en la terminal para cambiar al modo Expo Go
+2. Escanee el código QR que se muestra en la terminal:
+   - Android: Abra la aplicación Expo Go y escanee el código QR
+   - iOS: Use la cámara del dispositivo para escanear el código QR
 
-### Building Development Versions
+### Construcción de versiones de desarrollo
 
-For all mobile apps (Customer, Rider, and Restaurant), you can create development builds using EAS Build.
+Para todas las aplicaciones móviles (Cliente, Repartidor y Restaurante), puede crear versiones de desarrollo utilizando EAS Build.
 
-#### Configure EAS Build
+#### Configurar EAS Build
 
 ```bash
 # From the app directory (customer, rider, or restaurant)
 eas build:configure
 ```
 
-Select your desired platform:
+Seleccione la plataforma deseada:
 - android
 - ios
 - all
@@ -362,7 +362,7 @@ Select your desired platform:
 eas build --platform android --profile development
 ```
 
-This will create an APK file that you can install directly on your Android device.
+Esto creará un archivo APK que puede instalar directamente en su dispositivo Android.
 
 #### Build for iOS
 
@@ -370,7 +370,7 @@ This will create an APK file that you can install directly on your Android devic
 eas build --platform ios --profile development
 ```
 
-For iOS simulator builds, modify the `eas.json` file to include:
+Para las compilaciones del simulador de iOS, modifique el archivo `eas.json` para incluir:
 
 ```json
 "development": {
@@ -386,7 +386,7 @@ For iOS simulator builds, modify the `eas.json` file to include:
 }
 ```
 
-Then run:
+Luego ejecute:
 
 ```bash
 eas build --platform ios --profile development

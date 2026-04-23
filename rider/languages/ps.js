@@ -1,5 +1,5 @@
 export const ps = {
-  // Navigation
+  // Navegación
   continue: "دوام ورکړئ",
   Wallet: "بټۍ",
   Home: "کور",
@@ -29,7 +29,7 @@ export const ps = {
   faq7Description:
     "له بده مرغه، تاسو نشئ کولی په ورته امر کې له څو رستورانټونو څخه غوره کړئ. مګر تاسو کولی شئ په ورځ وخت کې له مختلفو رستورانټونو څخه جلا امرونه ورکړئ.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "د عاید لنډیز",
   Deliveries: "تحویلي",
   "Total Earnings": "ټول عاید",
@@ -292,14 +292,14 @@ export const ps = {
   "Message sent": "پیغام لیږل شو",
   "Message failed": "پیغام ناکام شو",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "مهرباني وکړئ د نیټې حد وټاکئ",
   "Please select a start date": "مهرباني وکړئ د پیل نیټه وټاکئ",
   "Please select an end date": "مهرباني وکړئ د پای نیټه وټاکئ",
   "Start date cannot be after end date": "د پیل نیټه د پای نیټه وروسته نشي کیدی",
   "Please log in to view your earnings": "مهرباني وکړئ خپل عاید د لیدلو لپاره ننوځئ",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "شته توب تازه کول ناشونی دی",
   "rider name": "د رایډر نوم",
   "rider id": "د رایډر پېژند",

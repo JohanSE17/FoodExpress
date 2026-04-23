@@ -1,5 +1,5 @@
 export const ro = {
-  // Navigation
+  // Navegación
   continue: "Continuă",
   Wallet: "Portofel",
   Home: "Acasă",
@@ -29,7 +29,7 @@ export const ro = {
   faq7Description:
     "Din păcate, nu puteți alege de la mai multe restaurante în cadrul aceleiași comenzi. Cu toate acestea, puteți plasa comenzi separate de la diferite restaurante în același timp.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Rezumat Câștiguri",
   Deliveries: "Livrări",
   "Total Earnings": "Câștiguri Totale",
@@ -318,7 +318,7 @@ export const ro = {
   "Message sent": "Mesaj trimis",
   "Message failed": "Mesaj eșuat",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Vă rugăm să selectați un interval de date",
   "Please select a start date": "Vă rugăm să selectați o dată de început",
   "Please select an end date": "Vă rugăm să selectați o dată de sfârșit",
@@ -327,7 +327,7 @@ export const ro = {
   "Please log in to view your earnings":
     "Vă rugăm să vă autentificați pentru a vă vizualiza câștigurile",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Imposibil de actualizat disponibilitatea",
   "rider name": "Nume Curier",
   "rider id": "ID Curier",

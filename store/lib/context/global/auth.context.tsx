@@ -1,11 +1,11 @@
 // Apollo
 import { loadDevMessages, loadErrorMessages } from "@apollo/client/dev";
 
-// Core
+// Núcleo (Core)
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
 
-// Constants
+// Constantes
 import { STORE_TOKEN } from "@/lib/utils/constants";
 
 // Interfaces

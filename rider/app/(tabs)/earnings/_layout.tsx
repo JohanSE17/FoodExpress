@@ -1,8 +1,8 @@
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { Stack, usePathname } from "expo-router";
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/global/theme.context";
 import EarningBottomBar from "@/lib/ui/screen-components/earnings/view/bottom-bar";
 import { useTranslation } from "react-i18next";
@@ -10,7 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { View } from "react-native";
 
 export default function StackLayout() {
-  // Hooks
+  // Ganchos (Hooks)
   const { modalVisible, setModalVisible } = useUserContext();
   const pathname = usePathname();
   const { t } = useTranslation();

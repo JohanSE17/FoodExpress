@@ -12,7 +12,7 @@ import { IConfigProps } from "@/lib/utils/interfaces";
 import { useQuery } from "@apollo/client";
 import { Libraries } from "@react-google-maps/api";
 
-// Core
+// Núcleo (Core)
 import React, { ReactNode, useContext } from "react";
 
 const ConfigurationContext = React.createContext({} as IConfigProps);

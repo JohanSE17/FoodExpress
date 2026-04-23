@@ -1,5 +1,5 @@
 export const pl = {
-  // Navigation
+  // Navegación
   continue: "Kontynuuj",
   Wallet: "Portfel",
   Home: "Strona główna",

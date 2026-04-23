@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useState } from 'react';
 
 // Prime React
@@ -34,7 +34,7 @@ export default function StaffMain({
   setIsAddStaffVisible,
   setStaff,
 }: IStaffMainComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

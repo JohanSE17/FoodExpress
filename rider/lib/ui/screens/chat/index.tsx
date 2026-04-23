@@ -1,15 +1,15 @@
-// Core
+// Núcleo (Core)
 import { SafeAreaView } from "react-native-safe-area-context";
 
-// Components
+// Componentes
 import ChatHeader from "@/lib/ui/screen-components/chat/header";
 import ChatMain from "@/lib/ui/screen-components/chat/main";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 
 export default function Chat() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

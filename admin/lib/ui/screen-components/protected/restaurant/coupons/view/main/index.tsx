@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Prime React
@@ -22,11 +22,11 @@ import Table from '@/lib/ui/useable-components/table';
 import { IActionMenuItem } from '@/lib/utils/interfaces/action-menu.interface';
 import { generateDummyCouponsRestaurant } from '@/lib/utils/dummy';
 
-// Hooks
+// Ganchos (Hooks)
 import { useQueryGQL } from '@/lib/hooks/useQueryQL';
 import useToast from '@/lib/hooks/useToast';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
 // GraphQL and Utilities
@@ -39,11 +39,11 @@ export default function CouponsMain({
   setIsAddCouponVisible,
   setCoupon,
 }: ICouponRestaurantMainComponentsProps) {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

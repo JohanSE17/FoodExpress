@@ -1,4 +1,4 @@
-// // Core
+// // Núcleo (Core)
 // import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
 
 // // Gifted Chat
@@ -9,7 +9,7 @@
 // import { Bubble, GiftedChat } from "react-native-gifted-chat";
 
 // export default function ChatMain() {
-//   // Hooks
+//   // Ganchos (Hooks)
 //   const { appTheme, currentTheme } = useApptheme();
 //   const { t } = useTranslation();
 //   const {

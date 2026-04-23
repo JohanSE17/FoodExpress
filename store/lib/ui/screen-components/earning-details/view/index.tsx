@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { View } from "react-native";
 
 // Interfaces
@@ -8,7 +8,7 @@ import {
   IStoreEarningsResponse,
 } from "@/lib/utils/interfaces/rider-earnings.interface";
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from "@/lib/context/global/user.context";
 import { QueryResult, useQuery } from "@apollo/client";
 import { useEffect, useMemo, useState } from "react";
@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 // GraphQL
 import { STORE_EARNINGS_GRAPH } from "@/lib/apollo/queries/earnings.query";
 
-// Components
+// Componentes
 import EarningDetailsHeader from "../header";
 import EarningsDetailStacks from "./earnings";
 
@@ -32,7 +32,7 @@ export default function EarningDetailsMain({
   dateFilter,
   setDateFilter,
 }: IEarningDetailsMainProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { t } = useTranslation();
 
   // States
@@ -42,10 +42,10 @@ export default function EarningDetailsMain({
     [] as IStoreEarnings[],
   );
 
-  // Contexts
+  // Contextos
   const { setModalVisible, userId } = useUserContext();
 
-  // Queries
+  // Consultas (Queries)
   const {
     loading: isStoreEarningsLoading,
     refetch: fetchStoreEarnings,

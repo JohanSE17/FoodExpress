@@ -9,7 +9,7 @@ export const EARNING_COLUMNS = ({
   menuItems: IActionMenuProps<IEarning>['items'];
   isSuperAdmin?: boolean;
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENT_SYMBOL } = useConfiguration();
 

@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import {
   DrawerContentComponentProps,
   DrawerContentScrollView,
@@ -6,7 +6,7 @@ import {
 import { useContext } from "react";
 import { Linking, Text, TouchableOpacity, View } from "react-native";
 
-// Context
+// Contexto
 import { AuthContext } from "@/lib/context/global/auth.context";
 
 // Drawer
@@ -29,7 +29,7 @@ import { ScrollView } from "react-native-gesture-handler";
 export default function CustomDrawerContent(
   props: DrawerContentComponentProps,
 ) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme } = useApptheme();
   const { t } = useTranslation();
   const { logout } = useContext(AuthContext);
@@ -121,12 +121,12 @@ export default function CustomDrawerContent(
                   >
                     {options.drawerIcon
                       ? options.drawerIcon({
-                          color: isFocused
-                            ? appTheme.iconColor
-                            : appTheme.iconColor,
-                          size: 16,
-                          focused: true,
-                        })
+                        color: isFocused
+                          ? appTheme.iconColor
+                          : appTheme.iconColor,
+                        size: 16,
+                        focused: true,
+                      })
                       : null}
                   </View>
                   <Text
@@ -153,7 +153,7 @@ export default function CustomDrawerContent(
         {/* EXTERNAL LINKS  */}
         <TouchableOpacity
           onPress={() => {
-            Linking.openURL("https://foodexpress.com/");
+            Linking.openURL("https://foodexpressapi.snepsej.space/");
           }}
           className="flex-row justify-between items-center px-4 py-4 border-b-[0.5px]"
           style={{ borderColor: appTheme.borderLineColor }}

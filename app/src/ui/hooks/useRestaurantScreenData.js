@@ -39,7 +39,7 @@ export const useRestaurantData = (
   const [selectedSubCtg, setSelectedSubCtg] = useState('')
   const [selectedPrntCtg, setSelectedPrntCtg] = useState('')
 
-  // Queries
+  // Consultas (Queries)
   const { data: popularItemsData } = useQuery(POPULAR_ITEMS, {
     variables: { restaurantId }
   })

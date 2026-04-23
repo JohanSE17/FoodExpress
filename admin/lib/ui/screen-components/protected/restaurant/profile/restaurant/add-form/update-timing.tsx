@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { ErrorMessage, Form, Formik, FormikErrors } from 'formik';
 import { useContext } from 'react';
 
@@ -18,7 +18,7 @@ import {
   ITimingResponseGQL,
 } from '@/lib/utils/interfaces/timing.interface';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 import { ProfileContext } from '@/lib/context/restaurant/profile.context';
 
@@ -42,13 +42,13 @@ const UpdateTiming = ({
     onStepChange: () => {},
   };
 
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const { restaurantId } = restaurantLayoutContextData;
   const { setIsUpdateProfileVisible, refetchRestaurantProfile } =
     useContext(ProfileContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

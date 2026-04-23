@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { usePathname, useRouter } from 'next/navigation';
 import { useContext, useEffect, useState } from 'react';
 
@@ -13,7 +13,7 @@ import {
   SubMenuItemProps,
 } from '@/lib/utils/interfaces';
 
-// Styles
+// Estilos
 import classes from './side-bar.module.css';
 import { LayoutContext } from '@/lib/context/global/layout.context';
 
@@ -51,7 +51,7 @@ export default function SidebarItem({
   const [expandSubMenu, setExpandSubMenu] = useState(false);
   const { showVendorSidebar } = useContext<LayoutContextProps>(LayoutContext);
 
-  // Hooks
+  // Ganchos (Hooks)
   const pathname = usePathname();
   const router = useRouter();
 
@@ -62,7 +62,7 @@ export default function SidebarItem({
     }
   }, [expanded]);
 
-  // Constants
+  // Constantes
   // Calculate the height of the sub-menu assuming each item is 40px tall
   const subMenuHeight = expandSubMenu
     ? `${((subMenu?.length || 0) * 40 + (subMenu! && 15)).toString()}px`

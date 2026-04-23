@@ -20,7 +20,7 @@ const GoogleMapComponent = ({
   const [zoom, setZoom] = useState(15);
   const { theme } = useTheme();
 
-  // Context
+  // Contexto
   const { isLoaded } = useContext(GoogleMapsContext);
 
   // useEffects
@@ -39,7 +39,7 @@ const GoogleMapComponent = ({
     position: "relative" as const,
   };
 
-  // Configuration for the circle overlay
+  // Configuración for the circle overlay
   const circleOptions = {
     strokeColor: "#000",
     strokeOpacity: 0.5,

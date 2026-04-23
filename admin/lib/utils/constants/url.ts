@@ -4,7 +4,7 @@ export const BACKEND_URL = {
     WS_SERVER_URL: 'ws://localhost:8001/',
   },
   LIVE: {
-    SERVER_URL: 'https://api.foodexpress.com/',
-    WS_SERVER_URL: 'wss://api.foodexpress.com/',
+    SERVER_URL: 'https://foodexpressapi.snepsej.space/',
+    WS_SERVER_URL: 'wss://foodexpressapi.snepsej.space/',
   },
 };

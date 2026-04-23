@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { createContext, useContext, useEffect, useState } from 'react';
 
 // Interface
@@ -24,7 +24,7 @@ export const VendorLayoutRestaurantContext =
   createContext<IRestaurantContextProps>({} as IRestaurantContextProps);
 
 export const VendorLayoutRestaurantProvider = ({ children }: IProvider) => {
-  // Context
+  // Contexto
   const {
     vendorLayoutContextData: { vendorId },
   } = useContext(VendorLayoutContext);

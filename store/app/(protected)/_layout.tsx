@@ -1,4 +1,4 @@
-// Providers
+// Proveedores
 import RestaurantProvider from "@/lib/context/global/restaurant";
 import { SoundProvider } from "@/lib/context/global/sound.context";
 import { useUserContext } from "@/lib/context/global/user.context";

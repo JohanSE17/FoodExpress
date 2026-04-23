@@ -9,7 +9,7 @@ export default function RestaurantsTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: IRestaurantsTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

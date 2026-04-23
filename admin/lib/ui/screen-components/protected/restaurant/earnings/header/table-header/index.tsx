@@ -16,7 +16,7 @@ export default function EarningRestaurantTableHeader({
   setDateFilters,
   onClearFilters,
 }: IEarningTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

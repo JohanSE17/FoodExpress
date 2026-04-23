@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useContext } from 'react';
 import { Form, Formik, FormikHelpers } from 'formik';
 
@@ -15,7 +15,7 @@ import CustomTextField from '@/lib/ui/useable-components/input-field';
 import CustomNumberField from '@/lib/ui/useable-components/number-input-field';
 import Toggle from '@/lib/ui/useable-components/toggle';
 
-// Context
+// Contexto
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
 // Utilities and Constants
@@ -39,7 +39,7 @@ export default function CouponsAddForm({
   position = 'right',
   isAddCouponVisible,
 }: ICouponRestaurantAddFormComponentProps) {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const restaurantId = restaurantLayoutContextData?.restaurantId || '';
 
@@ -51,7 +51,7 @@ export default function CouponsAddForm({
     ...coupon,
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useToast();
 

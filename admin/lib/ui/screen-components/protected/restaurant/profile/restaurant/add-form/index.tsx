@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import React, { useContext, useRef } from 'react';
 
 // PrimeReact Components
@@ -6,7 +6,7 @@ import { Sidebar } from 'primereact/sidebar';
 import { Stepper } from 'primereact/stepper';
 import { StepperPanel } from 'primereact/stepperpanel';
 
-// Context
+// Contexto
 import { ProfileContext } from '@/lib/context/restaurant/profile.context';
 
 // Custom Components
@@ -22,13 +22,13 @@ import UpdateBusinessDetails from './update-bussiness-details';
 const UpdateRestaurantsProfileForm = ({
   position = 'right',
 }: IRestaurantsAddFormComponentProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Refs
   const stepperRef = useRef(null);
 
-  // Contexts
+  // Contextos
   const {
     isUpdateProfileVisible,
     setIsUpdateProfileVisible,

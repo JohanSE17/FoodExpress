@@ -11,7 +11,7 @@ import SpinnerComponent from "../spinner";
 export default function LocationPermissionComponent({
   children,
 }: ILocationPermissionComponentProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const { setLocationPermission } = useLocationContext();

@@ -42,7 +42,7 @@ const Table = <T extends ITableExtends>({
     setSelectedData(e.value);
   };
 
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // Handlers

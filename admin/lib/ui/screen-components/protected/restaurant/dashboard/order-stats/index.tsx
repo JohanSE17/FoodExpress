@@ -23,10 +23,10 @@ import { useTranslations } from 'next-intl';
 export default function UserStats({
   dateFilter,
 }: IDashboardOrderStatsComponentsProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const {
     restaurantLayoutContextData: { restaurantId },
   } = useContext(RestaurantLayoutContext);

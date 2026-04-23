@@ -8,7 +8,7 @@ import { useQuery } from "@apollo/client";
 import { GET_USER_FAVOURITE } from "@/lib/api/graphql";
 //Interfaces
 import { IUserFavouriteQueryResponse } from "@/lib/utils/interfaces/favourite.restaurants.interface";
-// Components
+// Componentes
 import FavouriteCardsGrid from "@/lib/ui/useable-components/favourite-cards-grid";
 import CardSkeletonGrid from "@/lib/ui/useable-components/card-skelton-grid";
 import HeaderFavourite from "../header";

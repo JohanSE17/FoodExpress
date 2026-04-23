@@ -2,11 +2,11 @@
 import { useApptheme } from "@/lib/context/theme.context";
 import { MotiView, Text } from "moti";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslation } from "react-i18next";
 
 export default function EarningHeadingSkeleton() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

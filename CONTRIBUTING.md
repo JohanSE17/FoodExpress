@@ -1,72 +1,72 @@
-# Contributing to FoodExpress Multi Vendor Food Delivery System
+# Contribuyendo al Sistema de Entrega de Comida Multi Vendedor FoodExpress
 
-First off, thank you for considering contributing to our project! Your help is greatly appreciated.
+Primero que nada, ¡gracias por considerar contribuir a nuestro proyecto! Tu ayuda es muy apreciada.
 
-## How Can I Contribute?
+## ¿Cómo puedo contribuir?
 
-### Reporting Bugs
+### Reportar Bugs
 
-If you find a bug in the project, please submit an issue. When reporting a bug, please include:
+Si encuentras un bug en el proyecto, por favor envía un issue. Al reportar un bug, por favor incluye:
 
--   A clear and descriptive title.
--   A detailed description of the problem, including steps to reproduce.
--   Any relevant logs, screenshots, or other information that could help diagnose the problem.
+-   Un título claro y descriptivo.
+-   Una descripción detallada del problema, incluyendo pasos para reproducirlo.
+-   Cualquier log, captura de pantalla u otra información relevante que pueda ayudar a diagnosticar el problema.
 
-### Suggesting Enhancements
+### Sugerir Mejoras
 
-We welcome suggestions for improvements and new features. When suggesting an enhancement, please include:
+Damos la bienvenida a sugerencias de mejoras y nuevas características. Al sugerir una mejora, por favor incluye:
 
--   A clear and descriptive title.
--   A detailed description of the proposed change.
--   Any relevant context or reasoning for the enhancement.
+-   Un título claro y descriptivo.
+-   Una descripción detallada del cambio propuesto.
+-   Cualquier contexto o razonamiento relevante para la mejora.
 
 ### Pull Requests
 
-If you would like to contribute code, follow these steps:
+Si deseas contribuir con código, sigue estos pasos:
 
-1. **Fork the repository**: Create a fork of the repository on GitHub.
-2. **Clone your fork**: Clone your fork to your local machine.
+1. **Fork the repository**: Crea un fork del repositorio en GitHub.
+2. **Clone your fork**: Clona tu fork a tu máquina local.
     ```bash
-    git clone https://github.com/<your-username>/food-delivery-multivendor.git
-    cd food-delivery-multivendor
+    git clone https://github.com/<your-username>/FoodExpress.git
+    cd FoodExpress
     ```
-3. **Create a new branch**: Create a new branch for your feature or bugfix.
+3. **Create a new branch**: Crea una nueva rama para tu característica o corrección de bug.
     ```bash
     git checkout -b feature-or-bugfix-description
     ```
-4. **Make your changes**: Make your changes to the code.
-5. **Test your changes**: Ensure your changes work as expected and do not introduce any issues.
-6. **Commit your changes**: Commit your changes with a descriptive commit message.
+4. **Make your changes**: Realiza tus cambios en el código.
+5. **Test your changes**: Asegúrate de que tus cambios funcionen como se espera y no introduzcan ningún problema.
+6. **Commit your changes**: Realiza tus cambios con un mensaje de commit descriptivo.
     ```bash
     git add .
-    git commit -m "Description of the feature or bugfix"
+    git commit -m "Descripción de la característica o corrección de bug"
     ```
-7. **Push your changes**: Push your changes to your fork.
+7. **Push your changes**: Realiza tus cambios a tu fork.
     ```bash
-    git push origin feature-or-bugfix-description
+    git push origin feature-o-bugfix-description
     ```
-8. **Submit a pull request**: Create a pull request from your fork to the main repository. Include a detailed description of your changes.
+8. **Submit a pull request**: Crea un pull request desde tu fork al repositorio principal. Incluye una descripción detallada de tus cambios.
 
 ### Coding Guidelines
 
-To ensure consistency in the codebase, please follow these guidelines:
+Para asegurar la consistencia en el código, por favor sigue estas directrices:
 
--   **Code Style**: Follow the existing code style in the project.
--   **Comments**: Write clear and concise comments for complex code sections.
--   **Tests**: Write tests for new features and bug fixes.
+-   **Code Style**: Sigue el estilo de código existente en el proyecto.
+-   **Comments**: Escribe comentarios claros y concisos para secciones de código complejas.
+-   **Tests**: Escribe pruebas para nuevas características y correcciones de bugs.
 
 ### Code of Conduct
 
-By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
+Al participar en este proyecto, aceptas cumplir con nuestro [Código de Conducta](CODE_OF_CONDUCT.md).
 
 ## Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed:
+Asegúrate de tener lo siguiente instalado:
 
--   Node.js (version 14.0 to 16.0)
--   npm or yarn
+-   Node.js (versión 14.0 a 16.0)
+-   npm o yarn
 
 ### Setting Up
 

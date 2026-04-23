@@ -22,11 +22,11 @@ import {
   GET_RIDERS,
 } from '@/lib/api/graphql';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useState, useEffect } from 'react';
 import { useMutation, useSubscription } from '@apollo/client';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
 // CSS
@@ -76,7 +76,7 @@ function severityChecker(status: string | undefined) {
 }
 
 export const DISPATCH_TABLE_COLUMNS = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { showToast } = useContext(ToastContext);
 

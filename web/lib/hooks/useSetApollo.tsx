@@ -78,21 +78,23 @@ async function fetchMetricsToken(serverUrl?: string): Promise<string | null> {
 
 export const useSetupApollo = (): ApolloClient<NormalizedCacheObject> => {
   // const { SERVER_URL, WS_SERVER_URL } = getEnv(ENV);
-  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL;
-  const WS_SERVER_URL = process.env.NEXT_PUBLIC_WS_SERVER_URL;
+  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://foodexpressapi.snepsej.space/";
+  const WS_SERVER_URL = process.env.NEXT_PUBLIC_WS_SERVER_URL || SERVER_URL.replace("http", "ws");
+  const GRAPHQL_URL = process.env.NEXT_PUBLIC_GRAPHQL_URL || `${SERVER_URL}graphql`;
+  const WS_GRAPHQL_URL = (process.env.NEXT_PUBLIC_WS_SERVER_URL ? `${process.env.NEXT_PUBLIC_WS_SERVER_URL}graphql` : "") || GRAPHQL_URL.replace("http", "ws");
 
   initializeNonce();
 
   const cache = new InMemoryCache();
 
   const httpLink = createHttpLink({
-    uri: `${SERVER_URL}graphql`,
+    uri: GRAPHQL_URL,
     // useGETForQueries: true, 
   });
 
   // WebSocketLink with error handling
   const wsLink = new WebSocketLink(
-    new SubscriptionClient(`${WS_SERVER_URL}graphql`, {
+    new SubscriptionClient(WS_GRAPHQL_URL, {
       reconnect: true,
       timeout: 30000,
       lazy: true,

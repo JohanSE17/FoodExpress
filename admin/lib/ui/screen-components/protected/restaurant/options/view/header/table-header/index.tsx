@@ -9,7 +9,7 @@ export default function OptionTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: ICategoryTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   return (

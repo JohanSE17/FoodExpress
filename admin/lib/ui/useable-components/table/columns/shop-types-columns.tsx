@@ -6,14 +6,14 @@ import { IActionMenuProps, IShopType } from '@/lib/utils/interfaces';
 import CustomInputSwitch from '../../custom-input-switch';
 import ActionMenu from '../../action-menu';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useMemo, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
 //GraphQL
 import { GET_COUPONS, UPDATE_SHOP_TYPE } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -24,9 +24,9 @@ export const SHOP_TYPES_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IShopType>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useContext(ToastContext);
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

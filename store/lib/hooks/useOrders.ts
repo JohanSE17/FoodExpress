@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-// Context
+// Contexto
 import RestaurantProvider from "@/lib/context/global/restaurant";
 // Interface
 import { IOrder } from "@/lib/utils/interfaces/order.interface";

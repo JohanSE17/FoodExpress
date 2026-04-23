@@ -1,5 +1,5 @@
 export const km = {
-  // Navigation
+  // Navegación
   continue: "បន្ត",
   Wallet: "កាបូបអេឡិចត្រូនិក",
   Home: "ទំព័រដើម",

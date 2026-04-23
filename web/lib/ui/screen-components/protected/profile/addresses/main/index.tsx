@@ -7,7 +7,7 @@ import { useMutation, useQuery } from "@apollo/client";
 //Hooks
 import useToast from "@/lib/hooks/useToast";
 
-// Components
+// Componentes
 import UserAddressComponent from "@/lib/ui/useable-components/address";
 import CustomIconButton from "@/lib/ui/useable-components/custom-icon-button";
 import AddressesSkeleton from "@/lib/ui/useable-components/custom-skeletons/addresses.skelton";
@@ -32,7 +32,7 @@ export default function AddressesMain() {
   const [isUserAddressModalOpen, setIsUserAddressModalOpen] = useState(false);
   const [editAddress, setEditAddress] = useState<IUserAddress | null>(null);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useToast();
 
   //Queries and Mutations

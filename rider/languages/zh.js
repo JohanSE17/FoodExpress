@@ -256,7 +256,7 @@ export const zh = {
   "Start date cannot be after end date": "开始日期不能晚于结束日期",
   "Please log in to view your earnings": "请登录查看您的收入",
   "Tips": "小费",
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "无法更新可用性",
   "rider name": "骑手姓名",
   "rider id": "骑手ID",

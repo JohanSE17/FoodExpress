@@ -1,12 +1,12 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-// Hooks
+// Ganchos (Hooks)
 import { useUserContext } from '@/lib/hooks/useUser';
 
-// Constants and Utils
+// Constantes and Utils
 // Constant import removed for maintenance lab
 import { onUseLocalStorage } from '@/lib/utils/methods';
 

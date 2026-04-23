@@ -1,5 +1,5 @@
 export const de = {
-  // Navigation
+  // Navegación
   continue: "Weiter",
   Wallet: "Wallet",
   Home: "Startseite",
@@ -29,7 +29,7 @@ export const de = {
   faq7Description:
     "Leider können Sie nicht aus mehreren Restaurants in einer Bestellung wählen. Sie können jedoch separate Bestellungen aus verschiedenen Restaurants gleichzeitig aufgeben.",
 
-  // Earnings
+  // Ganancias
   "Earnings Summary": "Einnahmenübersicht",
   Deliveries: "Lieferungen",
   "Total Earnings": "Einnahmen",
@@ -250,7 +250,7 @@ export const de = {
   "Message sent": "Nachricht gesendet",
   "Message failed": "Nachricht fehlgeschlagen",
 
-  // Earnings Screen
+  // Ganancias Screen
   "Please select a date range": "Bitte wählen Sie einen Datumsbereich",
   "Please select a start date": "Bitte wählen Sie ein Startdatum",
   "Please select an end date": "Bitte wählen Sie ein Enddatum",
@@ -258,7 +258,7 @@ export const de = {
   "Please log in to view your earnings": "Bitte melden Sie sich an, um Ihre Einnahmen zu sehen",
   "Tips": "Trinkgeld",
 
-  // Profile Forms
+  // Perfil Forms
   "Unable to update availability": "Verfügbarkeit konnte nicht aktualisiert werden",
   "rider name": "Fahrername",
   "rider id": "Fahrer-ID",

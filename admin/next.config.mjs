@@ -45,7 +45,11 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'api.foodexpress.com',
+        hostname: 'foodexpressapi.snepsej.space',
+      },
+      {
+        protocol: 'https',
+        hostname: 'foodexpressapi.snepsej.space',
       },
       {
         protocol: 'https',

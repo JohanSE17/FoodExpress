@@ -25,7 +25,7 @@ const CustomDrawerHeader = () => {
     setIsRiderAvailable(dataProfile?.available || false);
   }, [dataProfile?.available]);
 
-  // Queries
+  // Consultas (Queries)
   const [toggleAvailablity, { loading }] = useMutation(UPDATE_AVAILABILITY, {
     refetchQueries: [
       { query: RIDER_PROFILE, variables: { id: dataProfile?._id?.toString() } },

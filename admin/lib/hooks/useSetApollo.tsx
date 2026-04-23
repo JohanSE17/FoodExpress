@@ -68,13 +68,13 @@ async function fetchMetricsToken(serverUrl?: string): Promise<string | null> {
 
 
 export const useSetupApollo = (): ApolloClient<NormalizedCacheObject> => {
-  const { SERVER_URL, WS_SERVER_URL } = useConfiguration();
+  const { SERVER_URL, WS_SERVER_URL, GRAPHQL_URL } = useConfiguration();
 
   initializeNonce();
   const cache = new InMemoryCache();
 
   const httpLink = createHttpLink({
-    uri: `${SERVER_URL}graphql`,
+    uri: GRAPHQL_URL,
   });
 
   // WebSocketLink with error handling

@@ -3,10 +3,10 @@
 // Interface and Types
 import { ICustomRadiusInputFieldComponentProps } from '@/lib/utils/interfaces';
 
-// Components
+// Componentes
 import { InputText } from 'primereact/inputtext';
 
-// Styles
+// Estilos
 import InputSkeleton from '../custom-skeletons/inputfield.skeleton';
 import classes from './cusom-input.module.css';
 

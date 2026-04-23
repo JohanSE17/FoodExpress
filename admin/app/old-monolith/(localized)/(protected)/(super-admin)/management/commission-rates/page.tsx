@@ -1,5 +1,5 @@
 'use client';
-// Screens
+// Pantallas
 import CommissionRateScreen from '@/lib/ui/screens/super-admin/management/commission-rates';
 
 export default function CommissionratePage() {

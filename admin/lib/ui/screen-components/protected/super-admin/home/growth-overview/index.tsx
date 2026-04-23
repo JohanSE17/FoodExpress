@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { useEffect, useMemo, useState } from 'react';
 
 // Prime React
@@ -15,7 +15,7 @@ import { useTranslations } from 'next-intl';
 // Dummy
 
 export default function GrowthOverView() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

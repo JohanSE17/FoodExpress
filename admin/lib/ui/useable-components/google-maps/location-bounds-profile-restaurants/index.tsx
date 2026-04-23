@@ -1,6 +1,6 @@
 'use client';
 
-// Core imports
+// Núcleo (Core) imports
 import {
   ApolloCache,
   ApolloError,
@@ -25,7 +25,7 @@ import {
   UPDATE_DELIVERY_BOUNDS_AND_LOCATION,
 } from '@/lib/api/graphql';
 
-// Context
+// Contexto
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { RestaurantLayoutContext } from '@/lib/context/restaurant/layout-restaurant.context';
 
@@ -72,7 +72,7 @@ const autocompleteService: {
 const CustomGoogleMapsLocationBounds: React.FC<
   ICustomGoogleMapsLocationBoundsComponentProps
 > = ({ onStepChange, hideControls, height }) => {
-  // Context
+  // Contexto
   const { restaurantLayoutContextData } = useContext(RestaurantLayoutContext);
   const { restaurantId } = restaurantLayoutContextData;
   const { showToast } = useContext(ToastContext);
@@ -92,7 +92,7 @@ const CustomGoogleMapsLocationBounds: React.FC<
   });
   const [path, setPath] = useState<ILocationPoint[]>([]);
   const [distance, setDistance] = useState(1);
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { theme } = useTheme();
 

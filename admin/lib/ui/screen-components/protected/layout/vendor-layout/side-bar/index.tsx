@@ -1,7 +1,7 @@
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
-// Context
+// Contexto
 import { LayoutContext } from '@/lib/context/global/layout.context';
 import { useUserContext } from '@/lib/hooks/useUser';
 
@@ -26,7 +26,7 @@ import { onUseLocalStorage } from '@/lib/utils/methods';
 import { useTranslations } from 'next-intl';
 
 function VendorSidebar({ children }: IGlobalComponentProps) {
-  // Context
+  // Contexto
   const { isVendorSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);
 
@@ -47,7 +47,7 @@ function VendorSidebar({ children }: IGlobalComponentProps) {
 }
 
 export default function MakeVendorSidebar() {
-    // Hooks
+    // Ganchos (Hooks)
     const t = useTranslations();
   const { isVendorSidebarVisible } =
     useContext<LayoutContextProps>(LayoutContext);

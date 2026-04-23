@@ -5,13 +5,13 @@ import {
   IUpdateUserResponse,
 } from "@/lib/utils/interfaces";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { useEffect, useState } from "react";
 import useVerifyOtp from "@/lib/hooks/useVerifyOtp";
 import { useTranslations } from "next-intl";
 
-// Components
+// Componentes
 import useToast from "@/lib/hooks/useToast";
 import CustomDialog from "@/lib/ui/useable-components/custom-dialog";
 import PhoneEntry from "./phone";
@@ -43,7 +43,7 @@ export default function UpdatePhoneModal({
   const [phoneOtp, setPhoneOtp] = useState("");
   // const [activeStep, setActiveStep] = useState(ActiveStep);
   
-    // Hooks
+    // Ganchos (Hooks)
   const { sendOtpToPhoneNumber, setUser, user, setOtp, checkPhoneExists } = useAuth();
   const { showToast } = useToast();
   const { verifyOTP, error } = useVerifyOtp();

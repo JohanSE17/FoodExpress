@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Location from "expo-location";
 import React, { useState } from "react";
@@ -16,7 +16,7 @@ export const AuthProvider: React.FC<IAuthProviderProps> = ({
   client,
   children,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const router = useRouter();
 
   // State

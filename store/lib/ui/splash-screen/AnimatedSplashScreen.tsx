@@ -2,7 +2,7 @@
 import "expo-dev-client";
 import * as SplashScreen from "expo-splash-screen";
 
-// Core
+// Núcleo (Core)
 import { StyleSheet, View } from "react-native";
 
 // React Native Reanimated
@@ -14,10 +14,10 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
-// Components
+// Componentes
 import SplashVideo from "./SplashVideo";
 
-// Hooks
+// Ganchos (Hooks)
 import { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 
 export default function AnimatedSplashScreen({
@@ -30,7 +30,7 @@ export default function AnimatedSplashScreen({
   const [isSplashVideoComplete, setSplashVideoComplete] = useState(false);
   const [isSplashAnimationComplete, setAnimationComplete] = useState(false);
 
-  // Hooks
+  // Ganchos (Hooks)
   const opacityAnimation = useSharedValue(1); // Shared value for opacity
   const scaleAnimation = useSharedValue(1); // Shared value for scale
 

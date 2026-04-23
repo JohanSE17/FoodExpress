@@ -1,7 +1,7 @@
 // Prime React
 import { Dialog } from "primereact/dialog";
 
-// Components
+// Componentes
 import CustomButton from "../button";
 
 // Interface and Types

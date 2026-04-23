@@ -1,4 +1,4 @@
-// Components
+// Componentes
 import { useAuth } from "@/lib/context/auth/auth.context";
 import CustomButton from "@/lib/ui/useable-components/button";
 import Divider from "@/lib/ui/useable-components/custom-divider";
@@ -8,7 +8,7 @@ import { ILoginWithGoogleProps } from "@/lib/utils/interfaces";
 // Assets
 import GoogleLogo from "@/public/assets/images/svgs/google-logo";
 
-// Hooks
+// Ganchos (Hooks)
 import { useTranslations } from "next-intl";
 
 // Next
@@ -20,7 +20,7 @@ export default function LoginWithGoogle({
   googleLogin,
   handleChangePanel,
 }: ILoginWithGoogleProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { isLoading } = useAuth();
 

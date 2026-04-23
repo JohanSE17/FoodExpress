@@ -6,14 +6,14 @@ import { ICoupon } from '@/lib/utils/interfaces/coupons.interface';
 import CustomInputSwitch from '../../custom-input-switch';
 import ActionMenu from '../../action-menu';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useMemo, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
 //GraphQL
 import { EDIT_COUPON, GET_COUPONS } from '@/lib/api/graphql';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 import { useTranslations } from 'next-intl';
 
@@ -22,9 +22,9 @@ export const COUPONS_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<ICoupon>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { showToast } = useContext(ToastContext);
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
   // States

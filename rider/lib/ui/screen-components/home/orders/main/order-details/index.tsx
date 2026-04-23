@@ -36,11 +36,11 @@ import Icons from "@expo/vector-icons/MaterialIcons";
 // Screen Components
 import ItemDetails from "@/lib/ui/screen-components/home/orders/main/item-details";
 
-// Hooks
+// Ganchos (Hooks)
 import useDetails from "@/lib/hooks/useDetail";
 import useOrderDetail from "@/lib/hooks/useOrderDetails";
 
-// Context
+// Contexto
 import { ConfigurationContext } from "@/lib/context/global/configuration.context";
 
 // UI Components
@@ -77,12 +77,12 @@ export default function OrderDetailScreen() {
   // Ref
   const bottomSheetRef = useRef<BottomSheet>(null);
 
-  // Context
+  // Contexto
   const configuration = useContext(ConfigurationContext);
   const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const insets = useSafeAreaInsets();
 
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme, currentTheme } = useApptheme();
   const { t } = useTranslation();
   const {

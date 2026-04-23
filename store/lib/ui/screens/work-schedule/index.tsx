@@ -1,12 +1,12 @@
-// Core
+// Núcleo (Core)
 import { SafeAreaView } from "react-native";
 
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/theme.context";
 import WorkScheduleMain from "../../screen-components/work-schedule/view/main";
 
 export default function WorkScheduleScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

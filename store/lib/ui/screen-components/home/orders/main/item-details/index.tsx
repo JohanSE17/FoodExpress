@@ -1,12 +1,12 @@
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 import { useContext, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
-// Contexts
+// Contextos
 import { ConfigurationContext } from "@/lib/context/global/configuration.context";
 
-// Core
+// Núcleo (Core)
 import { Text, View } from "react-native";
 
 import { IOrder, Item } from "@/lib/utils/interfaces/order.interface";
@@ -16,7 +16,7 @@ interface ItemDetailsProps {
 }
 
 const ItemDetails = ({ orderData: order }: ItemDetailsProps) => {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   const configuration = useContext(ConfigurationContext);

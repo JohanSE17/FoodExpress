@@ -18,7 +18,7 @@ const TransactionDetailModal: React.FC<ITransactionDetailModalProps> = ({
   onHide,
   transaction,
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENT_SYMBOL } = useConfiguration();
 

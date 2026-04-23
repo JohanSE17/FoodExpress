@@ -3,7 +3,7 @@ import { useApptheme } from "@/lib/context/theme.context";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 
-// Core
+// Núcleo (Core)
 import { Text, View } from "react-native";
 
 export default function NoRecordFound({
@@ -11,7 +11,7 @@ export default function NoRecordFound({
 }: {
   msg?: string;
 }) {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

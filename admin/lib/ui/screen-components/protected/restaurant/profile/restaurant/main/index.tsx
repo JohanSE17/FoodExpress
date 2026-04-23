@@ -11,11 +11,11 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 const RestaurantMain: React.FC = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const { CURRENT_SYMBOL } = useConfiguration();
 
-  // Context
+  // Contexto
   const { restaurantProfileResponse } = useContext(ProfileContext);
   const restaurant = restaurantProfileResponse?.data?.restaurant;
 

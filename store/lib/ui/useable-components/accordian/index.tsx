@@ -12,7 +12,7 @@ export default function AccordionItem({
   children,
   title,
 }: AccordionItemPros): JSX.Element {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
 
   // States

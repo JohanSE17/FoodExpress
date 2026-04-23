@@ -6,7 +6,7 @@ import {
   ISoundContext,
   ISoundContextProviderProps,
 } from "@/lib/utils/interfaces";
-// Context/Hooks
+// Contexto/Hooks
 import { useUserContext } from "./user.context";
 import { IOrder } from "@/lib/utils/interfaces/order.interface";
 
@@ -17,7 +17,7 @@ export const SoundProvider = ({ children }: ISoundContextProviderProps) => {
   const [audioPlayer, setAudioPlayer] = useState<AudioPlayer | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   
-  // Context/Hooks
+  // Contexto/Hooks
   const { assignedOrders } = useUserContext();
 
   // Create audio player

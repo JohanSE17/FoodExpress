@@ -3,7 +3,7 @@
 // React imports
 import { useContext } from 'react';
 
-// Context imports
+// Contexto imports
 import { RestaurantsContext } from '@/lib/context/super-admin/restaurants.context';
 
 // Component imports
@@ -15,10 +15,10 @@ import { faAdd } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from 'next-intl';
 
 export default function RestaurantsScreenHeader() {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { onRestaurantsFormVisible } = useContext(RestaurantsContext);
   return (
     <div className="sticky top-0 z-10 w-full flex-shrink-0 bg-white dark:bg-dark-950 p-3 shadow-sm">

@@ -2,7 +2,7 @@
 // Icons
 import PersonIcon from "@/lib/utils/assets/svg/person";
 
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomTextField from "@/lib/ui/useable-components/input-field";
 import CustomPasswordTextField from "@/lib/ui/useable-components/password-input-field";
@@ -12,7 +12,7 @@ import PhoneConflictModal from "../phone-conflict-modal";
 // Interfaces
 import { ILoginWithEmailProps } from "@/lib/utils/interfaces";
 
-// Hooks
+// Ganchos (Hooks)
 import { useAuth } from "@/lib/context/auth/auth.context";
 import { useConfig } from "@/lib/context/configuration/configuration.context";
 import useToast from "@/lib/hooks/useToast";
@@ -30,7 +30,7 @@ export default function SignUpWithEmail({
   handleFormChange,
   setFormData,
 }: ILoginWithEmailProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   const {
     sendOtpToEmailAddress,

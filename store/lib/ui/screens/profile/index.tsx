@@ -1,4 +1,4 @@
-// Components
+// Componentes
 import { useApptheme } from "@/lib/context/theme.context";
 import { View } from "react-native";
 import ProfileHeader from "../../screen-components/profile/header";

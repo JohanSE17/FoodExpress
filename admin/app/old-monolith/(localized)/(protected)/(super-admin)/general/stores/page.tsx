@@ -1,4 +1,4 @@
-// Screens
+// Pantallas
 import RestaurantsScreens from '@/lib/ui/screens/super-admin/general/restaurants';
 
 export default function RestaurantPage() {

@@ -6,16 +6,16 @@ import { useRouter } from "next/navigation";
 import { DEACTIVATE_USER, GET_USER_PROFILE } from "@/lib/api/graphql";
 import { useMutation, useQuery, ApolloError } from "@apollo/client";
 
-// Components
+// Componentes
 import CustomButton from "@/lib/ui/useable-components/button";
 import CustomInputSwitch from "@/lib/ui/useable-components/custom-input-switch";
 import ProfileSettingsSkeleton from "@/lib/ui/useable-components/custom-skeletons/profile.settings.skelton";
 import TextComponent from "@/lib/ui/useable-components/text-field";
 import DeleteAccountDialog from "./delete-account";
 import UpdatePhoneModal from "./update-phone";
-// Context
+// Contexto
 import { useAuth } from "@/lib/context/auth/auth.context";
-// Hooks
+// Ganchos (Hooks)
 import useToast from "@/lib/hooks/useToast";
 import NameUpdateModal from "./update-name";
 import { useTranslations } from "next-intl";
@@ -40,7 +40,7 @@ export default function SettingsMain() {
     useState<boolean>(false);
   const [activeStep, setActiveStep] = useState<number>(0);
 
-  // Hooks
+  // Ganchos (Hooks)
   const { setAuthToken } = useAuth();
   const router = useRouter();
   const { showToast } = useToast();

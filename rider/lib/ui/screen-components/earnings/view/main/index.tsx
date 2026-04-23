@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
 
 // Interfaces
@@ -13,7 +13,7 @@ import { barDataItem } from "react-native-gifted-charts";
 // GraphQL
 import { RIDER_EARNINGS_GRAPH } from "@/lib/apollo/queries/earnings.query";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useUserContext } from "@/lib/context/global/user.context";
 import { QueryResult, useQuery } from "@apollo/client";
@@ -25,7 +25,7 @@ import { router } from "expo-router";
 // Skeletons
 import { EarningScreenMainLoading } from "@/lib/ui/skeletons";
 
-// Components
+// Componentes
 import EarningsBarChart from "../../bar-chart";
 import EarningStack from "../earnings-stack";
 
@@ -33,14 +33,14 @@ import EarningStack from "../earnings-stack";
 import formatNumber from "@/lib/utils/methods/num-formatter";
 
 export default function EarningsMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
 
-  // Contexts
+  // Contextos
   const { userId, setModalVisible } = useUserContext();
 
-  // Queries
+  // Consultas (Queries)
   const { loading: isRiderEarningsLoading, data: riderEarningsData } = useQuery(
     RIDER_EARNINGS_GRAPH,
     {

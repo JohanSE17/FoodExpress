@@ -45,7 +45,7 @@ import { useCallback } from 'react'
 import useNetworkStatus from '../../utils/useNetworkStatus'
 import ErrorView from '../../components/ErrorView/ErrorView'
 
-// Constants
+// Constantes
 const PLACEORDER = gql`
   ${placeOrder}
 `

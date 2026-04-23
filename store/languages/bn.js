@@ -1,5 +1,5 @@
 export const bn = {
-  // Navigation
+  // Navegación
   continue: "চালিয়ে যান",
   Wallet: "ওয়ালেট",
   Home: "হোম",

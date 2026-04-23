@@ -1,5 +1,5 @@
 'use client';
-// Core
+// Núcleo (Core)
 import { Form, Formik } from 'formik';
 
 // Components
@@ -9,13 +9,13 @@ import CustomPasswordTextField from '@/lib/ui/useable-components/password-input-
 // Toast
 import useToast from '@/lib/hooks/useToast';
 
-// Hooks
+// Ganchos (Hooks)
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
 // Interfaces and Types
 import { IGoogleApiForm } from '@/lib/utils/interfaces/configurations.interface';
 
-// Utils and Constants
+// Utilidades and Constants
 import { GoogleApiValidationSchema } from '@/lib/utils/schema';
 
 // GraphQL
@@ -26,7 +26,7 @@ import {
 import { useMutation } from '@apollo/client';
 
 const GoogleApiAddForm = () => {
-  // Hooks
+  // Ganchos (Hooks)
   const { GOOGLE_MAPS_KEY } = useConfiguration();
   const { showToast } = useToast();
 

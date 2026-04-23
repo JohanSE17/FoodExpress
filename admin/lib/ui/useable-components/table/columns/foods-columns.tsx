@@ -21,10 +21,10 @@ export const FOODS_TABLE_COLUMNS = ({
 }: {
   menuItems: IActionMenuProps<IFoodNew>['items'];
 }) => {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
 
-  // Context
+  // Contexto
   const { showToast } = useContext(ToastContext);
   const {
     restaurantLayoutContextData: { restaurantId },

@@ -1,15 +1,15 @@
-// Components
+// Componentes
 import SuccessModal from "../success-modal";
 
-// Core
+// Núcleo (Core)
 import { View } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/global/theme.context";
 import { useTranslation } from "react-i18next";
 
 export default function WithdrawRquestSuccessMain() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   const { t } = useTranslation();
   return (

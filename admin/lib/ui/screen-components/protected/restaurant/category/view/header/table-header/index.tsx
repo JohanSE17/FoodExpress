@@ -9,7 +9,7 @@ export default function CategoryTableHeader({
   globalFilterValue,
   onGlobalFilterChange,
 }: ICategoryTableHeaderProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   return (
     <div className="mb-4 flex flex-col gap-6">

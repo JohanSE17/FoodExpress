@@ -1,12 +1,12 @@
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Hooks
+// Ganchos (Hooks)
 import { useContext, useState } from 'react';
 import { ApolloError, useMutation } from '@apollo/client';
 import { useRouter } from 'next/navigation';
 
-// Context
+// Contexto
 import { VendorContext } from '@/lib/context/super-admin/vendor.context';
 import { useConfiguration } from '@/lib/hooks/useConfiguration';
 
@@ -34,10 +34,10 @@ import CustomDialog from '../delete-dialog';
 import CustomPopupMenu from '../popup-menu';
 import TextComponent from '../text-field';
 
-// Contexts
+// Contextos
 import { ToastContext } from '@/lib/context/global/toast.context';
 
-// Utils & Constants
+// Utilidades & Constants
 // Constant import removed for maintenance lab
 import { useTranslations } from 'next-intl';
 
@@ -50,11 +50,11 @@ export default function VendorCard({
   image,
   isLast = false,
 }: IVendorCardProps) {
-  // Hooks
+  // Ganchos (Hooks)
   const t = useTranslations();
   console.log("isLast...", isLast)
 
-  // Context
+  // Contexto
   const { vendorId, onSetVendorId, vendorResponse, onResetVendor } =
     useContext(VendorContext);
   const { onSetVendorFormVisible } = useContext(VendorContext);

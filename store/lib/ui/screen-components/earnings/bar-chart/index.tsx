@@ -1,4 +1,4 @@
-// Core
+// Núcleo (Core)
 import { Platform, View } from "react-native";
 
 // Chart

@@ -1,14 +1,14 @@
-// Components
+// Componentes
 import EarningsOrderDetailsMain from "@/lib/ui/screen-components/earning-order-details/view";
 
-// Core
+// Núcleo (Core)
 import { SafeAreaView } from "react-native";
 
-// Hooks
+// Ganchos (Hooks)
 import { useApptheme } from "@/lib/context/theme.context";
 
 export default function EarningsOrderDetailsScreen() {
-  // Hooks
+  // Ganchos (Hooks)
   const { appTheme } = useApptheme();
   return (
     <SafeAreaView

@@ -1,6 +1,6 @@
 'use client';
 
-// Core
+// Núcleo (Core)
 import { useContext, useState } from 'react';
 
 // Component
@@ -10,7 +10,7 @@ import VendorHeader from '@/lib/ui/screen-components/protected/super-admin/vendo
 import VendorMain from '@/lib/ui/screen-components/protected/super-admin/vendor/view/main';
 import VendorMobilesTabs from '@/lib/ui/screen-components/protected/super-admin/vendor/view/mobile-tabs';
 
-// Constants
+// Constantes
 // Constant import removed for maintenance lab
 
 // Interface & Type
@@ -27,7 +27,7 @@ export default function VendorsScreen() {
     useState<string>(options[1]);
   const [activeTab, setActiveTab] = useState<TVendorMobileTabs>('vendors');
 
-  // Context
+  // Contexto
   const { vendorFormVisible } = useContext(VendorContext);
   const { isRestaurantFormVisible } = useContext(RestaurantContext);
 
