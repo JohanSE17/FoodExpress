@@ -8,6 +8,12 @@ const STORAGE_KEYS = {
 const MIN_REFRESH_INTERVAL = 5000; // 5 seconds between refresh attempts
 const EXPIRY_BUFFER = 10000; // Start refreshing 10 seconds before expiry
 
+/** Returns localStorage only in browser environments; null on the server (SSR). */
+function getStorage(): Storage | null {
+  if (typeof window === 'undefined') return null;
+  return window.localStorage;
+}
+
 function generateRandomKey(): string {
   const array = new Uint8Array(16);
   crypto.getRandomValues(array);
@@ -15,15 +21,19 @@ function generateRandomKey(): string {
 }
 
 export function initializeNonce(): void {
-  const existingNonce = localStorage.getItem(STORAGE_KEYS.NONCE);
+  const storage = getStorage();
+  if (!storage) return;
+  const existingNonce = storage.getItem(STORAGE_KEYS.NONCE);
   if (!existingNonce) {
     const nonce = generateRandomKey();
-    localStorage.setItem(STORAGE_KEYS.NONCE, nonce);
+    storage.setItem(STORAGE_KEYS.NONCE, nonce);
   }
 }
 
 export function getNonce(): string | null {
-  const nonce = localStorage.getItem(STORAGE_KEYS.NONCE);
+  const storage = getStorage();
+  if (!storage) return null;
+  const nonce = storage.getItem(STORAGE_KEYS.NONCE);
   if (!nonce) {
     initializeNonce();
     return getNonce();
@@ -32,19 +42,25 @@ export function getNonce(): string | null {
 }
 
 export function storeMetricsToken(token: string, expiry: string): void {
-  localStorage.setItem(STORAGE_KEYS.METRICS_TOKEN, token);
-  localStorage.setItem(STORAGE_KEYS.EXPIRY, expiry);
-  localStorage.setItem(STORAGE_KEYS.LAST_REFRESH, Date.now().toString());
+  const storage = getStorage();
+  if (!storage) return;
+  storage.setItem(STORAGE_KEYS.METRICS_TOKEN, token);
+  storage.setItem(STORAGE_KEYS.EXPIRY, expiry);
+  storage.setItem(STORAGE_KEYS.LAST_REFRESH, Date.now().toString());
 }
 
 export function getMetricsToken(): string | null {
-  return localStorage.getItem(STORAGE_KEYS.METRICS_TOKEN);
+  const storage = getStorage();
+  if (!storage) return null;
+  return storage.getItem(STORAGE_KEYS.METRICS_TOKEN);
 }
 
 export function shouldRefreshToken(): boolean {
-  const token = localStorage.getItem(STORAGE_KEYS.METRICS_TOKEN);
-  const expiryStr = localStorage.getItem(STORAGE_KEYS.EXPIRY);
-  const lastRefreshStr = localStorage.getItem(STORAGE_KEYS.LAST_REFRESH);
+  const storage = getStorage();
+  if (!storage) return false;
+  const token = storage.getItem(STORAGE_KEYS.METRICS_TOKEN);
+  const expiryStr = storage.getItem(STORAGE_KEYS.EXPIRY);
+  const lastRefreshStr = storage.getItem(STORAGE_KEYS.LAST_REFRESH);
 
   // No token or expiry - must refresh
   if (!token || !expiryStr) return true;
@@ -66,8 +82,10 @@ export function shouldRefreshToken(): boolean {
 }
 
 export function clearMetricsData(): void {
-  localStorage.removeItem(STORAGE_KEYS.NONCE);
-  localStorage.removeItem(STORAGE_KEYS.METRICS_TOKEN);
-  localStorage.removeItem(STORAGE_KEYS.EXPIRY);
-  localStorage.removeItem(STORAGE_KEYS.LAST_REFRESH);
+  const storage = getStorage();
+  if (!storage) return;
+  storage.removeItem(STORAGE_KEYS.NONCE);
+  storage.removeItem(STORAGE_KEYS.METRICS_TOKEN);
+  storage.removeItem(STORAGE_KEYS.EXPIRY);
+  storage.removeItem(STORAGE_KEYS.LAST_REFRESH);
 }

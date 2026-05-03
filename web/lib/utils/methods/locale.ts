@@ -3,8 +3,6 @@
 import { cookies } from 'next/headers';
 import { TLocale } from '../types/locale';
 import { DEFAULT_LOCALE } from '../constants';
-
-
 const COOKIE_NAME = 'NEXT_LOCALE';
 
 export async function getUserLocale() {

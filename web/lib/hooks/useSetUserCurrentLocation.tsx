@@ -11,7 +11,6 @@ import { useUserAddress } from "../context/address/address.context";
 import { LocationNameSpace } from "../utils/types/location";
 import { onUseLocalStorage } from "../utils/methods/local-storage";
 import { USER_CURRENT_LOCATION_LS_KEY } from "../utils/constants";
-
 export default function useSetUserCurrentLocation() {
   // States
   const [isLocationFetching, setIsLocationFetching] = useState(false);

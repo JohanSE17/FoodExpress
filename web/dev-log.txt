@@ -1,0 +1,27 @@
+
+> foodexpress-web@0.1.0 dev
+> cross-env NODE_OPTIONS='--inspect' next dev -p 3001
+
+Debugger listening on ws://127.0.0.1:9229/3b189aed-f94d-4f0d-8329-45e808a541ca
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9230/cd086e5a-87da-4f49-a850-5560aeb2378d
+For help, see: https://nodejs.org/en/docs/inspector
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/johan/Escritorio/Mant_Suport_Sw/FoodExpress/FoodExpress/web/node_modules/next/dist/server/lib/start-server.js:280:16
+    at new Promise (<anonymous>)
+    at startServer (/home/johan/Escritorio/Mant_Suport_Sw/FoodExpress/FoodExpress/web/node_modules/next/dist/server/lib/start-server.js:191:11)
+    at /home/johan/Escritorio/Mant_Suport_Sw/FoodExpress/FoodExpress/web/node_modules/next/dist/server/lib/start-server.js:310:52
+    at Span.traceAsyncFn (/home/johan/Escritorio/Mant_Suport_Sw/FoodExpress/FoodExpress/web/node_modules/next/dist/trace/trace.js:154:26)
+    at process.<anonymous> (/home/johan/Escritorio/Mant_Suport_Sw/FoodExpress/FoodExpress/web/node_modules/next/dist/server/lib/start-server.js:310:35)
+    at process.emit (node:events:524:28) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+[?25h

@@ -14,7 +14,7 @@ export * from './withdraw-requests';
 export * from './zone';
 export * from './food';
 export * from './notifications';
-export * from './dashboard';
+
 export * from './app-versions';
 export * from './transaction-history';
 export * from './earnings';

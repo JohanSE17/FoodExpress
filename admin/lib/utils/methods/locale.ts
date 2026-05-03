@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers';
 import { TLocale } from '../types/locale';
-import { DEFAULT_LOCALE } from '../constants';
+const DEFAULT_LOCALE = 'en';
 
 
 const COOKIE_NAME = 'NEXT_LOCALE';

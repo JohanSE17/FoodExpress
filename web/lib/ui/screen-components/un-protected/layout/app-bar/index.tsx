@@ -57,11 +57,7 @@ import {
   getSearchedKeywords,
 } from "@/lib/utils/methods";
 
-// Constnats
-import {
-  languageTypes,
-  "user-current-location",
-} from "@/lib/utils/constants";
+import { languageTypes } from "@/lib/utils/constants";
 import EmptySearch from "@/lib/ui/useable-components/empty-search-results";
 import { useLocale, useTranslations } from "next-intl";
 import { TLocale } from "@/lib/utils/types/locale";
