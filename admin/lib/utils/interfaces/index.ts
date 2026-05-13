@@ -1,4 +1,4 @@
-]633;E;} > "$IDIR/index.ts";b25e31c1-3348-4349-a94a-33347e5e86e9]633;Cexport * from './action.button.interface';
+export * from './action.button.interface';
 export * from './action-menu.interface';
 export * from './add-on.interface';
 export * from './app-versions.interface';
